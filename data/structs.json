@@ -5,13 +5,29 @@
         "name": "dmgtype",
         "type": "number{DMG}",
         "default": "DMG_BULLET",
-        "description": "Damage type using <page>Enums/DMG</page>.\n\nRelated function is <page>game.GetAmmoDamageType</page>."
+        "description": "Damage type using <page>Enums/DMG</page>.\n\nRelated function is <page>game.GetAmmoDamageType</page>.",
+        "references": [
+          {
+            "name": "Enums/DMG",
+            "resolved": false
+          },
+          {
+            "name": "game.GetAmmoDamageType",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "force",
         "type": "number",
         "default": "1000",
-        "description": "The force of the ammo.\n\nRelated function is <page>game.GetAmmoForce</page>."
+        "description": "The force of the ammo.\n\nRelated function is <page>game.GetAmmoForce</page>.",
+        "references": [
+          {
+            "name": "game.GetAmmoForce",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "maxsplash",
@@ -28,37 +44,89 @@
       {
         "name": "name",
         "type": "string",
-        "description": "Name of the ammo.\n\nRelated functions are <page>game.GetAmmoName</page> and <page>game.GetAmmoID</page>."
+        "description": "Name of the ammo.\n\nRelated functions are <page>game.GetAmmoName</page> and <page>game.GetAmmoID</page>.",
+        "references": [
+          {
+            "name": "game.GetAmmoName",
+            "resolved": false
+          },
+          {
+            "name": "game.GetAmmoID",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "npcdmg",
         "type": "number",
         "default": "10",
-        "description": "The damage dealt to NPCs.\n\nRelated function is <page>game.GetAmmoNPCDamage</page>.\n\nCan also be a string with the name of a <page>convar</page>. The value will automatically update with the convar's."
+        "description": "The damage dealt to NPCs.\n\nRelated function is <page>game.GetAmmoNPCDamage</page>.\n\nCan also be a string with the name of a <page>convar</page>. The value will automatically update with the convar's.",
+        "references": [
+          {
+            "name": "game.GetAmmoNPCDamage",
+            "resolved": false
+          },
+          {
+            "name": "convar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "plydmg",
         "type": "number",
         "default": "10",
-        "description": "The damage dealt to players.\n\nRelated function is <page>game.GetAmmoPlayerDamage</page>.\n\nCan also be a string with the name of a <page>convar</page>. The value will automatically update with the convar's."
+        "description": "The damage dealt to players.\n\nRelated function is <page>game.GetAmmoPlayerDamage</page>.\n\nCan also be a string with the name of a <page>convar</page>. The value will automatically update with the convar's.",
+        "references": [
+          {
+            "name": "game.GetAmmoPlayerDamage",
+            "resolved": false
+          },
+          {
+            "name": "convar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "tracer",
         "type": "number{TRACER}",
         "default": "TRACER_NONE",
-        "description": "Tracer type using <page>Enums/TRACER</page>."
+        "description": "Tracer type using <page>Enums/TRACER</page>.",
+        "references": [
+          {
+            "name": "Enums/TRACER",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "maxcarry",
         "type": "number",
         "default": "9999",
-        "description": "Maximum amount of ammo of this type the player should be able to carry in reserve. `-2` makes this ammo type infinite.\n\nRelated function is <page>game.GetAmmoMax</page>.\n\nCan also be a string with the name of a <page>convar</page>. The value will automatically update with the convar's.\n<warning>`gmod_maxammo` convar will override this value if set to above 0, **which it is by default**.</warning>"
+        "description": "Maximum amount of ammo of this type the player should be able to carry in reserve. `-2` makes this ammo type infinite.\n\nRelated function is <page>game.GetAmmoMax</page>.\n\nCan also be a string with the name of a <page>convar</page>. The value will automatically update with the convar's.\n<warning>`gmod_maxammo` convar will override this value if set to above 0, **which it is by default**.</warning>",
+        "references": [
+          {
+            "name": "game.GetAmmoMax",
+            "resolved": false
+          },
+          {
+            "name": "convar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "flags",
         "type": "number{AMMO}",
         "default": "0",
-        "description": "Flags for the ammo type using <page>Enums/AMMO</page>."
+        "description": "Flags for the ammo type using <page>Enums/AMMO</page>.",
+        "references": [
+          {
+            "name": "Enums/AMMO",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -71,7 +139,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/AmmoData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "game.AddAmmoType",
+        "resolved": false
+      },
+      {
+        "name": "game.GetAmmoData",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -101,19 +179,37 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/AngPos"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Entity:GetAttachment",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "StartTime",
         "type": "number",
-        "description": "The system time value returned by <page>Global.SysTime</page> when the animation starts/will start."
+        "description": "The system time value returned by <page>Global.SysTime</page> when the animation starts/will start.",
+        "references": [
+          {
+            "name": "Global.SysTime",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "EndTime",
         "type": "number",
-        "description": "The system time value returned by <page>Global.SysTime</page> when the animation ends/will end."
+        "description": "The system time value returned by <page>Global.SysTime</page> when the animation ends/will end.",
+        "references": [
+          {
+            "name": "Global.SysTime",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Ease",
@@ -134,63 +230,143 @@
       {
         "name": "Pos",
         "type": "Vector",
-        "description": "The target position, or target translation of the panel object. Used by <page>Panel:MoveTo</page> and <page>Panel:MoveBy</page> respectively."
+        "description": "The target position, or target translation of the panel object. Used by <page>Panel:MoveTo</page> and <page>Panel:MoveBy</page> respectively.",
+        "references": [
+          {
+            "name": "Panel:MoveTo",
+            "resolved": false
+          },
+          {
+            "name": "Panel:MoveBy",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "StartPos",
         "type": "Vector",
-        "description": "The position of the panel object when the animation started. Used by <page>Panel:MoveTo</page> and <page>Panel:MoveBy</page>."
+        "description": "The position of the panel object when the animation started. Used by <page>Panel:MoveTo</page> and <page>Panel:MoveBy</page>.",
+        "references": [
+          {
+            "name": "Panel:MoveTo",
+            "resolved": false
+          },
+          {
+            "name": "Panel:MoveBy",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SizeX",
         "type": "boolean",
-        "description": "Whether to resize the panel horizontally or not. Only used by <page>Panel:SizeTo</page>."
+        "description": "Whether to resize the panel horizontally or not. Only used by <page>Panel:SizeTo</page>.",
+        "references": [
+          {
+            "name": "Panel:SizeTo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SizeY",
         "type": "boolean",
-        "description": "Whether to resize the panel vertically or not. Only used by <page>Panel:SizeTo</page>."
+        "description": "Whether to resize the panel vertically or not. Only used by <page>Panel:SizeTo</page>.",
+        "references": [
+          {
+            "name": "Panel:SizeTo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Size",
         "type": "Vector",
         "default": "(0, 0, 0)",
-        "description": "The target size of the panel object. Only used by <page>Panel:SizeTo</page>."
+        "description": "The target size of the panel object. Only used by <page>Panel:SizeTo</page>.",
+        "references": [
+          {
+            "name": "Panel:SizeTo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "StartSize",
         "type": "Vector",
-        "description": "The size of the panel object when the animation started. Only used by <page>Panel:SizeTo</page>."
+        "description": "The size of the panel object when the animation started. Only used by <page>Panel:SizeTo</page>.",
+        "references": [
+          {
+            "name": "Panel:SizeTo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Color",
         "type": "Color",
-        "description": "The target colour of the panel object. Only used by <page>Panel:ColorTo</page>."
+        "description": "The target colour of the panel object. Only used by <page>Panel:ColorTo</page>.",
+        "references": [
+          {
+            "name": "Panel:ColorTo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "StartColor",
         "type": "Color",
-        "description": "The colour of the panel object when the animation started. Only used by <page>Panel:ColorTo</page>."
+        "description": "The colour of the panel object when the animation started. Only used by <page>Panel:ColorTo</page>.",
+        "references": [
+          {
+            "name": "Panel:ColorTo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Alpha",
         "type": "number",
-        "description": "The target alpha (0-255) of the panel object. Only used by <page>Panel:AlphaTo</page>."
+        "description": "The target alpha (0-255) of the panel object. Only used by <page>Panel:AlphaTo</page>.",
+        "references": [
+          {
+            "name": "Panel:AlphaTo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "StartAlpha",
         "type": "number",
-        "description": "The alpha (0-255) of the panel object when the animation started. Only used by <page>Panel:AlphaTo</page>."
+        "description": "The alpha (0-255) of the panel object when the animation started. Only used by <page>Panel:AlphaTo</page>.",
+        "references": [
+          {
+            "name": "Panel:AlphaTo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Speed",
         "type": "number",
-        "description": "The speed to use for transitions when using linear interpolation (Lerp) animations. Only used by <page>Panel:LerpPositions</page>."
+        "description": "The speed to use for transitions when using linear interpolation (Lerp) animations. Only used by <page>Panel:LerpPositions</page>.",
+        "references": [
+          {
+            "name": "Panel:LerpPositions",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "UseGravity",
         "type": "boolean",
-        "description": "Whether or not to use easing to make the panel 'jump' at its target, slowing as it approaches. Only used by <page>Panel:LerpPositions</page>."
+        "description": "Whether or not to use easing to make the panel 'jump' at its target, slowing as it approaches. Only used by <page>Panel:LerpPositions</page>.",
+        "references": [
+          {
+            "name": "Panel:LerpPositions",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -202,7 +378,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/AnimationData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Panel:AnimationThinkInternal",
+        "resolved": false
+      },
+      {
+        "name": "Panel:NewAnimation",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -227,7 +413,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/AttachmentData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Entity:GetAttachments",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -259,7 +451,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/BalloonData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "MakeBalloon",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -294,7 +492,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/BodyGroupData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Entity:GetBodyGroups",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -319,7 +523,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/BoneBindPose"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "table",
+        "resolved": false
+      },
+      {
+        "name": "util.GetModelMeshes",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -352,7 +566,41 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/BoneManipulationData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Entity:GetManipulateBoneScale",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetManipulateBoneAngles",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetManipulateBonePosition",
+        "resolved": false
+      },
+      {
+        "name": "Entity:ManipulateBoneScale",
+        "resolved": false
+      },
+      {
+        "name": "Entity:ManipulateBoneAngles",
+        "resolved": false
+      },
+      {
+        "name": "Entity:ManipulateBonePosition",
+        "resolved": false
+      },
+      {
+        "name": "duplicator.DoBoneManipulator",
+        "resolved": false
+      },
+      {
+        "name": "Structures/EntityCopyData",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -364,7 +612,13 @@
       {
         "name": "weight",
         "type": "number",
-        "description": "A percentage between `0` and `1` indicating how much influence this bone's <page>VMatrix</page> should have on the the vertex."
+        "description": "A percentage between `0` and `1` indicating how much influence this bone's <page>VMatrix</page> should have on the the vertex.",
+        "references": [
+          {
+            "name": "VMatrix",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -377,7 +631,29 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/BoneWeight"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "table",
+        "resolved": false
+      },
+      {
+        "name": "VMatrix",
+        "resolved": false
+      },
+      {
+        "name": "Structures/MeshVertex",
+        "resolved": false
+      },
+      {
+        "name": "util.GetModelMeshes",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetBoneMatrix",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -385,25 +661,63 @@
         "name": "Attacker",
         "type": "Entity",
         "default": "self",
-        "description": "The entity that should be reported as attacker. (eg. a player)\n\nBy default this would be set to the entity <page>Entity:FireBullets</page> is called on."
+        "description": "The entity that should be reported as attacker. (eg. a player)\n\nBy default this would be set to the entity <page>Entity:FireBullets</page> is called on.",
+        "references": [
+          {
+            "name": "Entity:FireBullets",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Inflictor",
         "type": "Entity",
         "default": "NULL",
-        "description": "The entity that should be reported as inflictor eg. a weapon or something similar.\n\nAlso defines <page>CTakeDamageInfo:GetWeapon</page> for <page>Weapon</page>."
+        "description": "The entity that should be reported as inflictor eg. a weapon or something similar.\n\nAlso defines <page>CTakeDamageInfo:GetWeapon</page> for <page>Weapon</page>.",
+        "references": [
+          {
+            "name": "CTakeDamageInfo:GetWeapon",
+            "resolved": false
+          },
+          {
+            "name": "Weapon",
+            "canonicalName": "Weapon",
+            "resolved": true,
+            "id": "Weapon:Weapon"
+          }
+        ]
       },
       {
         "name": "Callback",
         "type": "function",
         "default": "nil",
-        "description": "Function to be called **after** the bullet was fired but **before** the damage is applied (the callback is called even if no damage is applied).\n\n<callback>\n<arg type=\"Entity\" name=\"attacker\"></arg>\n<arg type=\"table\" name=\"tr\">See <page>Structures/TraceResult</page></arg>\n<arg type=\"CTakeDamageInfo\" name=\"dmgInfo\"></arg>\n<ret type=\"table\">\nThe return value can be a table with following keys:\n* <page>boolean</page> effects - `false` to not do any of the effects.\n* <page>boolean</page> damage - `false` to not do any damage.\n</ret>\n</callback>"
+        "description": "Function to be called **after** the bullet was fired but **before** the damage is applied (the callback is called even if no damage is applied).\n\n<callback>\n<arg type=\"Entity\" name=\"attacker\"></arg>\n<arg type=\"table\" name=\"tr\">See <page>Structures/TraceResult</page></arg>\n<arg type=\"CTakeDamageInfo\" name=\"dmgInfo\"></arg>\n<ret type=\"table\">\nThe return value can be a table with following keys:\n* <page>boolean</page> effects - `false` to not do any of the effects.\n* <page>boolean</page> damage - `false` to not do any damage.\n</ret>\n</callback>",
+        "references": [
+          {
+            "name": "Structures/TraceResult",
+            "resolved": false
+          },
+          {
+            "name": "boolean",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Damage",
         "type": "number",
         "default": "1",
-        "description": "The damage dealt by the bullet.\n\nIf set to `0`, it means the damage should be calculated from the ammo type's <page>ConVar</page>s if  the ammo type has `AMMO_INTERPRET_PLRDAMAGE_AS_DAMAGE_TO_PLAYER` flag set.\nSee <page>Structures/AmmoData</page>."
+        "description": "The damage dealt by the bullet.\n\nIf set to `0`, it means the damage should be calculated from the ammo type's <page>ConVar</page>s if  the ammo type has `AMMO_INTERPRET_PLRDAMAGE_AS_DAMAGE_TO_PLAYER` flag set.\nSee <page>Structures/AmmoData</page>.",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          },
+          {
+            "name": "Structures/AmmoData",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Force",
@@ -482,7 +796,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/Bullet"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Entity:FireBullets",
+        "resolved": false
+      },
+      {
+        "name": "GM:EntityFireBullets",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -521,7 +845,13 @@
         "name": "ortho",
         "type": "table",
         "default": "nil",
-        "description": "If set, enables orthographic mode. The table has following arguments:\n* <page>number</page> left.\n* <page>number</page> right.\n* <page>number</page> top.\n* <page>number</page> bottom.\n\nEach describes where their border starts, (`left`+`right`) and (`top`+`bottom`) should equal `0` to center on the view position."
+        "description": "If set, enables orthographic mode. The table has following arguments:\n* <page>number</page> left.\n* <page>number</page> right.\n* <page>number</page> top.\n* <page>number</page> bottom.\n\nEach describes where their border starts, (`left`+`right`) and (`top`+`bottom`) should equal `0` to center on the view position.",
+        "references": [
+          {
+            "name": "number",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -533,7 +863,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/CamData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "GM:CalcView",
+        "resolved": false
+      },
+      {
+        "name": "GM:CalcVehicleView",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -628,7 +968,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/CollisionData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "ENTITY:PhysicsCollide",
+        "resolved": false
+      },
+      {
+        "name": "EFFECT:PhysicsCollide",
+        "resolved": false
+      },
+      {
+        "name": "Entity:AddCallback",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -663,7 +1017,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/Color"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Global.Color",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -697,7 +1057,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/CreationMenus"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "spawnmenu.AddCreationTab",
+        "resolved": false
+      },
+      {
+        "name": "spawnmenu.GetCreationTabs",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -758,7 +1128,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/DateData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "os.date",
+        "resolved": false
+      },
+      {
+        "name": "os.time",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -780,7 +1160,17 @@
       {
         "name": "source",
         "type": "string",
-        "description": "The path to the file where the passed function is defined prepended by an @ (ex. \"@lua/autorun/mytestfile.lua\"). This will be the <page>Global.CompileString</page> or <page>Global.RunString</page> identifier if the function wasn't defined in a file, also prepended by an @.\n\n**Option: S**"
+        "description": "The path to the file where the passed function is defined prepended by an @ (ex. \"@lua/autorun/mytestfile.lua\"). This will be the <page>Global.CompileString</page> or <page>Global.RunString</page> identifier if the function wasn't defined in a file, also prepended by an @.\n\n**Option: S**",
+        "references": [
+          {
+            "name": "Global.CompileString",
+            "resolved": false
+          },
+          {
+            "name": "Global.RunString",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "short_src",
@@ -820,7 +1210,13 @@
       {
         "name": "nups",
         "type": "number",
-        "description": "Upvalue count. Max index that can be used with <page>debug.getupvalue</page>. C functions can have upvalues but they cannot be accessed from Lua.\n\n**Option: u**"
+        "description": "Upvalue count. Max index that can be used with <page>debug.getupvalue</page>. C functions can have upvalues but they cannot be accessed from Lua.\n\n**Option: u**",
+        "references": [
+          {
+            "name": "debug.getupvalue",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "activelines",
@@ -839,7 +1235,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/DebugInfo"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "debug.getinfo",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -856,7 +1258,13 @@
       {
         "name": "dietime",
         "type": "number",
-        "description": "Time after which light will be removed.\n\nThis is relative to <page>Global.CurTime</page>. If you put in a value that is less than or equal to <page>Global.CurTime</page>, the light will not behave properly.\n\nNote, that it does not affect fading out. Light will be removed regardless of it being fully faded out or not."
+        "description": "Time after which light will be removed.\n\nThis is relative to <page>Global.CurTime</page>. If you put in a value that is less than or equal to <page>Global.CurTime</page>, the light will not behave properly.\n\nNote, that it does not affect fading out. Light will be removed regardless of it being fully faded out or not.",
+        "references": [
+          {
+            "name": "Global.CurTime",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "dir",
@@ -879,7 +1287,13 @@
       {
         "name": "key",
         "type": "number",
-        "description": "The entity index the light belongs to. Set automatically by <page>Global.DynamicLight</page>. Probably don't touch it."
+        "description": "The entity index the light belongs to. Set automatically by <page>Global.DynamicLight</page>. Probably don't touch it.",
+        "references": [
+          {
+            "name": "Global.DynamicLight",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "minlight",
@@ -939,7 +1353,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/DynamicLight"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Global.DynamicLight",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -951,7 +1371,13 @@
       {
         "name": "OriginalSoundName",
         "type": "string",
-        "description": "The original file path or soundscript name.\n\nEven if the SoundName value is changed, the OriginalSoundName value will remain the same.\n\nSounds may be returned as soundscripts (for example, \"Weapon_357.Single\") instead of the sound's file path. You can use <page>sound.GetProperties</page> to retrieve the actual file path."
+        "description": "The original file path or soundscript name.\n\nEven if the SoundName value is changed, the OriginalSoundName value will remain the same.\n\nSounds may be returned as soundscripts (for example, \"Weapon_357.Single\") instead of the sound's file path. You can use <page>sound.GetProperties</page> to retrieve the actual file path.",
+        "references": [
+          {
+            "name": "sound.GetProperties",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SoundTime",
@@ -969,7 +1395,13 @@
         "name": "SoundLevel",
         "type": "number{SNDLVL}",
         "default": "75",
-        "description": "The sound's attenuation, a number between 0 (low) and 511 (high)\n\nThis determines how fast the sound drops away. A higher value means the sound can be heard farther away.\n\nSee <page>Enums/SNDLVL</page>."
+        "description": "The sound's attenuation, a number between 0 (low) and 511 (high)\n\nThis determines how fast the sound drops away. A higher value means the sound can be heard farther away.\n\nSee <page>Enums/SNDLVL</page>.",
+        "references": [
+          {
+            "name": "Enums/SNDLVL",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Pitch",
@@ -981,12 +1413,24 @@
         "name": "Flags",
         "type": "number{SND}",
         "default": "0",
-        "description": "The bit flags of the played sound. See <page>Enums/SND</page> for available options."
+        "description": "The bit flags of the played sound. See <page>Enums/SND</page> for available options.",
+        "references": [
+          {
+            "name": "Enums/SND",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Channel",
         "type": "number{CHAN}",
-        "description": "The sound's channel. See <page>Enums/CHAN</page> for available options."
+        "description": "The sound's channel. See <page>Enums/CHAN</page> for available options.",
+        "references": [
+          {
+            "name": "Enums/CHAN",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Volume",
@@ -1014,7 +1458,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/EmitSoundInfo"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "GM:EntityEmitSound",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -1026,7 +1476,13 @@
       {
         "name": "Type",
         "type": "string",
-        "description": "Type of the entity. This **must** be one of these:\n* **anim**\n* **brush**\n* **point**\n* **ai**\n* **nextbot**\n* **filter**\n\nSee <page>Scripted Entities</page> for a more detailed explanation of what each one is."
+        "description": "Type of the entity. This **must** be one of these:\n* **anim**\n* **brush**\n* **point**\n* **ai**\n* **nextbot**\n* **filter**\n\nSee <page>Scripted Entities</page> for a more detailed explanation of what each one is.",
+        "references": [
+          {
+            "name": "Scripted Entities",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "ClassName",
@@ -1047,7 +1503,13 @@
         "name": "AutomaticFrameAdvance",
         "type": "boolean",
         "default": "false",
-        "description": "Set this to true if your entity has animations. You should also apply changes to the <page>ENTITY:Think</page> function from the example on that page."
+        "description": "Set this to true if your entity has animations. You should also apply changes to the <page>ENTITY:Think</page> function from the example on that page.",
+        "references": [
+          {
+            "name": "ENTITY:Think",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Category",
@@ -1071,7 +1533,13 @@
         "name": "Editable",
         "type": "boolean",
         "default": "false",
-        "description": "Whether the entity supports Editing. See <page>Editable Entities</page> for more info."
+        "description": "Whether the entity supports Editing. See <page>Editable Entities</page> for more info.",
+        "references": [
+          {
+            "name": "Editable Entities",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "AdminOnly",
@@ -1107,13 +1575,25 @@
       {
         "name": "RenderGroup",
         "type": "number",
-        "description": "The entity's render group, see <page>Enums/RENDERGROUP</page>. If unset, the engine will decide the render group based on the entity's model."
+        "description": "The entity's render group, see <page>Enums/RENDERGROUP</page>. If unset, the engine will decide the render group based on the entity's model.",
+        "references": [
+          {
+            "name": "Enums/RENDERGROUP",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "WantsTranslucency",
         "type": "boolean",
         "default": "false",
-        "description": "If set and `RenderGroup` is not, will switch the render group to <page text=\"RENDERGROUP_BOTH\">Enums/RENDERGROUP#RENDERGROUP_BOTH</page> when appropriate.\n\nBasically, when the default render group of the entity's model is opaque, <page>ENTITY:DrawTranslucent</page> will still be called, for example to render effects and such. This is preferable to forcing translucent models to render in the opaque pass by setting `RenderGroup` to `RENDERGROUP_BOTH` at all times, causing graphical issues."
+        "description": "If set and `RenderGroup` is not, will switch the render group to <page text=\"RENDERGROUP_BOTH\">Enums/RENDERGROUP#RENDERGROUP_BOTH</page> when appropriate.\n\nBasically, when the default render group of the entity's model is opaque, <page>ENTITY:DrawTranslucent</page> will still be called, for example to render effects and such. This is preferable to forcing translucent models to render in the opaque pass by setting `RenderGroup` to `RENDERGROUP_BOTH` at all times, causing graphical issues.",
+        "references": [
+          {
+            "name": "ENTITY:DrawTranslucent",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "DisableDuplicator",
@@ -1124,7 +1604,13 @@
       {
         "name": "ScriptedEntityType",
         "type": "string",
-        "description": "Sets the spawnmenu content icon type for the entity, used by spawnmenu in the Sandbox-derived gamemodes.\nSee <page>spawnmenu.AddContentType</page> for more information."
+        "description": "Sets the spawnmenu content icon type for the entity, used by spawnmenu in the Sandbox-derived gamemodes.\nSee <page>spawnmenu.AddContentType</page> for more information.",
+        "references": [
+          {
+            "name": "spawnmenu.AddContentType",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "IconOverride",
@@ -1136,7 +1622,13 @@
         "name": "PhysicsSolidMask",
         "type": "number",
         "default": "nil",
-        "description": "If set, a bitflag for the physics solidity of the entity. See <page>Enums/CONTENTS</page>.\n\nCan be used to make the entity pass though certain otherwise solid meshes, such as grates, or special clip brushes.\n\n<note>This only works for `nextbot`, `anim` and `ai` type SENTs.</note>"
+        "description": "If set, a bitflag for the physics solidity of the entity. See <page>Enums/CONTENTS</page>.\n\nCan be used to make the entity pass though certain otherwise solid meshes, such as grates, or special clip brushes.\n\n<note>This only works for `nextbot`, `anim` and `ai` type SENTs.</note>",
+        "references": [
+          {
+            "name": "Enums/CONTENTS",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "PhysicsSounds",
@@ -1155,19 +1647,45 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/ENT"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "ENTITY Hooks",
+        "resolved": false
+      },
+      {
+        "name": "Custom Entity Fields",
+        "resolved": false
+      },
+      {
+        "name": "ENTITY:Initialize",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "Name",
         "type": "string",
-        "description": "The entity's name, see <page>Entity:GetName</page>."
+        "description": "The entity's name, see <page>Entity:GetName</page>.",
+        "references": [
+          {
+            "name": "Entity:GetName",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Class",
         "type": "string",
-        "description": "The entity's class name, see <page>Entity:GetClass</page>."
+        "description": "The entity's class name, see <page>Entity:GetClass</page>.",
+        "references": [
+          {
+            "name": "Entity:GetClass",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Pos",
@@ -1182,72 +1700,176 @@
       {
         "name": "DT",
         "type": "table",
-        "description": "The entity's Network Vars, see <page>ENTITY:SetupDataTables</page> and <page>Networking Entities</page>."
+        "description": "The entity's Network Vars, see <page>ENTITY:SetupDataTables</page> and <page>Networking Entities</page>.",
+        "references": [
+          {
+            "name": "ENTITY:SetupDataTables",
+            "resolved": false
+          },
+          {
+            "name": "Networking Entities",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Model",
         "type": "string",
-        "description": "The entity's model, see <page>Entity:GetModel</page>."
+        "description": "The entity's model, see <page>Entity:GetModel</page>.",
+        "references": [
+          {
+            "name": "Entity:GetModel",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "ModelScale",
         "type": "number",
-        "description": "The entity's model scale, see <page>Entity:GetModelScale</page>. This will only be present if the model scale isn't 1."
+        "description": "The entity's model scale, see <page>Entity:GetModelScale</page>. This will only be present if the model scale isn't 1.",
+        "references": [
+          {
+            "name": "Entity:GetModelScale",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Skin",
         "type": "number",
-        "description": "The entity's active skin, see <page>Entity:GetSkin</page>."
+        "description": "The entity's active skin, see <page>Entity:GetSkin</page>.",
+        "references": [
+          {
+            "name": "Entity:GetSkin",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "ColGroup",
         "type": "number",
-        "description": "The entity's collision group, see <page>Entity:GetCollisionGroup</page>. Uses the <page>Enums/COLLISION_GROUP</page>."
+        "description": "The entity's collision group, see <page>Entity:GetCollisionGroup</page>. Uses the <page>Enums/COLLISION_GROUP</page>.",
+        "references": [
+          {
+            "name": "Entity:GetCollisionGroup",
+            "resolved": false
+          },
+          {
+            "name": "Enums/COLLISION_GROUP",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Mins",
         "type": "Vector",
-        "description": "The entity's collision bound minimums, see <page>Entity:GetCollisionBounds</page>."
+        "description": "The entity's collision bound minimums, see <page>Entity:GetCollisionBounds</page>.",
+        "references": [
+          {
+            "name": "Entity:GetCollisionBounds",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Maxs",
         "type": "Vector",
-        "description": "The entity's collision bound maximums, see <page>Entity:GetCollisionBounds</page>."
+        "description": "The entity's collision bound maximums, see <page>Entity:GetCollisionBounds</page>.",
+        "references": [
+          {
+            "name": "Entity:GetCollisionBounds",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "PhysicsObjects",
         "type": "table",
-        "description": "Data about the entity's <page>PhysObj</page>s, see <page>Entity:GetPhysicsObjectNum</page>. The key is the physics object index (starts from 0), and the value is a <page>Structures/PhysicsObjectSave</page>. Unlike other tables in this structure, if there are no physics objects for this entity this will be an empty table."
+        "description": "Data about the entity's <page>PhysObj</page>s, see <page>Entity:GetPhysicsObjectNum</page>. The key is the physics object index (starts from 0), and the value is a <page>Structures/PhysicsObjectSave</page>. Unlike other tables in this structure, if there are no physics objects for this entity this will be an empty table.",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          },
+          {
+            "name": "Entity:GetPhysicsObjectNum",
+            "resolved": false
+          },
+          {
+            "name": "Structures/PhysicsObjectSave",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FlexScale",
         "type": "number",
-        "description": "The entity's Flex Scale, see <page>Entity:GetFlexScale</page>."
+        "description": "The entity's Flex Scale, see <page>Entity:GetFlexScale</page>.",
+        "references": [
+          {
+            "name": "Entity:GetFlexScale",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Flex",
         "type": "table",
-        "description": "Each flex bone's flex weight, see <page>Entity:GetFlexWeight</page>. The key is the flex's index and the value is the weight. Only flexes with a non-default (nonzero) weight are listed, and if none exist, this field will be nil."
+        "description": "Each flex bone's flex weight, see <page>Entity:GetFlexWeight</page>. The key is the flex's index and the value is the weight. Only flexes with a non-default (nonzero) weight are listed, and if none exist, this field will be nil.",
+        "references": [
+          {
+            "name": "Entity:GetFlexWeight",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "BodyG",
         "type": "table",
-        "description": "The entity's body groups, see <page>Entity:GetBodygroup</page>. The key is the bodygroup ID and the value is the assigned bodygroup number. Only body groups with a non-default (&gt; 0) value are listed, and if none exist, this field will be nil."
+        "description": "The entity's body groups, see <page>Entity:GetBodygroup</page>. The key is the bodygroup ID and the value is the assigned bodygroup number. Only body groups with a non-default (&gt; 0) value are listed, and if none exist, this field will be nil.",
+        "references": [
+          {
+            "name": "Entity:GetBodygroup",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "BoneManip",
         "type": "table",
-        "description": "Bone manipulation data, see <page>Entity:HasBoneManipulations</page>. The key is the bone index and the value is a <page>Structures/BoneManipulationData</page>. Only bones that have been manipulated with non-default values are listed, and if none exist, this field will be nil."
+        "description": "Bone manipulation data, see <page>Entity:HasBoneManipulations</page>. The key is the bone index and the value is a <page>Structures/BoneManipulationData</page>. Only bones that have been manipulated with non-default values are listed, and if none exist, this field will be nil.",
+        "references": [
+          {
+            "name": "Entity:HasBoneManipulations",
+            "resolved": false
+          },
+          {
+            "name": "Structures/BoneManipulationData",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "MapCreationID",
         "type": "number",
-        "description": "The entity's MapCreationID, only exists for entities that were created by the map. See <page>Entity:MapCreationID</page>."
+        "description": "The entity's MapCreationID, only exists for entities that were created by the map. See <page>Entity:MapCreationID</page>.",
+        "references": [
+          {
+            "name": "Entity:MapCreationID",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "WorkshopID",
         "type": "number",
-        "description": "Deprecated, always 0. See <page>Entity:GetWorkshopID</page>."
+        "description": "Deprecated, always 0. See <page>Entity:GetWorkshopID</page>.",
+        "references": [
+          {
+            "name": "Entity:GetWorkshopID",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -1259,7 +1881,33 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/EntityCopyData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "duplicator",
+        "resolved": false
+      },
+      {
+        "name": "duplicator.CopyEntTable",
+        "resolved": false
+      },
+      {
+        "name": "duplicator.CreateEntityFromTable",
+        "resolved": false
+      },
+      {
+        "name": "duplicator.RegisterEntityClass",
+        "resolved": false
+      },
+      {
+        "name": "ENTITY:OnEntityCopyTableFinish",
+        "resolved": false
+      },
+      {
+        "name": "ENTITY:OnDuplicated",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -1267,17 +1915,52 @@
         "name": "AmmoType",
         "type": "string",
         "default": "<Empty String>",
-        "description": "The type of ammo that was fired.\n\nShould be one of the values from the <page>game.GetAmmoTypes</page> table."
+        "description": "The type of ammo that was fired.\n\nShould be one of the values from the <page>game.GetAmmoTypes</page> table.",
+        "references": [
+          {
+            "name": "game.GetAmmoTypes",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Attacker",
         "type": "Entity",
-        "description": "The <page>Entity</page> that fired the bullet.\n\nThis is usually the <page>Player</page> that is holding the <page>Weapon</page>."
+        "description": "The <page>Entity</page> that fired the bullet.\n\nThis is usually the <page>Player</page> that is holding the <page>Weapon</page>.",
+        "references": [
+          {
+            "name": "Entity",
+            "canonicalName": "Entity",
+            "resolved": true,
+            "id": "Entity:Entity"
+          },
+          {
+            "name": "PLAYER",
+            "canonicalName": "PLAYER",
+            "resolved": true,
+            "id": "enum:PLAYER",
+            "documentationURLs": [
+              "https://wiki.facepunch.com/gmod/Structures/PLAYER"
+            ]
+          },
+          {
+            "name": "Weapon",
+            "canonicalName": "Weapon",
+            "resolved": true,
+            "id": "Weapon:Weapon"
+          }
+        ]
       },
       {
         "name": "Damage",
         "type": "number",
-        "description": "The amount of damage dealt by the bullet.\n\nWhen set to `0`, damage should be determined based on the values set in the <page>Structures/AmmoData</page> of the bullet's Ammo Type."
+        "description": "The amount of damage dealt by the bullet.\n\nWhen set to `0`, damage should be determined based on the values set in the <page>Structures/AmmoData</page> of the bullet's Ammo Type.",
+        "references": [
+          {
+            "name": "Structures/AmmoData",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Force",
@@ -1292,7 +1975,13 @@
       {
         "name": "Trace",
         "type": "table{TraceResult}",
-        "description": "The <page>Structures/TraceResult</page> from the <page text=\"Trace\">util.TraceLine</page> that determined where and what the bullet hit."
+        "description": "The <page>Structures/TraceResult</page> from the <page text=\"Trace\">util.TraceLine</page> that determined where and what the bullet hit.",
+        "references": [
+          {
+            "name": "Structures/TraceResult",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -1305,7 +1994,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/FiredBullet"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "GM:PostEntityFireBullets",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -1313,7 +2008,13 @@
         "name": "font",
         "type": "string",
         "default": "Arial",
-        "description": "The font source. Custom font files are stored in `resource/fonts/`.\n\nThe length is limited to 31 characters maximum.\n\n<warning>This must be the actual 'nice' font, not a file name. Unless the client is running Linux or macOS. (<page>Finding the Font Name</page>)\n\nThis also cannot be an already registered font, i.e. you cannot base your font from any of the <page text=\"Default Fonts\">Default_Fonts</page></warning>"
+        "description": "The font source. Custom font files are stored in `resource/fonts/`.\n\nThe length is limited to 31 characters maximum.\n\n<warning>This must be the actual 'nice' font, not a file name. Unless the client is running Linux or macOS. (<page>Finding the Font Name</page>)\n\nThis also cannot be an already registered font, i.e. you cannot base your font from any of the <page text=\"Default Fonts\">Default_Fonts</page></warning>",
+        "references": [
+          {
+            "name": "Finding the Font Name",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "extended",
@@ -1397,7 +2098,13 @@
         "name": "outline",
         "type": "boolean",
         "default": "false",
-        "description": "Add a black outline to the font.\n\nThis does not work well with antialias, and only allows black 1-pixel outlines. It may be preferable to not use this parameter, and instead use <page>draw.SimpleTextOutlined</page> when drawing text that you want outlined."
+        "description": "Add a black outline to the font.\n\nThis does not work well with antialias, and only allows black 1-pixel outlines. It may be preferable to not use this parameter, and instead use <page>draw.SimpleTextOutlined</page> when drawing text that you want outlined.",
+        "references": [
+          {
+            "name": "draw.SimpleTextOutlined",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -1410,7 +2117,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/FontData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "surface.CreateFont",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -1446,7 +2159,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/FormattedTime"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "string.FormattedTime",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -1493,7 +2212,17 @@
       {
         "name": "BaseClass",
         "type": "table",
-        "description": "The table of the base gamemode to derive from, set automatically by <page>Global.DeriveGamemode</page>.\n\n<note>It is recommended to use <page>Global.DEFINE_BASECLASS</page> when referencing the gamemode's BaseClass to prevent unintended behavior</note>\n\n<note><page>Global.DeriveGamemode</page> modifies the main gamemode's BaseClass, which is shared with parent gamemodes. Because of this, in parent gamemodes the BaseClass can be incorrect, so for instance you need to use `self.BaseClass.BaseClass` in the 1st parent instead</note>"
+        "description": "The table of the base gamemode to derive from, set automatically by <page>Global.DeriveGamemode</page>.\n\n<note>It is recommended to use <page>Global.DEFINE_BASECLASS</page> when referencing the gamemode's BaseClass to prevent unintended behavior</note>\n\n<note><page>Global.DeriveGamemode</page> modifies the main gamemode's BaseClass, which is shared with parent gamemodes. Because of this, in parent gamemodes the BaseClass can be incorrect, so for instance you need to use `self.BaseClass.BaseClass` in the 1st parent instead</note>",
+        "references": [
+          {
+            "name": "Global.DeriveGamemode",
+            "resolved": false
+          },
+          {
+            "name": "Global.DEFINE_BASECLASS",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "IsSandboxDerived",
@@ -1580,7 +2309,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/HTTPRequest"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Global.HTTP",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -1614,13 +2349,25 @@
         "name": "mask",
         "type": "number{MASK}",
         "default": "MASK_SOLID",
-        "description": "The trace mask <page>Enums/MASK</page>. This determines what the trace should hit and what it shouldn't hit."
+        "description": "The trace mask <page>Enums/MASK</page>. This determines what the trace should hit and what it shouldn't hit.",
+        "references": [
+          {
+            "name": "Enums/MASK",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "collisiongroup",
         "type": "number{COLLISION_GROUP}",
         "default": "COLLISION_GROUP_NONE",
-        "description": "The collision group <page>Enums/COLLISION_GROUP</page>. This determines what the trace should hit in regards to the entity's collision group."
+        "description": "The collision group <page>Enums/COLLISION_GROUP</page>. This determines what the trace should hit in regards to the entity's collision group.",
+        "references": [
+          {
+            "name": "Enums/COLLISION_GROUP",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "ignoreworld",
@@ -1657,7 +2404,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/HullTrace"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "util.TraceHull",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -1665,7 +2418,13 @@
         "name": "type",
         "type": "number{MATERIAL_LIGHT}",
         "default": "MATERIAL_LIGHT_POINT",
-        "description": "The type of the light source, see <page>Enums/MATERIAL_LIGHT</page>."
+        "description": "The type of the light source, see <page>Enums/MATERIAL_LIGHT</page>.",
+        "references": [
+          {
+            "name": "Enums/MATERIAL_LIGHT",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "color",
@@ -1749,7 +2508,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/LocalLight"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "render.SetLocalModelLights",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -1778,29 +2543,64 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/MatProxyData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "matproxy.Add",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "color",
         "type": "Color",
-        "description": "The <page>Color</page> that the area around this corner of a triangle should be tinted."
+        "description": "The <page>Color</page> that the area around this corner of a triangle should be tinted.",
+        "references": [
+          {
+            "name": "Color",
+            "canonicalName": "Color",
+            "resolved": true,
+            "id": "enum:Color",
+            "documentationURLs": [
+              "https://wiki.facepunch.com/gmod/Structures/Color"
+            ]
+          }
+        ]
       },
       {
         "name": "normal",
         "type": "Vector",
-        "description": "A normalized <page>Vector</page> representing a direction facing away from (perpendicular to) the surface of the triangle that this vertex is a part of.\n\nMany shaders use this to calculate lighting."
+        "description": "A normalized <page>Vector</page> representing a direction facing away from (perpendicular to) the surface of the triangle that this vertex is a part of.\n\nMany shaders use this to calculate lighting.",
+        "references": [
+          {
+            "name": "Vector",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "tangent",
         "type": "Vector",
-        "description": "A normalized <page>Vector</page> representing a direction facing along (parallel with) the surface of the triangle that this vertex is a part of."
+        "description": "A normalized <page>Vector</page> representing a direction facing along (parallel with) the surface of the triangle that this vertex is a part of.",
+        "references": [
+          {
+            "name": "Vector",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "binormal",
         "type": "Vector",
-        "description": "A normalized <page>Vector</page> representing a direction facing away from (perpendicular to) both the vertex's normal and tangent directions.\n\nThis is the result of a <page text=\"Cross Product\">Vector:Cross</page> between the vertex's normal and tangent directions."
+        "description": "A normalized <page>Vector</page> representing a direction facing away from (perpendicular to) both the vertex's normal and tangent directions.\n\nThis is the result of a <page text=\"Cross Product\">Vector:Cross</page> between the vertex's normal and tangent directions.",
+        "references": [
+          {
+            "name": "Vector",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "pos",
@@ -1820,12 +2620,24 @@
       {
         "name": "u1",
         "type": "number",
-        "description": "A secondary U texture coordinate used by some shaders like `LightmappedGeneric`.\n\nCurrently used exclusively by <page>IMesh:BuildFromTriangles</page>."
+        "description": "A secondary U texture coordinate used by some shaders like `LightmappedGeneric`.\n\nCurrently used exclusively by <page>IMesh:BuildFromTriangles</page>.",
+        "references": [
+          {
+            "name": "IMesh:BuildFromTriangles",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "v1",
         "type": "number",
-        "description": "A secondary V texture coordinate used by some shaders like `LightmappedGeneric`.\n\nCurrently used exclusively by <page>IMesh:BuildFromTriangles</page>."
+        "description": "A secondary V texture coordinate used by some shaders like `LightmappedGeneric`.\n\nCurrently used exclusively by <page>IMesh:BuildFromTriangles</page>.",
+        "references": [
+          {
+            "name": "IMesh:BuildFromTriangles",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "userdata",
@@ -1835,7 +2647,13 @@
       {
         "name": "weights",
         "type": "table<table>",
-        "description": "A sequential table of all the <page text=\"BoneWeight structures\">Structures/BoneWeight</page> that affect this vertex.\n\nThe total sum of their `weight` values should be `1`\n\nCurrently added exclusively by <page>util.GetModelMeshes</page>"
+        "description": "A sequential table of all the <page text=\"BoneWeight structures\">Structures/BoneWeight</page> that affect this vertex.\n\nThe total sum of their `weight` values should be `1`\n\nCurrently added exclusively by <page>util.GetModelMeshes</page>",
+        "references": [
+          {
+            "name": "util.GetModelMeshes",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -1848,19 +2666,53 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/MeshVertex"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "table",
+        "resolved": false
+      },
+      {
+        "name": "util.GetModelMeshes",
+        "resolved": false
+      },
+      {
+        "name": "PhysObj:GetMesh",
+        "resolved": false
+      },
+      {
+        "name": "IMesh:BuildFromTriangles",
+        "resolved": false
+      },
+      {
+        "name": "Entity:PhysicsFromMesh",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "SkinCount",
         "type": "number",
-        "description": "Identical to <page>Entity:SkinCount</page>."
+        "description": "Identical to <page>Entity:SkinCount</page>.",
+        "references": [
+          {
+            "name": "Entity:SkinCount",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "KeyValues",
         "type": "string",
-        "description": "Valve key-value formatted info about the model's physics (Constraint Info, etc). This is limited to 4096 characters.\n\nThis data can be parsed into a Lua table via <page>util.KeyValuesToTablePreserveOrder</page>"
+        "description": "Valve key-value formatted info about the model's physics (Constraint Info, etc). This is limited to 4096 characters.\n\nThis data can be parsed into a Lua table via <page>util.KeyValuesToTablePreserveOrder</page>",
+        "references": [
+          {
+            "name": "util.KeyValuesToTablePreserveOrder",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "ModelKeyValues",
@@ -1920,7 +2772,13 @@
       {
         "name": "SurfacePropName",
         "type": "string",
-        "description": "Name of the surface property for this model. See <page>util.GetSurfaceData</page> for more details about what they are."
+        "description": "Name of the surface property for this model. See <page>util.GetSurfaceData</page> for more details about what they are.",
+        "references": [
+          {
+            "name": "util.GetSurfaceData",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "EyePosition",
@@ -1955,7 +2813,21 @@
       {
         "name": "Sequences",
         "type": "table<table>",
-        "description": "A list of sequences the model has, including the ones from `$includemodel`s.\n\nEach sequence is a table with the following info:\n* <page>string</page> Name\n* <page>string</page> Activity\n* <page added=\"2026.02.17\">number</page> ActivityID\n* <page added=\"2026.02.17\">number</page> ActivityWeight\n* <page>table</page> Events\n\n`Events` table is a list of tables with following members:\n* <page>number</page> Cycle\n* <page>number</page> Event\n* <page>string</page> Name\n* <page>number</page> Type\n* <page>string</page> Options"
+        "description": "A list of sequences the model has, including the ones from `$includemodel`s.\n\nEach sequence is a table with the following info:\n* <page>string</page> Name\n* <page>string</page> Activity\n* <page added=\"2026.02.17\">number</page> ActivityID\n* <page added=\"2026.02.17\">number</page> ActivityWeight\n* <page>table</page> Events\n\n`Events` table is a list of tables with following members:\n* <page>number</page> Cycle\n* <page>number</page> Event\n* <page>string</page> Name\n* <page>number</page> Type\n* <page>string</page> Options",
+        "references": [
+          {
+            "name": "string",
+            "resolved": false
+          },
+          {
+            "name": "table",
+            "resolved": false
+          },
+          {
+            "name": "number",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Materials",
@@ -1993,7 +2865,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/ModelInfo"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "util.GetModelInfo",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2005,12 +2883,28 @@
       {
         "name": "triangles",
         "type": "table<table>",
-        "description": "A sequential <page>table</page> of <page text=\"MeshVertex Structures\">Structures/MeshVertex</page> that represents the triangles of this mesh.\n\nThese triangles are created from the contents of the `verticies` field.\n\nThis can be used as an input to <page>IMesh:BuildFromTriangles</page>"
+        "description": "A sequential <page>table</page> of <page text=\"MeshVertex Structures\">Structures/MeshVertex</page> that represents the triangles of this mesh.\n\nThese triangles are created from the contents of the `verticies` field.\n\nThis can be used as an input to <page>IMesh:BuildFromTriangles</page>",
+        "references": [
+          {
+            "name": "table",
+            "resolved": false
+          },
+          {
+            "name": "IMesh:BuildFromTriangles",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "verticies",
         "type": "table<table>",
-        "description": "A sequential <page>table</page> of <page text=\"MeshVertex Structures\">Structures/MeshVertex</page> that represents each vertex of the mesh.\n\n<bug>\nThis field has a typo in its name and should be named \"vertices\"\n</bug>"
+        "description": "A sequential <page>table</page> of <page text=\"MeshVertex Structures\">Structures/MeshVertex</page> that represents each vertex of the mesh.\n\n<bug>\nThis field has a typo in its name and should be named \"vertices\"\n</bug>",
+        "references": [
+          {
+            "name": "table",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -2023,7 +2917,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/ModelMeshData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "table",
+        "resolved": false
+      },
+      {
+        "name": "util.GetModelMeshes",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2059,7 +2963,13 @@
         "name": "KeyValues",
         "type": "table",
         "default": "{}",
-        "description": "Key-value pairs to apply to the NPC on spawn. See <page>Entity:SetKeyValue</page>."
+        "description": "Key-value pairs to apply to the NPC on spawn. See <page>Entity:SetKeyValue</page>.",
+        "references": [
+          {
+            "name": "Entity:SetKeyValue",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Model",
@@ -2071,7 +2981,13 @@
         "name": "SpawnFlags",
         "type": "number",
         "default": "0",
-        "description": "Additional spawnflags for this NPC. See <page>Entity:GetSpawnFlags</page>.\n\nIgnored if `TotalSpawnFlags` key is present."
+        "description": "Additional spawnflags for this NPC. See <page>Entity:GetSpawnFlags</page>.\n\nIgnored if `TotalSpawnFlags` key is present.",
+        "references": [
+          {
+            "name": "Entity:GetSpawnFlags",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TotalSpawnFlags",
@@ -2100,13 +3016,25 @@
       {
         "name": "Material",
         "type": "string",
-        "description": "Material override for this NPC. See <page>Entity:SetMaterial</page>."
+        "description": "Material override for this NPC. See <page>Entity:SetMaterial</page>.",
+        "references": [
+          {
+            "name": "Entity:SetMaterial",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Skin",
         "type": "number",
         "default": "nil",
-        "description": "Skin override for the NPC. See <page>Entity:SetSkin</page>."
+        "description": "Skin override for the NPC. See <page>Entity:SetSkin</page>.",
+        "references": [
+          {
+            "name": "Entity:SetSkin",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "NoDrop",
@@ -2124,13 +3052,25 @@
         "name": "Health",
         "type": "number",
         "default": "nil",
-        "description": "Health override for this NPC. Also sets <page>Entity:SetMaxHealth</page>."
+        "description": "Health override for this NPC. Also sets <page>Entity:SetMaxHealth</page>.",
+        "references": [
+          {
+            "name": "Entity:SetMaxHealth",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "OnDuplicated",
         "type": "function",
         "default": "nil",
-        "description": "If set, a function to be called when the NPC is pasted using the <page>duplicator</page> library."
+        "description": "If set, a function to be called when the NPC is pasted using the <page>duplicator</page> library.",
+        "references": [
+          {
+            "name": "duplicator",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -2187,44 +3127,96 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/OperatingParams"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Vehicle:GetOperatingParams",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "translate_x",
         "type": "number",
-        "description": "The X coordinate for the top-left corner of the <page>Panel</page> currently being drawn."
+        "description": "The X coordinate for the top-left corner of the <page>Panel</page> currently being drawn.",
+        "references": [
+          {
+            "name": "Panel",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "translate_y",
         "type": "number",
-        "description": "The Y coordinate for the top-left corner of the <page>Panel</page> currently being drawn."
+        "description": "The Y coordinate for the top-left corner of the <page>Panel</page> currently being drawn.",
+        "references": [
+          {
+            "name": "Panel",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "scissor_left",
         "type": "number",
-        "description": "The X coordinate for the left edge of the <page text=\"ScissorRect\">render.SetScissorRect</page> that surrounds the <page>Panel</page> that is currently being drawn."
+        "description": "The X coordinate for the left edge of the <page text=\"ScissorRect\">render.SetScissorRect</page> that surrounds the <page>Panel</page> that is currently being drawn.",
+        "references": [
+          {
+            "name": "Panel",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "scissor_top",
         "type": "number",
-        "description": "The Y coordinate for the top edge of the <page text=\"ScissorRect\">render.SetScissorRect</page> that surrounds the <page>Panel</page> that is currently being drawn."
+        "description": "The Y coordinate for the top edge of the <page text=\"ScissorRect\">render.SetScissorRect</page> that surrounds the <page>Panel</page> that is currently being drawn.",
+        "references": [
+          {
+            "name": "Panel",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "scissor_right",
         "type": "number",
-        "description": "The X coordinate for the right edge of the <page text=\"ScissorRect\">render.SetScissorRect</page> that surrounds the <page>Panel</page> that is currently being drawn."
+        "description": "The X coordinate for the right edge of the <page text=\"ScissorRect\">render.SetScissorRect</page> that surrounds the <page>Panel</page> that is currently being drawn.",
+        "references": [
+          {
+            "name": "Panel",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "scissor_bottom",
         "type": "number",
-        "description": "The Y coordinate for the bottom edge of the <page text=\"ScissorRect\">render.SetScissorRect</page> that surrounds the <page>Panel</page> that is currently being drawn."
+        "description": "The Y coordinate for the bottom edge of the <page text=\"ScissorRect\">render.SetScissorRect</page> that surrounds the <page>Panel</page> that is currently being drawn.",
+        "references": [
+          {
+            "name": "Panel",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "scissor_enabled",
         "type": "boolean",
-        "description": "Whether or not the <page>Panel</page> currently being drawn has <page>render.SetScissorRect</page> active."
+        "description": "Whether or not the <page>Panel</page> currently being drawn has <page>render.SetScissorRect</page> active.",
+        "references": [
+          {
+            "name": "Panel",
+            "resolved": false
+          },
+          {
+            "name": "render.SetScissorRect",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -2236,7 +3228,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/PanelPaintState"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "surface.GetPanelPaintState",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2303,7 +3301,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/PathSegment"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "PathFollower:GetCurrentGoal",
+        "resolved": false
+      },
+      {
+        "name": "PathFollower:FirstSegment",
+        "resolved": false
+      },
+      {
+        "name": "PathFollower:LastSegment",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2366,34 +3378,74 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/PhysEnvPerformanceSettings"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "physenv.SetPerformanceSettings",
+        "resolved": false
+      },
+      {
+        "name": "physenv.GetPerformanceSettings",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "Pos",
         "type": "Vector",
-        "description": "The entity's world position made local with <page>Global.WorldToLocal</page>"
+        "description": "The entity's world position made local with <page>Global.WorldToLocal</page>",
+        "references": [
+          {
+            "name": "Global.WorldToLocal",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Angle",
         "type": "Angle",
-        "description": "The entity's world angles made local with <page>Global.WorldToLocal</page>"
+        "description": "The entity's world angles made local with <page>Global.WorldToLocal</page>",
+        "references": [
+          {
+            "name": "Global.WorldToLocal",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Frozen",
         "type": "boolean",
-        "description": "Whether the entity is moveable. Equal to (`not` <page>PhysObj:IsMoveable</page>)"
+        "description": "Whether the entity is moveable. Equal to (`not` <page>PhysObj:IsMoveable</page>)",
+        "references": [
+          {
+            "name": "PhysObj:IsMoveable",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "NoGrav",
         "type": "boolean",
-        "description": "Whether the entity's gravity is affected by gravity or not. <page>PhysObj:IsGravityEnabled</page>"
+        "description": "Whether the entity's gravity is affected by gravity or not. <page>PhysObj:IsGravityEnabled</page>",
+        "references": [
+          {
+            "name": "PhysObj:IsGravityEnabled",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Sleep",
         "type": "boolean",
-        "description": "Whether the entity is dormant or not. <page>PhysObj:IsAsleep</page>"
+        "description": "Whether the entity is dormant or not. <page>PhysObj:IsAsleep</page>",
+        "references": [
+          {
+            "name": "PhysObj:IsAsleep",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -2405,7 +3457,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/PhysicsObjectSave"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "duplicator.GenericDuplicatorFunction",
+        "resolved": false
+      },
+      {
+        "name": "duplicator.DoGenericPhysics",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2431,7 +3493,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/PhysProperties"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "construct.SetPhysProp",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2582,7 +3650,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/PolygonVertex"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "surface.DrawPoly",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2616,7 +3690,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/Preset"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Global.CreateNewAddonPreset",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2655,7 +3735,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/Problem"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Global.FireProblem",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2689,7 +3775,25 @@
       {
         "name": "Filter",
         "type": "function",
-        "description": "Used **clientside** to decide whether this property should be shown for an entity.\n\nIt's good practice to call <page>GM:CanProperty</page> in this hook via <page>gamemode.Call</page> or <page>hook.Run</page>.\n\n<callback>\n<arg type=\"table\" name=\"self\">the property table</arg>\n<arg type=\"Entity\" name=\"ent\">the entity the player clicked</arg>\n<arg type=\"Player\" name=\"player\">the <page>Global.LocalPlayer</page></arg>\n<ret type=\"boolean\" name=\"check\">Return true if the property should be shown for this entity.</ret>\n</callback>"
+        "description": "Used **clientside** to decide whether this property should be shown for an entity.\n\nIt's good practice to call <page>GM:CanProperty</page> in this hook via <page>gamemode.Call</page> or <page>hook.Run</page>.\n\n<callback>\n<arg type=\"table\" name=\"self\">the property table</arg>\n<arg type=\"Entity\" name=\"ent\">the entity the player clicked</arg>\n<arg type=\"Player\" name=\"player\">the <page>Global.LocalPlayer</page></arg>\n<ret type=\"boolean\" name=\"check\">Return true if the property should be shown for this entity.</ret>\n</callback>",
+        "references": [
+          {
+            "name": "GM:CanProperty",
+            "resolved": false
+          },
+          {
+            "name": "gamemode.Call",
+            "resolved": false
+          },
+          {
+            "name": "hook.Run",
+            "resolved": false
+          },
+          {
+            "name": "Global.LocalPlayer",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Checked",
@@ -2699,12 +3803,36 @@
       {
         "name": "Action",
         "type": "function",
-        "description": "Called **clientside** when the property is clicked\n<callback>\n<arg type=\"table\" name=\"self\">the property table</arg>\n<arg type=\"Entity\" name=\"ent\">the entity the player clicked</arg>\n<arg type=\"table\" name=\"tr\">the player's eye trace</arg>\n</callback>\n\nWhen appropriate, within this function you can call `self:MsgStart()`, write data with the <page>net</page>.`Write*` functions, and finish with `self:MsgEnd()`. This will activate the `Receive` function on the server. In most cases, you will want to send the entity to the server, as it's not done by default."
+        "description": "Called **clientside** when the property is clicked\n<callback>\n<arg type=\"table\" name=\"self\">the property table</arg>\n<arg type=\"Entity\" name=\"ent\">the entity the player clicked</arg>\n<arg type=\"table\" name=\"tr\">the player's eye trace</arg>\n</callback>\n\nWhen appropriate, within this function you can call `self:MsgStart()`, write data with the <page>net</page>.`Write*` functions, and finish with `self:MsgEnd()`. This will activate the `Receive` function on the server. In most cases, you will want to send the entity to the server, as it's not done by default.",
+        "references": [
+          {
+            "name": "net",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Receive",
         "type": "function",
-        "description": "Called **serverside** if the client sends a message in the `Action` function (see above).\n\n<callback>\n<arg type=\"table\" name=\"self\">the property table</arg>\n<arg type=\"number\" name=\"len\">the net message length, although this includes the property identifier used internally (the name of the property)</arg>\n<arg type=\"Player\" name=\"ply\">the player who clicked the property</arg>\n</callback>\n\nYou can read data received from the client with the <page>net</page>.`Read*` functions. It's good practice to check <page>GM:CanProperty</page> here via <page>gamemode.Call</page> or <page>hook.Run</page>."
+        "description": "Called **serverside** if the client sends a message in the `Action` function (see above).\n\n<callback>\n<arg type=\"table\" name=\"self\">the property table</arg>\n<arg type=\"number\" name=\"len\">the net message length, although this includes the property identifier used internally (the name of the property)</arg>\n<arg type=\"Player\" name=\"ply\">the player who clicked the property</arg>\n</callback>\n\nYou can read data received from the client with the <page>net</page>.`Read*` functions. It's good practice to check <page>GM:CanProperty</page> here via <page>gamemode.Call</page> or <page>hook.Run</page>.",
+        "references": [
+          {
+            "name": "net",
+            "resolved": false
+          },
+          {
+            "name": "GM:CanProperty",
+            "resolved": false
+          },
+          {
+            "name": "gamemode.Call",
+            "resolved": false
+          },
+          {
+            "name": "hook.Run",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "MenuOpen",
@@ -2727,7 +3855,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/PropertyAdd"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "properties.Add",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2831,7 +3965,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/RenderCamData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "cam.Start",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2881,7 +4021,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/RenderCaptureData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "render.Capture",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -2898,7 +4044,13 @@
       {
         "name": "activity",
         "type": "number{ACT}",
-        "description": "The activity ID associated with this sequence. See <page>Enums/ACT</page>."
+        "description": "The activity ID associated with this sequence. See <page>Enums/ACT</page>.",
+        "references": [
+          {
+            "name": "Enums/ACT",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "actweight",
@@ -2976,7 +4128,13 @@
       {
         "name": "anims",
         "type": "table<number>",
-        "description": "A 1-based array of all animationIDs associated with this sequence. For use with <page>Entity:GetAnimInfo</page>."
+        "description": "A 1-based array of all animationIDs associated with this sequence. For use with <page>Entity:GetAnimInfo</page>.",
+        "references": [
+          {
+            "name": "Entity:GetAnimInfo",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -2989,7 +4147,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/SequenceInfo"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Entity:GetSequenceInfo",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3013,7 +4177,17 @@
       {
         "name": "Callback",
         "type": "function",
-        "description": "Called when a new server is found and queried.\n\n<callback>\n<arg type=\"number\" name=\"ping\">Latency to the server.</arg>\n<arg type=\"string\" name=\"name\">Name of the server</arg>\n<arg type=\"string\" name=\"desc\">\"Nice\" gamemode name</arg>\n<arg type=\"string\" name=\"map\">Current map</arg>\n<arg type=\"number\" name=\"players\">Total player number ( bot + human )</arg>\n<arg type=\"number\" name=\"maxplayers\">Maximum reported amount of players</arg>\n<arg type=\"number\" name=\"botplayers\">Amount of bots on the server</arg>\n<arg type=\"boolean\" name=\"pass\">Whether this server has password or not</arg>\n<arg type=\"number\" name=\"lastplayed\">Time when you last played on this server, as UNIX timestamp or 0</arg>\n<arg type=\"string\" name=\"address\">IP Address of the server</arg>\n<arg type=\"string\" name=\"gamemode\">Gamemode folder name</arg>\n<arg type=\"number\" name=\"workshopid\">Gamemode Steam Workshop ID</arg>\n<arg type=\"boolean\" name=\"isanon\">Is the server signed into an anonymous account?</arg>\n<arg type=\"string\" name=\"version\">Version number, same format as <page>jit.version_num</page></arg>\n<arg type=\"string\" name=\"localization\">Two digit country code, `us` if <page>nil</page></arg>\n<arg type=\"string\" name=\"gmcategory\">Category of the gamemode, ex. `pvp`, `pve`, `rp` or `roleplay`</arg>\n\n<ret type=\"boolean\" name=\"stop\">Return `false` to stop the query.</ret>\n</callback>"
+        "description": "Called when a new server is found and queried.\n\n<callback>\n<arg type=\"number\" name=\"ping\">Latency to the server.</arg>\n<arg type=\"string\" name=\"name\">Name of the server</arg>\n<arg type=\"string\" name=\"desc\">\"Nice\" gamemode name</arg>\n<arg type=\"string\" name=\"map\">Current map</arg>\n<arg type=\"number\" name=\"players\">Total player number ( bot + human )</arg>\n<arg type=\"number\" name=\"maxplayers\">Maximum reported amount of players</arg>\n<arg type=\"number\" name=\"botplayers\">Amount of bots on the server</arg>\n<arg type=\"boolean\" name=\"pass\">Whether this server has password or not</arg>\n<arg type=\"number\" name=\"lastplayed\">Time when you last played on this server, as UNIX timestamp or 0</arg>\n<arg type=\"string\" name=\"address\">IP Address of the server</arg>\n<arg type=\"string\" name=\"gamemode\">Gamemode folder name</arg>\n<arg type=\"number\" name=\"workshopid\">Gamemode Steam Workshop ID</arg>\n<arg type=\"boolean\" name=\"isanon\">Is the server signed into an anonymous account?</arg>\n<arg type=\"string\" name=\"version\">Version number, same format as <page>jit.version_num</page></arg>\n<arg type=\"string\" name=\"localization\">Two digit country code, `us` if <page>nil</page></arg>\n<arg type=\"string\" name=\"gmcategory\">Category of the gamemode, ex. `pvp`, `pve`, `rp` or `roleplay`</arg>\n\n<ret type=\"boolean\" name=\"stop\">Return `false` to stop the query.</ret>\n</callback>",
+        "references": [
+          {
+            "name": "jit.version_num",
+            "resolved": false
+          },
+          {
+            "name": "nil",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "CallbackFailed",
@@ -3035,7 +4209,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/ServerQueryData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "serverlist.Query",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3049,7 +4229,13 @@
         "name": "delta",
         "type": "number",
         "default": "0.1",
-        "description": "The time it should use - just use the one from <page>ENTITY:PhysicsSimulate</page>."
+        "description": "The time it should use - just use the one from <page>ENTITY:PhysicsSimulate</page>.",
+        "references": [
+          {
+            "name": "ENTITY:PhysicsSimulate",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "pos",
@@ -3110,7 +4296,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/ShadowControlParams"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "PhysObj:ComputeShadowControl",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3135,7 +4327,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/Sky3DParams"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "table",
+        "resolved": false
+      },
+      {
+        "name": "game.Get3DSkyboxInfo",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3147,19 +4349,37 @@
       {
         "name": "name",
         "type": "string",
-        "description": "The name of the soundscript, to be referenced by in functions such as <page>Entity:EmitSound</page>."
+        "description": "The name of the soundscript, to be referenced by in functions such as <page>Entity:EmitSound</page>.",
+        "references": [
+          {
+            "name": "Entity:EmitSound",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "channel",
         "type": "number{CHAN}",
         "default": "CHAN_AUTO",
-        "description": "The sound channel to play in. See <page>Enums/CHAN</page>"
+        "description": "The sound channel to play in. See <page>Enums/CHAN</page>",
+        "references": [
+          {
+            "name": "Enums/CHAN",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "level",
         "type": "number{SNDLVL}",
         "default": "SNDLVL_NORM",
-        "description": "The soundlevel of the sound in dB. See <page>Enums/SNDLVL</page>. This will affect how far the sound can be heard."
+        "description": "The soundlevel of the sound in dB. See <page>Enums/SNDLVL</page>. This will affect how far the sound can be heard.",
+        "references": [
+          {
+            "name": "Enums/SNDLVL",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "volume",
@@ -3196,7 +4416,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/SoundData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "sound.Add",
+        "resolved": false
+      },
+      {
+        "name": "sound.GetProperties",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3250,7 +4480,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/SoundHintData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "NPC:GetBestSoundHint",
+        "resolved": false
+      },
+      {
+        "name": "sound.GetLoudestSoundHint",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3267,7 +4507,18 @@
       {
         "name": "overlayColor",
         "type": "table{Color}",
-        "description": "Color of sun's overlay in `0`-`255` range as <page>Color</page> structure."
+        "description": "Color of sun's overlay in `0`-`255` range as <page>Color</page> structure.",
+        "references": [
+          {
+            "name": "Color",
+            "canonicalName": "Color",
+            "resolved": true,
+            "id": "enum:Color",
+            "documentationURLs": [
+              "https://wiki.facepunch.com/gmod/Structures/Color"
+            ]
+          }
+        ]
       },
       {
         "name": "overlayMaterial",
@@ -3282,7 +4533,18 @@
       {
         "name": "sunColor",
         "type": "table{Color}",
-        "description": "Color of sun in `0`-`255` range as <page>Color</page> structure."
+        "description": "Color of sun in `0`-`255` range as <page>Color</page> structure.",
+        "references": [
+          {
+            "name": "Color",
+            "canonicalName": "Color",
+            "resolved": true,
+            "id": "enum:Color",
+            "documentationURLs": [
+              "https://wiki.facepunch.com/gmod/Structures/Color"
+            ]
+          }
+        ]
       },
       {
         "name": "sunMaterial",
@@ -3309,14 +4571,26 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/SunInfo"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "util.GetSunInfo",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "name",
         "type": "string",
-        "description": "The name of the surface property, identical to <page>util.GetSurfacePropName</page>."
+        "description": "The name of the surface property, identical to <page>util.GetSurfacePropName</page>.",
+        "references": [
+          {
+            "name": "util.GetSurfacePropName",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "hardnessFactor",
@@ -3361,12 +4635,28 @@
       {
         "name": "material",
         "type": "number{MAT}",
-        "description": "The surface material. See <page>Enums/MAT</page>."
+        "description": "The surface material. See <page>Enums/MAT</page>.",
+        "references": [
+          {
+            "name": "Enums/MAT",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "maxSpeedFactor",
         "type": "number",
-        "description": "Scalar multiplier for player speed. Achieves this by multiplying <page>CMoveData:SetMaxSpeed</page> in <page>GM:Move</page>."
+        "description": "Scalar multiplier for player speed. Achieves this by multiplying <page>CMoveData:SetMaxSpeed</page> in <page>GM:Move</page>.",
+        "references": [
+          {
+            "name": "CMoveData:SetMaxSpeed",
+            "resolved": false
+          },
+          {
+            "name": "GM:Move",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "dampening",
@@ -3454,7 +4744,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/SurfacePropertyData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "util.GetSurfaceData",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3513,7 +4809,13 @@
       {
         "name": "Owner",
         "type": "Entity",
-        "description": "<deprecated notag=\"true\">Use <page>Entity:GetOwner</page>() instead.</deprecated>"
+        "description": "<deprecated notag=\"true\">Use <page>Entity:GetOwner</page>() instead.</deprecated>",
+        "references": [
+          {
+            "name": "Entity:GetOwner",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Weapon",
@@ -3633,13 +4935,25 @@
       {
         "name": "RenderGroup",
         "type": "number{RENDERGROUP}",
-        "description": "The SWEP render group, see <page>Enums/RENDERGROUP</page>. If unset, the engine will decide the render group based on the SWEPs world model."
+        "description": "The SWEP render group, see <page>Enums/RENDERGROUP</page>. If unset, the engine will decide the render group based on the SWEPs world model.",
+        "references": [
+          {
+            "name": "Enums/RENDERGROUP",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "WantsTranslucency",
         "type": "boolean",
         "default": "false",
-        "description": "If set and `RenderGroup` is not, will switch the render group to <page text=\"RENDERGROUP_BOTH\">Enums/RENDERGROUP#RENDERGROUP_BOTH</page> when appropriate.\n\nSee <page>Structures/ENT</page> for details."
+        "description": "If set and `RenderGroup` is not, will switch the render group to <page text=\"RENDERGROUP_BOTH\">Enums/RENDERGROUP#RENDERGROUP_BOTH</page> when appropriate.\n\nSee <page>Structures/ENT</page> for details.",
+        "references": [
+          {
+            "name": "Structures/ENT",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Slot",
@@ -3663,7 +4977,17 @@
         "name": "WepSelectIcon",
         "type": "number",
         "default": "surface.GetTextureID( 'weapons/swep' )",
-        "description": "Path to\na material. Override this in your SWEP to set the icon in the weapon selection. This must be the texture ID,\nsee <page>surface.GetTextureID</page>. Keep in mind that the path must be to a `.vmt` file, NOT `.vtf`.\n\n\nAlternatively you can render custom weapon selection via <page>WEAPON:DrawWeaponSelection</page>."
+        "description": "Path to\na material. Override this in your SWEP to set the icon in the weapon selection. This must be the texture ID,\nsee <page>surface.GetTextureID</page>. Keep in mind that the path must be to a `.vmt` file, NOT `.vtf`.\n\n\nAlternatively you can render custom weapon selection via <page>WEAPON:DrawWeaponSelection</page>.",
+        "references": [
+          {
+            "name": "surface.GetTextureID",
+            "resolved": false
+          },
+          {
+            "name": "WEAPON:DrawWeaponSelection",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "CSMuzzleFlashes",
@@ -3680,7 +5004,25 @@
       {
         "name": "Primary",
         "type": "table",
-        "description": "Primary attack settings. The table contains these fields:\n\n* <page>string</page> `Ammo` - Ammo type (`Pistol`, `SMG1`, etc.) See <page>game.AddAmmoType</page>.\n* <page>number</page> `ClipSize` - The maximum amount of bullets one clip can hold. Setting it to `-1` means weapon uses no clips, like a grenade or a rocket launch.\n* <page>number</page> `DefaultClip` - Default ammo in the clip, making it higher than ClipSize will give player additional ammo on spawn\n* <page>boolean</page> `Automatic` - If true makes the weapon shoot automatically as long as the player has primary attack button held down"
+        "description": "Primary attack settings. The table contains these fields:\n\n* <page>string</page> `Ammo` - Ammo type (`Pistol`, `SMG1`, etc.) See <page>game.AddAmmoType</page>.\n* <page>number</page> `ClipSize` - The maximum amount of bullets one clip can hold. Setting it to `-1` means weapon uses no clips, like a grenade or a rocket launch.\n* <page>number</page> `DefaultClip` - Default ammo in the clip, making it higher than ClipSize will give player additional ammo on spawn\n* <page>boolean</page> `Automatic` - If true makes the weapon shoot automatically as long as the player has primary attack button held down",
+        "references": [
+          {
+            "name": "string",
+            "resolved": false
+          },
+          {
+            "name": "game.AddAmmoType",
+            "resolved": false
+          },
+          {
+            "name": "number",
+            "resolved": false
+          },
+          {
+            "name": "boolean",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Secondary",
@@ -3714,7 +5056,13 @@
         "name": "ScriptedEntityType",
         "type": "string",
         "default": "weapon",
-        "description": "Sets the spawnmenu content icon type\nfor the entity, used by spawnmenu in the Sandbox-derived gamemodes.\nSee <page>spawnmenu.AddContentType</page> for more information."
+        "description": "Sets the spawnmenu content icon type\nfor the entity, used by spawnmenu in the Sandbox-derived gamemodes.\nSee <page>spawnmenu.AddContentType</page> for more information.",
+        "references": [
+          {
+            "name": "spawnmenu.AddContentType",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "m_bPlayPickupSound",
@@ -3739,7 +5087,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/SWEP"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "SANDBOX:PlayerGiveSWEP",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3774,7 +5128,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/TeamData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "team.GetAllTeams",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3798,13 +5158,25 @@
         "name": "xalign",
         "type": "number{TEXT_ALIGN}",
         "default": "TEXT_ALIGN_LEFT",
-        "description": "The alignment of the X position. See <page>Enums/TEXT_ALIGN</page>"
+        "description": "The alignment of the X position. See <page>Enums/TEXT_ALIGN</page>",
+        "references": [
+          {
+            "name": "Enums/TEXT_ALIGN",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "yalign",
         "type": "number{TEXT_ALIGN}",
         "default": "TEXT_ALIGN_TOP",
-        "description": "The alignment of the Y position. See <page>Enums/TEXT_ALIGN</page>"
+        "description": "The alignment of the Y position. See <page>Enums/TEXT_ALIGN</page>",
+        "references": [
+          {
+            "name": "Enums/TEXT_ALIGN",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "color",
@@ -3823,7 +5195,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/TextData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "draw.Text",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3856,7 +5234,18 @@
         "name": "color",
         "type": "Color",
         "default": "color_white",
-        "description": "The texture color. See <page>Color</page>."
+        "description": "The texture color. See <page>Color</page>.",
+        "references": [
+          {
+            "name": "Color",
+            "canonicalName": "Color",
+            "resolved": true,
+            "id": "enum:Color",
+            "documentationURLs": [
+              "https://wiki.facepunch.com/gmod/Structures/Color"
+            ]
+          }
+        ]
       }
     ],
     "realms": [
@@ -3869,7 +5258,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/TextureData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "draw.TexturedQuad",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3900,7 +5295,17 @@
       {
         "name": "ClientConVar",
         "type": "table",
-        "description": "A key-value ( convar name-default value ) table containing the client-side convars to create. All convars will be prefixed with the filename of the tool.\nYou can later use <page>Tool:GetClientNumber</page> or <page>Tool:GetClientInfo</page> to retrieve these values."
+        "description": "A key-value ( convar name-default value ) table containing the client-side convars to create. All convars will be prefixed with the filename of the tool.\nYou can later use <page>Tool:GetClientNumber</page> or <page>Tool:GetClientInfo</page> to retrieve these values.",
+        "references": [
+          {
+            "name": "Tool:GetClientNumber",
+            "resolved": false
+          },
+          {
+            "name": "Tool:GetClientInfo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "ServerConVar",
@@ -3910,7 +5315,17 @@
       {
         "name": "ClientConVars",
         "type": "table",
-        "description": "A key-value ( <page>string</page> name - <page>ConVar</page> object ) table containing the cached convar objected created from `ClientConVar`."
+        "description": "A key-value ( <page>string</page> name - <page>ConVar</page> object ) table containing the cached convar objected created from `ClientConVar`.",
+        "references": [
+          {
+            "name": "string",
+            "resolved": false
+          },
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "ServerConVars",
@@ -3920,12 +5335,24 @@
       {
         "name": "BuildCPanel",
         "type": "function",
-        "description": "The function that is called to build the context menu for your tool. It has one argument, namely the context menu's base panel to which all of your custom panels are going to be parented to.\n\nWhile it might sound like a hook, it isn't - you won't receive a `self` argument inside the function. See <page>TOOL.BuildCPanel</page>."
+        "description": "The function that is called to build the context menu for your tool. It has one argument, namely the context menu's base panel to which all of your custom panels are going to be parented to.\n\nWhile it might sound like a hook, it isn't - you won't receive a `self` argument inside the function. See <page>TOOL.BuildCPanel</page>.",
+        "references": [
+          {
+            "name": "TOOL.BuildCPanel",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Information",
         "type": "table",
-        "description": "Allows you to override the tool usage information shown when the tool is equipped.\nSee <page>Tool Information Display</page> for more information."
+        "description": "Allows you to override the tool usage information shown when the tool is equipped.\nSee <page>Tool Information Display</page> for more information.",
+        "references": [
+          {
+            "name": "Tool Information Display",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Mode",
@@ -3935,7 +5362,13 @@
       {
         "name": "Tab",
         "type": "string",
-        "description": "The tool tab (<page>spawnmenu.AddToolTab</page>) to add this tool to. (The internal name, first argument)"
+        "description": "The tool tab (<page>spawnmenu.AddToolTab</page>) to add this tool to. (The internal name, first argument)",
+        "references": [
+          {
+            "name": "spawnmenu.AddToolTab",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "LeftClickAutomatic",
@@ -3960,7 +5393,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/TOOL"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "language.Add",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -3989,7 +5428,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/ToScreenData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Vector:ToScreen",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4015,13 +5460,29 @@
         "name": "mask",
         "type": "number{MASK}",
         "default": "MASK_SOLID",
-        "description": "The trace mask <page>Enums/MASK</page>. This determines what the trace should hit and what it shouldn't hit. A mask is a combination of <page>Enums/CONTENTS</page> - you can use these for more advanced masks."
+        "description": "The trace mask <page>Enums/MASK</page>. This determines what the trace should hit and what it shouldn't hit. A mask is a combination of <page>Enums/CONTENTS</page> - you can use these for more advanced masks.",
+        "references": [
+          {
+            "name": "Enums/MASK",
+            "resolved": false
+          },
+          {
+            "name": "Enums/CONTENTS",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "collisiongroup",
         "type": "number{COLLISION_GROUP}",
         "default": "COLLISION_GROUP_NONE",
-        "description": "The collision group <page>Enums/COLLISION_GROUP</page>. This determines what the trace should hit in regards to the entity's collision group."
+        "description": "The collision group <page>Enums/COLLISION_GROUP</page>. This determines what the trace should hit in regards to the entity's collision group.",
+        "references": [
+          {
+            "name": "Enums/COLLISION_GROUP",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "ignoreworld",
@@ -4058,7 +5519,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/Trace"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "util.TraceLine",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4096,7 +5563,13 @@
         "name": "HitGroup",
         "type": "number{HITGROUP}",
         "default": "0",
-        "description": "<page>Enums/HITGROUP</page> describing what hitgroup the trace hit (not the same as HitBox)."
+        "description": "<page>Enums/HITGROUP</page> describing what hitgroup the trace hit (not the same as HitBox).",
+        "references": [
+          {
+            "name": "Enums/HITGROUP",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "HitNoDraw",
@@ -4143,7 +5616,13 @@
         "name": "MatType",
         "type": "number{MAT}",
         "default": "nil",
-        "description": "<page>Enums/MAT</page> of the material hit by the trace."
+        "description": "<page>Enums/MAT</page> of the material hit by the trace.",
+        "references": [
+          {
+            "name": "Enums/MAT",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Normal",
@@ -4154,7 +5633,17 @@
         "name": "PhysicsBone",
         "type": "number",
         "default": "0",
-        "description": "The <page>PhysObj</page> ID that was hit.\n\nUsed for <page>Entity:GetPhysicsObjectNum</page>."
+        "description": "The <page>PhysObj</page> ID that was hit.\n\nUsed for <page>Entity:GetPhysicsObjectNum</page>.",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          },
+          {
+            "name": "Entity:GetPhysicsObjectNum",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "StartPos",
@@ -4165,7 +5654,17 @@
         "name": "SurfaceProps",
         "type": "number",
         "default": "0",
-        "description": "ID of hit surface property from `scripts/surfaceproperties.txt`.\nYou can get the name using <page>util.GetSurfacePropName</page>.\n\nUsed for <page>CEffectData:SetSurfaceProp</page>."
+        "description": "ID of hit surface property from `scripts/surfaceproperties.txt`.\nYou can get the name using <page>util.GetSurfacePropName</page>.\n\nUsed for <page>CEffectData:SetSurfaceProp</page>.",
+        "references": [
+          {
+            "name": "util.GetSurfacePropName",
+            "resolved": false
+          },
+          {
+            "name": "CEffectData:SetSurfaceProp",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "StartSolid",
@@ -4183,19 +5682,37 @@
         "name": "SurfaceFlags",
         "type": "number{SURF}",
         "default": "0",
-        "description": "The surface flags of the hit surface. See <page>Enums/SURF</page>."
+        "description": "The surface flags of the hit surface. See <page>Enums/SURF</page>.",
+        "references": [
+          {
+            "name": "Enums/SURF",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "DispFlags",
         "type": "number{DISPSURF}",
         "default": "0",
-        "description": "The displacement flags of the hit surface. See <page>Enums/DISPSURF</page>."
+        "description": "The displacement flags of the hit surface. See <page>Enums/DISPSURF</page>.",
+        "references": [
+          {
+            "name": "Enums/DISPSURF",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Contents",
         "type": "number{CONTENTS}",
         "default": "0",
-        "description": "The contents of the hit surface. See <page>Enums/CONTENTS</page>."
+        "description": "The contents of the hit surface. See <page>Enums/CONTENTS</page>.",
+        "references": [
+          {
+            "name": "Enums/CONTENTS",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "HitBoxBone",
@@ -4214,7 +5731,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/TraceResult"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "util.TraceLine",
+        "resolved": false
+      },
+      {
+        "name": "util.TraceHull",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4231,7 +5758,13 @@
       {
         "name": "description",
         "type": "string",
-        "description": "The description of the Workshop item. It will be limited to 255 characters (by Steam) unless <page>steamworks.FileInfo</page> is called with the `extraInfo` parameter set."
+        "description": "The description of the Workshop item. It will be limited to 255 characters (by Steam) unless <page>steamworks.FileInfo</page> is called with the `extraInfo` parameter set.",
+        "references": [
+          {
+            "name": "steamworks.FileInfo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "fileid",
@@ -4301,7 +5834,13 @@
       {
         "name": "ownername",
         "type": "string",
-        "description": "<warning>We advise against using this. It may be changed or removed in a future update.</warning>\n\nThe \"nice\" name of the Uploader, or \"Unnammed Player\" if we failed to get the data for some reason.\n\nDo not use this field as it will most likely not be updated in time. Use <page>steamworks.RequestPlayerInfo</page> instead."
+        "description": "<warning>We advise against using this. It may be changed or removed in a future update.</warning>\n\nThe \"nice\" name of the Uploader, or \"Unnammed Player\" if we failed to get the data for some reason.\n\nDo not use this field as it will most likely not be updated in time. Use <page>steamworks.RequestPlayerInfo</page> instead.",
+        "references": [
+          {
+            "name": "steamworks.RequestPlayerInfo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "error",
@@ -4336,7 +5875,21 @@
       {
         "name": "extra_previews",
         "type": "table<table>",
-        "description": "If present, a list of additional previews for this Workshop item.\n\n<page>steamworks.FileInfo</page> must be called with `extraInfo` parameter.\n\nIt will be a table of tables with the following keys:\n* <page>number</page> `type` - type of additional preview. 0 = is normal image, 1=YouTube video ID\n* <page>string</page> `url` - URL to the additional preview. Format depends on the type."
+        "description": "If present, a list of additional previews for this Workshop item.\n\n<page>steamworks.FileInfo</page> must be called with `extraInfo` parameter.\n\nIt will be a table of tables with the following keys:\n* <page>number</page> `type` - type of additional preview. 0 = is normal image, 1=YouTube video ID\n* <page>string</page> `url` - URL to the additional preview. Format depends on the type.",
+        "references": [
+          {
+            "name": "steamworks.FileInfo",
+            "resolved": false
+          },
+          {
+            "name": "number",
+            "resolved": false
+          },
+          {
+            "name": "string",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -4349,7 +5902,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/UGCFileInfo"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "steamworks.FileInfo",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4393,7 +5952,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/Undo"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "undo.Do_Undo",
+        "resolved": false
+      },
+      {
+        "name": "GM:CanUndo",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4410,22 +5979,46 @@
       {
         "name": "axles",
         "type": "table{VehicleParamsAxle}",
-        "description": "A table of <page>Structures/VehicleParamsAxle</page> tables."
+        "description": "A table of <page>Structures/VehicleParamsAxle</page> tables.",
+        "references": [
+          {
+            "name": "Structures/VehicleParamsAxle",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "body",
         "type": "table{VehicleParamsBody}",
-        "description": "See <page>Structures/VehicleParamsBody</page>"
+        "description": "See <page>Structures/VehicleParamsBody</page>",
+        "references": [
+          {
+            "name": "Structures/VehicleParamsBody",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "engine",
         "type": "table{VehicleParamsEngine}",
-        "description": "See <page>Structures/VehicleParamsEngine</page>"
+        "description": "See <page>Structures/VehicleParamsEngine</page>",
+        "references": [
+          {
+            "name": "Structures/VehicleParamsEngine",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "steering",
         "type": "table{VehicleParamsSteering}",
-        "description": "See <page>Structures/VehicleParamsSteering</page>"
+        "description": "See <page>Structures/VehicleParamsSteering</page>",
+        "references": [
+          {
+            "name": "Structures/VehicleParamsSteering",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -4437,7 +6030,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/VehicleParams"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Vehicle:SetVehicleParams",
+        "resolved": false
+      },
+      {
+        "name": "Vehicle:GetVehicleParams",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4540,7 +6143,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/VehicleParamsAxle"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Structures/VehicleParams",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4590,7 +6199,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/VehicleParamsBody"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Structures/VehicleParams",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4624,7 +6239,17 @@
       {
         "name": "boostMaxSpeed",
         "type": "number",
-        "description": "Maximum speed while boosting\n\n<warning>The <page>Vehicle:SetVehicleParams</page> function takes this in **miles per hour**, but <page>Vehicle:GetVehicleParams</page> returns this in **hammer units per second**!\n\nIn this case HU = inches, so 1 MPH is 17.6 HU/s.</warning>"
+        "description": "Maximum speed while boosting\n\n<warning>The <page>Vehicle:SetVehicleParams</page> function takes this in **miles per hour**, but <page>Vehicle:GetVehicleParams</page> returns this in **hammer units per second**!\n\nIn this case HU = inches, so 1 MPH is 17.6 HU/s.</warning>",
+        "references": [
+          {
+            "name": "Vehicle:SetVehicleParams",
+            "resolved": false
+          },
+          {
+            "name": "Vehicle:GetVehicleParams",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "gearCount",
@@ -4654,12 +6279,32 @@
       {
         "name": "maxRevSpeed",
         "type": "number",
-        "description": "Maximum reverse speed of the vehicle\n\n<warning>The <page>Vehicle:SetVehicleParams</page> function takes this in **miles per hour**, but <page>Vehicle:GetVehicleParams</page> returns this in **hammer units per second**!\n\nIn this case HU = inches, so 1 MPH is 17.6 HU/s.</warning>"
+        "description": "Maximum reverse speed of the vehicle\n\n<warning>The <page>Vehicle:SetVehicleParams</page> function takes this in **miles per hour**, but <page>Vehicle:GetVehicleParams</page> returns this in **hammer units per second**!\n\nIn this case HU = inches, so 1 MPH is 17.6 HU/s.</warning>",
+        "references": [
+          {
+            "name": "Vehicle:SetVehicleParams",
+            "resolved": false
+          },
+          {
+            "name": "Vehicle:GetVehicleParams",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "maxSpeed",
         "type": "number",
-        "description": "Maximum forward going speed of the vehicle without boosting\n\n<warning>The <page>Vehicle:SetVehicleParams</page> function takes this in **miles per hour**, but <page>Vehicle:GetVehicleParams</page> returns this in **hammer units per second**!\n\nIn this case HU = inches, so 1 MPH is 17.6 HU/s.</warning>"
+        "description": "Maximum forward going speed of the vehicle without boosting\n\n<warning>The <page>Vehicle:SetVehicleParams</page> function takes this in **miles per hour**, but <page>Vehicle:GetVehicleParams</page> returns this in **hammer units per second**!\n\nIn this case HU = inches, so 1 MPH is 17.6 HU/s.</warning>",
+        "references": [
+          {
+            "name": "Vehicle:SetVehicleParams",
+            "resolved": false
+          },
+          {
+            "name": "Vehicle:GetVehicleParams",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "shiftDownRPM",
@@ -4689,7 +6334,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/VehicleParamsEngine"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Structures/VehicleParams",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4785,7 +6436,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/VehicleParamsSteering"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "Structures/VehicleParams",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4819,7 +6476,13 @@
         "name": "Members",
         "type": "table",
         "default": "nil",
-        "description": "Set these members on the spawned vehicle's table (<page>Entity:GetTable</page>) to given values."
+        "description": "Set these members on the spawned vehicle's table (<page>Entity:GetTable</page>) to given values.",
+        "references": [
+          {
+            "name": "Entity:GetTable",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "Author",
@@ -4848,7 +6511,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/VehicleTable"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "SANDBOX:PlayerSpawnVehicle",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -4913,7 +6582,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/VideoData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "video.Record",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -5059,7 +6734,13 @@
         "name": "viewid",
         "type": "number{VIEW}",
         "default": "0",
-        "description": "This is identifying which logical part of the scene an entity is being redered in, see <page>Enums/VIEW</page>."
+        "description": "This is identifying which logical part of the scene an entity is being redered in, see <page>Enums/VIEW</page>.",
+        "references": [
+          {
+            "name": "Enums/VIEW",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "offcenter",
@@ -5077,14 +6758,26 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/ViewData"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "render.RenderView",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "viewid",
         "type": "number{VIEW}",
-        "description": "The current view id. See <page>Enums/VIEW</page>."
+        "description": "The current view id. See <page>Enums/VIEW</page>.",
+        "references": [
+          {
+            "name": "Enums/VIEW",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "origin",
@@ -5179,7 +6872,13 @@
       {
         "name": "offcenter",
         "type": "table",
-        "description": "It's a table with 4 keys, controlling what portion of the screen to draw:\n* left - where the left edge starts. Natural value is 0.\n* right - where the right edge ends. Natural value is equal to w (the width of the viewport).\n* top - where the `bottom` edge starts. Natural value is 0.\n* bottom - where the `top` edge ends. Natural value is equal to h (the height of the viewport).\n\nNote that top and bottom are reversed.\n\nThis will not be present if offscreen rendering is not enabled for this view.\n\nSee <page>Structures/ViewData</page> for more info."
+        "description": "It's a table with 4 keys, controlling what portion of the screen to draw:\n* left - where the left edge starts. Natural value is 0.\n* right - where the right edge ends. Natural value is equal to w (the width of the viewport).\n* top - where the `bottom` edge starts. Natural value is 0.\n* bottom - where the `top` edge ends. Natural value is equal to h (the height of the viewport).\n\nNote that top and bottom are reversed.\n\nThis will not be present if offscreen rendering is not enabled for this view.\n\nSee <page>Structures/ViewData</page> for more info.",
+        "references": [
+          {
+            "name": "Structures/ViewData",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -5191,6 +6890,12 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Structures/ViewSetup"
     ],
-    "retrievalDate": "2026-10-09T14:14:21.321Z"
+    "retrievalDate": "2026-10-09T14:14:21.321Z",
+    "references": [
+      {
+        "name": "render.GetViewSetup",
+        "resolved": false
+      }
+    ]
   }
 ]

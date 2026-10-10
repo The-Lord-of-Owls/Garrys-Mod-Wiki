@@ -32,7 +32,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/_USE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:SetUseType",
+        "resolved": false
+      },
+      {
+        "name": "ENTITY:Use",
+        "resolved": false
+      },
+      {
+        "name": "Enums/USE",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6436,7 +6450,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/ACT"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Weapon:SendWeaponAnim",
+        "resolved": false
+      },
+      {
+        "name": "Entity:SelectWeightedSequence",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6480,7 +6504,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/AIMR"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:MoveClimbExec",
+        "resolved": false
+      },
+      {
+        "name": "NPC:MoveJumpExec",
+        "resolved": false
+      },
+      {
+        "name": "NPC:MoveJumpStop",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6505,7 +6543,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/AMMO"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "game.AddAmmoType",
+        "resolved": false
+      },
+      {
+        "name": "Structures/AmmoData",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6559,7 +6607,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/ANALOG"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "input.GetAnalogValue",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6628,7 +6682,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/BLEND"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.OverrideBlend",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6669,7 +6729,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/BLENDFUNC"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.OverrideBlend",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6724,7 +6790,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/BLOOD_COLOR"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:GetBloodColor",
+        "resolved": false
+      },
+      {
+        "name": "Entity:SetBloodColor",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6829,7 +6905,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/BONE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:BoneHasFlag",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6854,7 +6936,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/BOUNDS"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:SetSurroundingBoundsType",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6900,7 +6988,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/BOX"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.SetModelLighting",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -6932,7 +7026,45 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/BUTTON_CODE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Enums/KEY",
+        "resolved": false
+      },
+      {
+        "name": "Enums/MOUSE",
+        "resolved": false
+      },
+      {
+        "name": "Enums/JOYSTICK",
+        "resolved": false
+      },
+      {
+        "name": "input.IsButtonDown",
+        "resolved": false
+      },
+      {
+        "name": "input.LookupKeyBinding",
+        "resolved": false
+      },
+      {
+        "name": "input.GetKeyName",
+        "resolved": false
+      },
+      {
+        "name": "input.GetKeyCode",
+        "resolved": false
+      },
+      {
+        "name": "GM:PlayerButtonDown",
+        "resolved": false
+      },
+      {
+        "name": "GM:PlayerButtonUp",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -7082,7 +7214,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/CAP"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:CapabilitiesAdd",
+        "resolved": false
+      },
+      {
+        "name": "WEAPON:GetCapabilities",
+        "resolved": false
+      },
+      {
+        "name": "NPC:CapabilitiesGet",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -7152,7 +7298,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/CHAN"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.EmitSound",
+        "resolved": false
+      },
+      {
+        "name": "sound.Add",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -7351,7 +7507,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/CLASS"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:Classify",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -7481,7 +7643,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/COLLISION_GROUP"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:SetCollisionGroup",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetCollisionGroup",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -7782,7 +7954,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/COND"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:SetCondition",
+        "resolved": false
+      },
+      {
+        "name": "NPC:ConditionName",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -7842,7 +8024,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/ContentAlignment"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Panel:SetContentAlignment",
+        "resolved": false
+      },
+      {
+        "name": "DListView_Column:SetTextAlign",
+        "resolved": false
+      },
+      {
+        "name": "DNotify:SetAlignment",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8007,7 +8203,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/CONTENTS"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "util.PointContents",
+        "resolved": false
+      },
+      {
+        "name": "PhysObj:SetContents",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8036,7 +8242,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/CREATERENDERTARGETFLAGS"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.GetRenderTargetEx",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8114,7 +8326,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/D"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:Disposition",
+        "resolved": false
+      },
+      {
+        "name": "NPC:AddEntityRelationship",
+        "resolved": false
+      },
+      {
+        "name": "ENTITY:GetRelationship",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8139,7 +8365,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/DEATH_NOTICE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "bit",
+        "resolved": false
+      },
+      {
+        "name": "bit.band",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8174,7 +8410,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/DISPSURF"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Structures/TraceResult",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8354,7 +8596,29 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/DMG"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "CTakeDamageInfo:GetDamageType",
+        "resolved": false
+      },
+      {
+        "name": "CTakeDamageInfo:SetDamageType",
+        "resolved": false
+      },
+      {
+        "name": "CTakeDamageInfo:IsDamageType",
+        "resolved": false
+      },
+      {
+        "name": "bit",
+        "resolved": false
+      },
+      {
+        "name": "bit.band",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8399,7 +8663,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/DOCK"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Panel:Dock",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8428,7 +8698,13 @@
       {
         "name": "EF_BONEMERGE",
         "value": 1,
-        "description": "Performs bone merge on client side, merging bone positions of child entities (<page>Entity:SetParent</page>) with those of the parent, by bone names. The skeletons should have identical proportions, however it is not a requirement."
+        "description": "Performs bone merge on client side, merging bone positions of child entities (<page>Entity:SetParent</page>) with those of the parent, by bone names. The skeletons should have identical proportions, however it is not a requirement.",
+        "references": [
+          {
+            "name": "Entity:SetParent",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "EF_BONEMERGE_FASTCULL",
@@ -8478,7 +8754,13 @@
       {
         "name": "EF_FOLLOWBONE",
         "value": 1024,
-        "description": "Internal flag that is set by <page>Entity:FollowBone</page>."
+        "description": "Internal flag that is set by <page>Entity:FollowBone</page>.",
+        "references": [
+          {
+            "name": "Entity:FollowBone",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "EF_NOFLASHLIGHT",
@@ -8496,7 +8778,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/EF"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:AddEffects",
+        "resolved": false
+      },
+      {
+        "name": "Entity:RemoveEffects",
+        "resolved": false
+      },
+      {
+        "name": "Entity:IsEffectActive",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8523,7 +8819,13 @@
       {
         "name": "EFL_KEEP_ON_RECREATE_ENTITIES",
         "value": 16,
-        "description": "This is a special entity that should not be deleted when we respawn entities via <page>game.CleanUpMap</page>."
+        "description": "This is a special entity that should not be deleted when we respawn entities via <page>game.CleanUpMap</page>.",
+        "references": [
+          {
+            "name": "game.CleanUpMap",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "EFL_HAS_PLAYER_CHILD",
@@ -8671,24 +8973,56 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/EFL"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:AddEFlags",
+        "resolved": false
+      },
+      {
+        "name": "Entity:RemoveEFlags",
+        "resolved": false
+      },
+      {
+        "name": "Entity:IsEFlagSet",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "FCVAR_ARCHIVE",
         "value": 128,
-        "description": "Save the <page>ConVar</page> value into either client.vdf or server.vdf\n\nReported as \"a\" by `cvarlist`, except Lua <page>ConVar</page>s"
+        "description": "Save the <page>ConVar</page> value into either client.vdf or server.vdf\n\nReported as \"a\" by `cvarlist`, except Lua <page>ConVar</page>s",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_ARCHIVE_XBOX",
         "value": 16777216,
-        "description": "Save the <page>ConVar</page> value into config.vdf on XBox"
+        "description": "Save the <page>ConVar</page> value into config.vdf on XBox",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_CHEAT",
         "value": 16384,
-        "description": "Requires `sv_cheats` to be enabled to change the <page>ConVar</page> or run the command\n\nReported as \"cheat\" by `cvarlist`"
+        "description": "Requires `sv_cheats` to be enabled to change the <page>ConVar</page> or run the command\n\nReported as \"cheat\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_CLIENTCMD_CAN_EXECUTE",
@@ -8698,22 +9032,46 @@
       {
         "name": "FCVAR_CLIENTDLL",
         "value": 8,
-        "description": "<page>ConVar</page> is defined by the client DLL.\n\nThis flag is set automatically\n\nReported as \"cl\" by `cvarlist`"
+        "description": "<page>ConVar</page> is defined by the client DLL.\n\nThis flag is set automatically\n\nReported as \"cl\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_DEMO",
         "value": 65536,
-        "description": "Force the <page>ConVar</page> to be recorded by demo recordings.\n\nReported as \"demo\" by `cvarlist`"
+        "description": "Force the <page>ConVar</page> to be recorded by demo recordings.\n\nReported as \"demo\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_DONTRECORD",
         "value": 131072,
-        "description": "Opposite of [FCVAR_DEMO](#FCVAR_DEMO), ensures the <page>ConVar</page> is not recorded in demos\n\nReported as \"norecord\" by `cvarlist`"
+        "description": "Opposite of [FCVAR_DEMO](#FCVAR_DEMO), ensures the <page>ConVar</page> is not recorded in demos\n\nReported as \"norecord\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_GAMEDLL",
         "value": 4,
-        "description": "<page>ConVar</page> is defined by the game DLL.\n\nThis flag is set automatically\n\nReported as \"sv\" by `cvarlist`"
+        "description": "<page>ConVar</page> is defined by the game DLL.\n\nThis flag is set automatically\n\nReported as \"sv\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_LUA_CLIENT",
@@ -8738,32 +9096,68 @@
       {
         "name": "FCVAR_NOTIFY",
         "value": 256,
-        "description": "For serverside <page>ConVar</page>s, notifies all players with blue chat text when the value gets changed, also makes the convar appear in [A2S_RULES](https://developer.valvesoftware.com/wiki/Server_queries#A2S_RULES)\n\nReported as \"nf\" by `cvarlist`"
+        "description": "For serverside <page>ConVar</page>s, notifies all players with blue chat text when the value gets changed, also makes the convar appear in [A2S_RULES](https://developer.valvesoftware.com/wiki/Server_queries#A2S_RULES)\n\nReported as \"nf\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_NOT_CONNECTED",
         "value": 4194304,
-        "description": "Makes the <page>ConVar</page> not changeable while connected to a server or in singleplayer"
+        "description": "Makes the <page>ConVar</page> not changeable while connected to a server or in singleplayer",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_PRINTABLEONLY",
         "value": 1024,
-        "description": "Forces the <page>ConVar</page> to only have printable characters (No control characters)\n\nReported as \"print\" by `cvarlist`"
+        "description": "Forces the <page>ConVar</page> to only have printable characters (No control characters)\n\nReported as \"print\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_PROTECTED",
         "value": 32,
-        "description": "Makes the <page>ConVar</page> value hidden from all clients (For example `sv_password`)\n\nReported as \"prot\" by `cvarlist`"
+        "description": "Makes the <page>ConVar</page> value hidden from all clients (For example `sv_password`)\n\nReported as \"prot\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_REPLICATED",
         "value": 8192,
-        "description": "For serverside <page>ConVar</page>s, it will enforce its value on all clients. The <page>ConVar</page> with the same name must also exist on the client!\n\nReported as \"rep\" by `cvarlist`"
+        "description": "For serverside <page>ConVar</page>s, it will enforce its value on all clients. The <page>ConVar</page> with the same name must also exist on the client!\n\nReported as \"rep\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_SERVER_CANNOT_QUERY",
         "value": 536870912,
-        "description": "Prevents the server from querying value of this <page>ConVar</page>"
+        "description": "Prevents the server from querying value of this <page>ConVar</page>",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_SERVER_CAN_EXECUTE",
@@ -8773,12 +9167,24 @@
       {
         "name": "FCVAR_SPONLY",
         "value": 64,
-        "description": "Executing the command or changing the <page>ConVar</page> is only allowed in singleplayer\n\nReported as \"sp\" by `cvarlist`"
+        "description": "Executing the command or changing the <page>ConVar</page> is only allowed in singleplayer\n\nReported as \"sp\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_UNLOGGED",
         "value": 2048,
-        "description": "Don't log the <page>ConVar</page> changes to console/log files/users\n\nReported as \"log\" by `cvarlist`"
+        "description": "Don't log the <page>ConVar</page> changes to console/log files/users\n\nReported as \"log\" by `cvarlist`",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FCVAR_UNREGISTERED",
@@ -8802,7 +9208,25 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/FCVAR"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.AddConsoleCommand",
+        "resolved": false
+      },
+      {
+        "name": "concommand.Add",
+        "resolved": false
+      },
+      {
+        "name": "Global.CreateClientConVar",
+        "resolved": false
+      },
+      {
+        "name": "Global.CreateConVar",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8856,7 +9280,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/FFT"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "IGModAudioChannel:FFT",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -8978,7 +9408,13 @@
       {
         "name": "FL_DONTTOUCH",
         "value": 8388608,
-        "description": "Doesn't generate touch functions, calls <page>ENTITY:EndTouch</page> when this flag gets set during a touch callback"
+        "description": "Doesn't generate touch functions, calls <page>ENTITY:EndTouch</page> when this flag gets set during a touch callback",
+        "references": [
+          {
+            "name": "ENTITY:EndTouch",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FL_BASEVELOCITY",
@@ -9031,39 +9467,89 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/FL"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:AddFlags",
+        "resolved": false
+      },
+      {
+        "name": "Entity:RemoveFlags",
+        "resolved": false
+      },
+      {
+        "name": "Entity:IsFlagSet",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "FORCE_STRING",
         "value": 1,
-        "description": "Forces the function to take <page>string</page>s only"
+        "description": "Forces the function to take <page>string</page>s only",
+        "references": [
+          {
+            "name": "string",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FORCE_NUMBER",
         "value": 2,
-        "description": "Forces the function to take <page>number</page>s only"
+        "description": "Forces the function to take <page>number</page>s only",
+        "references": [
+          {
+            "name": "number",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FORCE_BOOL",
         "value": 3,
-        "description": "Forces the function to take <page>boolean</page>s only"
+        "description": "Forces the function to take <page>boolean</page>s only",
+        "references": [
+          {
+            "name": "boolean",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FORCE_ANGLE",
         "value": 4,
-        "description": "Forces the function to take <page>Angle</page>s only"
+        "description": "Forces the function to take <page>Angle</page>s only",
+        "references": [
+          {
+            "name": "Angle",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FORCE_COLOR",
         "value": 5,
-        "description": "Forces the function to take <page>Color</page>s only"
+        "description": "Forces the function to take <page>Color</page>s only",
+        "references": [
+          {
+            "name": "Color",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FORCE_VECTOR",
         "value": 6,
-        "description": "Forces the function to take <page>Vector</page>s only"
+        "description": "Forces the function to take <page>Vector</page>s only",
+        "references": [
+          {
+            "name": "Vector",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -9077,7 +9563,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/FORCE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.AccessorFunc",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9144,7 +9636,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/FSASYNC"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "file.AsyncRead",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9214,14 +9712,30 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/FSOLID"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:SetSolidFlags",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetSolidFlags",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "FVPHYSICS_CONSTRAINT_STATIC",
         "value": 2,
-        "description": "Won't receive physics forces from collisions and won't collide with other <page>PhysObj</page> with the same flag set."
+        "description": "Won't receive physics forces from collisions and won't collide with other <page>PhysObj</page> with the same flag set.",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FVPHYSICS_DMG_DISSOLVE",
@@ -9241,7 +9755,13 @@
       {
         "name": "FVPHYSICS_MULTIOBJECT_ENTITY",
         "value": 16,
-        "description": "This <page>PhysObj</page> is part of an entity with multiple <page>PhysObj</page> , such as a ragdoll or a vehicle , and will be considered during collision damage events."
+        "description": "This <page>PhysObj</page> is part of an entity with multiple <page>PhysObj</page> , such as a ragdoll or a vehicle , and will be considered during collision damage events.",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FVPHYSICS_NO_IMPACT_DMG",
@@ -9256,27 +9776,57 @@
       {
         "name": "FVPHYSICS_NO_PLAYER_PICKUP",
         "value": 128,
-        "description": "Doesn't allow the player to pick this <page>PhysObj</page> with the Gravity Gun or +use pickup."
+        "description": "Doesn't allow the player to pick this <page>PhysObj</page> with the Gravity Gun or +use pickup.",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FVPHYSICS_NO_SELF_COLLISIONS",
         "value": 32768,
-        "description": "We won't collide with other <page>PhysObj</page> associated to the same entity, only used for vehicles and ragdolls held by the Super Gravity Gun."
+        "description": "We won't collide with other <page>PhysObj</page> associated to the same entity, only used for vehicles and ragdolls held by the Super Gravity Gun.",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FVPHYSICS_PART_OF_RAGDOLL",
         "value": 8,
-        "description": "This <page>PhysObj</page> is part of a ragdoll."
+        "description": "This <page>PhysObj</page> is part of a ragdoll.",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FVPHYSICS_PENETRATING",
         "value": 64,
-        "description": "Set by the physics engine when two <page>PhysObj</page> are penetrating each other. This is only automatically updated for non-static physics objects."
+        "description": "Set by the physics engine when two <page>PhysObj</page> are penetrating each other. This is only automatically updated for non-static physics objects.",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FVPHYSICS_PLAYER_HELD",
         "value": 4,
-        "description": "Set when the player is holding this <page>PhysObj</page> with the Physics Gun, Gravity Gun or +use pickup."
+        "description": "Set when the player is holding this <page>PhysObj</page> with the Physics Gun, Gravity Gun or +use pickup.",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "FVPHYSICS_WAS_THROWN",
@@ -9294,7 +9844,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/FVPHYSICS"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "PhysObj:AddGameFlag",
+        "resolved": false
+      },
+      {
+        "name": "PhysObj:HasGameFlag",
+        "resolved": false
+      },
+      {
+        "name": "PhysObj:ClearGameFlag",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9342,7 +9906,25 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/GESTURE_SLOT"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Player:AddVCDSequenceToGestureSlot",
+        "resolved": false
+      },
+      {
+        "name": "Player:AnimResetGestureSlot",
+        "resolved": false
+      },
+      {
+        "name": "Player:AnimRestartGesture",
+        "resolved": false
+      },
+      {
+        "name": "Entity:IsValidLayer",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9371,7 +9953,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/GLOBAL"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "game.SetGlobalState",
+        "resolved": false
+      },
+      {
+        "name": "game.GetGlobalState",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9405,7 +9997,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/GMOD_CHANNEL"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "IGModAudioChannel:GetState",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9464,14 +10062,26 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/GOALTYPE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:GetCurGoalType",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "HITGROUP_GENERIC",
         "value": 0,
-        "description": "1:1 damage. Melee weapons and fall damage typically hit this hitgroup.\nThis hitgroup is not present on default player models.\n\nIt is unknown how this is generated in <page>GM:ScalePlayerDamage</page>, but it occurs when shot by NPCs ( npc_combine_s ) for example."
+        "description": "1:1 damage. Melee weapons and fall damage typically hit this hitgroup.\nThis hitgroup is not present on default player models.\n\nIt is unknown how this is generated in <page>GM:ScalePlayerDamage</page>, but it occurs when shot by NPCs ( npc_combine_s ) for example.",
+        "references": [
+          {
+            "name": "GM:ScalePlayerDamage",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "HITGROUP_HEAD",
@@ -9524,7 +10134,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/HITGROUP"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "GM:ScalePlayerDamage",
+        "resolved": false
+      },
+      {
+        "name": "GM:ScaleNPCDamage",
+        "resolved": false
+      },
+      {
+        "name": "Player:LastHitGroup",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9559,7 +10183,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/HUD"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Player:PrintMessage",
+        "resolved": false
+      },
+      {
+        "name": "Global.PrintMessage",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9614,7 +10248,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/HULL"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:SetHullType",
+        "resolved": false
+      },
+      {
+        "name": "NPC:GetHullType",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9678,7 +10322,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/IMAGE_FORMAT"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.GetRenderTargetEx",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9818,7 +10468,93 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/IN"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Enums/BUTTON_CODE",
+        "resolved": false
+      },
+      {
+        "name": "CUserCmd",
+        "resolved": false
+      },
+      {
+        "name": "Player:KeyDown",
+        "resolved": false
+      },
+      {
+        "name": "Player:KeyDownLast",
+        "resolved": false
+      },
+      {
+        "name": "Player:KeyPressed",
+        "resolved": false
+      },
+      {
+        "name": "Player:KeyReleased",
+        "resolved": false
+      },
+      {
+        "name": "CMoveData:AddKey",
+        "resolved": false
+      },
+      {
+        "name": "CMoveData:GetButtons",
+        "resolved": false
+      },
+      {
+        "name": "CMoveData:GetOldButtons",
+        "resolved": false
+      },
+      {
+        "name": "CMoveData:KeyDown",
+        "resolved": false
+      },
+      {
+        "name": "CMoveData:KeyPressed",
+        "resolved": false
+      },
+      {
+        "name": "CMoveData:KeyReleased",
+        "resolved": false
+      },
+      {
+        "name": "CMoveData:KeyWasDown",
+        "resolved": false
+      },
+      {
+        "name": "CMoveData:SetButtons",
+        "resolved": false
+      },
+      {
+        "name": "CMoveData:SetOldButtons",
+        "resolved": false
+      },
+      {
+        "name": "CUserCmd:GetButtons",
+        "resolved": false
+      },
+      {
+        "name": "CUserCmd:KeyDown",
+        "resolved": false
+      },
+      {
+        "name": "CUserCmd:RemoveKey",
+        "resolved": false
+      },
+      {
+        "name": "CUserCmd:SetButtons",
+        "resolved": false
+      },
+      {
+        "name": "GM:KeyPress",
+        "resolved": false
+      },
+      {
+        "name": "GM:KeyRelease",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -9869,7 +10605,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/JOYSTICK"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "input.IsButtonDown",
+        "resolved": false
+      },
+      {
+        "name": "Enums/BUTTON_CODE",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -10222,7 +10968,13 @@
       {
         "name": "KEY_LSHIFT",
         "value": 79,
-        "description": "The left Shift key, has been seen to be triggered by Right Shift in <page>PANEL:OnKeyCodePressed</page>"
+        "description": "The left Shift key, has been seen to be triggered by Right Shift in <page>PANEL:OnKeyCodePressed</page>",
+        "references": [
+          {
+            "name": "PANEL:OnKeyCodePressed",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "KEY_RSHIFT",
@@ -10451,7 +11203,49 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/KEY"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "input.IsKeyDown",
+        "resolved": false
+      },
+      {
+        "name": "input.WasKeyPressed",
+        "resolved": false
+      },
+      {
+        "name": "input.WasKeyReleased",
+        "resolved": false
+      },
+      {
+        "name": "input.WasKeyTyped",
+        "resolved": false
+      },
+      {
+        "name": "input.IsKeyTrapping",
+        "resolved": false
+      },
+      {
+        "name": "input.GetKeyName",
+        "resolved": false
+      },
+      {
+        "name": "input.LookupBinding",
+        "resolved": false
+      },
+      {
+        "name": "PANEL:OnKeyCodePressed",
+        "resolved": false
+      },
+      {
+        "name": "PANEL:OnKeyCodeReleased",
+        "resolved": false
+      },
+      {
+        "name": "Enums/BUTTON_CODE",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -10584,7 +11378,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/kRenderFx"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:SetRenderFX",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetRenderFX",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -10704,7 +11508,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/MASK"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Structures/Trace",
+        "resolved": false
+      },
+      {
+        "name": "Structures/HullTrace",
+        "resolved": false
+      },
+      {
+        "name": "Enums/CONTENTS",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -10834,7 +11652,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/MAT"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Structures/TraceResult",
+        "resolved": false
+      },
+      {
+        "name": "Structures/SurfacePropertyData",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetMaterialType",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -10846,22 +11678,46 @@
       {
         "name": "MATERIAL_LINES",
         "value": 1,
-        "description": "Creates line using 2 vertices.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of line multiply by 2 that the Mesh will contain.\nE.g. `(vertexCount * 2)`\n\nFor more information, see <page text=\"Line Primitives\">mesh_primitives#lines</page>"
+        "description": "Creates line using 2 vertices.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of line multiply by 2 that the Mesh will contain.\nE.g. `(vertexCount * 2)`\n\nFor more information, see <page text=\"Line Primitives\">mesh_primitives#lines</page>",
+        "references": [
+          {
+            "name": "mesh.Begin",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "MATERIAL_TRIANGLES",
         "value": 2,
-        "description": "Creates triangles from groupings of 3 vertices.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of triangles that the Mesh will contain.\nE.g. `(vertexCount / 3)`\n\nFor more information, see <page text=\"Triangle Primitives\">mesh_primitives#triangles</page>"
+        "description": "Creates triangles from groupings of 3 vertices.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of triangles that the Mesh will contain.\nE.g. `(vertexCount / 3)`\n\nFor more information, see <page text=\"Triangle Primitives\">mesh_primitives#triangles</page>",
+        "references": [
+          {
+            "name": "mesh.Begin",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "MATERIAL_TRIANGLE_STRIP",
         "value": 3,
-        "description": "Creates a set of triangles that each share two vertices with the previous triangle in the sequence.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of triangles that the Mesh will contain.\nE.g. `(vertexCount - 2)`\n\nFor more information, see <page text=\"Triangle Strip Primitives\">mesh_primitives#trianglestrips</page>"
+        "description": "Creates a set of triangles that each share two vertices with the previous triangle in the sequence.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of triangles that the Mesh will contain.\nE.g. `(vertexCount - 2)`\n\nFor more information, see <page text=\"Triangle Strip Primitives\">mesh_primitives#trianglestrips</page>",
+        "references": [
+          {
+            "name": "mesh.Begin",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "MATERIAL_LINE_STRIP",
         "value": 4,
-        "description": "Creates a set of lines that all share a single vertex and each share a vertex with the previous lines.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of line connection that the Mesh will contain.\nE.g. `(vertexCount)`\n\nFor more information, see <page text=\"Line Strip Primitives\">mesh_primitives#linestrips</page>"
+        "description": "Creates a set of lines that all share a single vertex and each share a vertex with the previous lines.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of line connection that the Mesh will contain.\nE.g. `(vertexCount)`\n\nFor more information, see <page text=\"Line Strip Primitives\">mesh_primitives#linestrips</page>",
+        "references": [
+          {
+            "name": "mesh.Begin",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "MATERIAL_LINE_LOOP",
@@ -10871,12 +11727,24 @@
       {
         "name": "MATERIAL_POLYGON",
         "value": 6,
-        "description": "Creates a set of triangles that all share a single vertex and each share a vertex with the previous triangle.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of vertices that the Mesh will contain.\nE.g. `(vertexCount)`\n\nFor more information, see <page text=\"Polygon Primitives\">mesh_primitives#polygons</page>"
+        "description": "Creates a set of triangles that all share a single vertex and each share a vertex with the previous triangle.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of vertices that the Mesh will contain.\nE.g. `(vertexCount)`\n\nFor more information, see <page text=\"Polygon Primitives\">mesh_primitives#polygons</page>",
+        "references": [
+          {
+            "name": "mesh.Begin",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "MATERIAL_QUADS",
         "value": 7,
-        "description": "Creates pairs of triangles that share two vertices.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of quads that the Mesh will contain.\nE.g. `(vertexCount / 4)`\n\nFor more information, see <page text=\"Quad Primitives\">mesh_primitives#quads</page>"
+        "description": "Creates pairs of triangles that share two vertices.\n\nThe `primitiveCount` argument of <page>mesh.Begin</page> should be the total number of quads that the Mesh will contain.\nE.g. `(vertexCount / 4)`\n\nFor more information, see <page text=\"Quad Primitives\">mesh_primitives#quads</page>",
+        "references": [
+          {
+            "name": "mesh.Begin",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -10888,7 +11756,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/MATERIAL"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "mesh.Begin",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -10917,7 +11791,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/MATERIAL_CULLMODE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.CullMode",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -10934,7 +11814,13 @@
       {
         "name": "MATERIAL_FOG_LINEAR_BELOW_FOG_Z",
         "value": 2,
-        "description": "For use in conjunction with <page>render.SetFogZ</page>. Does not work if start distance is bigger than end distance. Ignores density setting. Seems to be broken? Used for underwater fog by the engine."
+        "description": "For use in conjunction with <page>render.SetFogZ</page>. Does not work if start distance is bigger than end distance. Ignores density setting. Seems to be broken? Used for underwater fog by the engine.",
+        "references": [
+          {
+            "name": "render.SetFogZ",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -10946,7 +11832,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/MATERIAL_FOG"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.GetFogMode",
+        "resolved": false
+      },
+      {
+        "name": "render.FogMode",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -10980,7 +11876,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/MATERIAL_LIGHT"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.SetLocalModelLights",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11014,7 +11916,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/MATERIAL_RT_DEPTH"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.GetRenderTargetEx",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11080,7 +11988,25 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/MOUSE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "input.IsMouseDown",
+        "resolved": false
+      },
+      {
+        "name": "input.WasMousePressed",
+        "resolved": false
+      },
+      {
+        "name": "input.WasMouseDoublePressed",
+        "resolved": false
+      },
+      {
+        "name": "Enums/BUTTON_CODE",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11097,7 +12023,13 @@
       {
         "name": "MOVECOLLIDE_FLY_CUSTOM",
         "value": 2,
-        "description": "<page>ENTITY:ResolveCustomFlyCollision</page> will modify the velocity however it likes"
+        "description": "<page>ENTITY:ResolveCustomFlyCollision</page> will modify the velocity however it likes",
+        "references": [
+          {
+            "name": "ENTITY:ResolveCustomFlyCollision",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "MOVECOLLIDE_FLY_SLIDE",
@@ -11120,7 +12052,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/MOVECOLLIDE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:SetMoveCollide",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetMoveCollide",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11162,7 +12104,21 @@
       {
         "name": "MOVETYPE_PUSH",
         "value": 7,
-        "description": "Doesn't collide with the world, but does push and crush entities.\nThis is what is used by the engine for elevators, trains, doors, moving water, etc.\n\nIn order to work properly, the entity needs to have specific Save Values/Internal Variables set which tell it how long it should be moving for.\n\n**Note:** This same process can be done for both position and angle.\n\n1. You'll need to <page text=\"Get an existing Save Value\">Entity:GetInternalVariable</page> called `ltime`\n2. Calculate how long (in seconds) the entity will be moving before it reaches its destination.\nAs a simple example, this can be done via `duration = distance / speed`\n3. <page text=\"Set the Save Value\">Entity:SetSaveValue</page> for `m_flMoveDoneTime` to the value you retrieved for `ltime` plus the duration calculated in step 2.\nPut more simply: `m_flMoveDoneTime = ltime + duration`\n4. Set the entity's velocity to move it to the destination at the speed used in step 2.\n\nOnce the duration of the move has elapsed, the entity will stop moving.  If you have done your calculations correctly, it should stop exactly at the desired destination.\n\n<note>\nMOVETYPE_PUSH entities only move during <page>Entity:Think</page> so if you want smooth movement, you need to set <page>Entity:NextThink</page> to <page>Global.CurTime</page>, which instructs the entity to execute <page>Entity:Think</page> as quickly as possible.\n</note>"
+        "description": "Doesn't collide with the world, but does push and crush entities.\nThis is what is used by the engine for elevators, trains, doors, moving water, etc.\n\nIn order to work properly, the entity needs to have specific Save Values/Internal Variables set which tell it how long it should be moving for.\n\n**Note:** This same process can be done for both position and angle.\n\n1. You'll need to <page text=\"Get an existing Save Value\">Entity:GetInternalVariable</page> called `ltime`\n2. Calculate how long (in seconds) the entity will be moving before it reaches its destination.\nAs a simple example, this can be done via `duration = distance / speed`\n3. <page text=\"Set the Save Value\">Entity:SetSaveValue</page> for `m_flMoveDoneTime` to the value you retrieved for `ltime` plus the duration calculated in step 2.\nPut more simply: `m_flMoveDoneTime = ltime + duration`\n4. Set the entity's velocity to move it to the destination at the speed used in step 2.\n\nOnce the duration of the move has elapsed, the entity will stop moving.  If you have done your calculations correctly, it should stop exactly at the desired destination.\n\n<note>\nMOVETYPE_PUSH entities only move during <page>Entity:Think</page> so if you want smooth movement, you need to set <page>Entity:NextThink</page> to <page>Global.CurTime</page>, which instructs the entity to execute <page>Entity:Think</page> as quickly as possible.\n</note>",
+        "references": [
+          {
+            "name": "Entity:Think",
+            "resolved": false
+          },
+          {
+            "name": "Entity:NextThink",
+            "resolved": false
+          },
+          {
+            "name": "Global.CurTime",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "MOVETYPE_NOCLIP",
@@ -11195,7 +12151,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/MOVETYPE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:SetMoveType",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetMoveType",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11234,7 +12200,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/NAV"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:SetNavType",
+        "resolved": false
+      },
+      {
+        "name": "NPC:GetNavType",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11326,7 +12302,13 @@
       {
         "name": "NAV_MESH_BLOCKED_LUA",
         "value": 65536,
-        "description": "Whether the area is blocked via <page>CNavArea:MarkAsBlocked</page>."
+        "description": "Whether the area is blocked via <page>CNavArea:MarkAsBlocked</page>.",
+        "references": [
+          {
+            "name": "CNavArea:MarkAsBlocked",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "NAV_MESH_BLOCKED_PROPDOOR",
@@ -11358,7 +12340,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/NAV_MESH"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "CNavArea:GetAttributes",
+        "resolved": false
+      },
+      {
+        "name": "CNavArea:HasAttributes",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11385,7 +12377,13 @@
       {
         "name": "NUM_CORNERS",
         "value": 4,
-        "description": "Represents all corners, only applicable to certain functions, such as <page>CNavArea:PlaceOnGround</page>."
+        "description": "Represents all corners, only applicable to certain functions, such as <page>CNavArea:PlaceOnGround</page>.",
+        "references": [
+          {
+            "name": "CNavArea:PlaceOnGround",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -11397,29 +12395,59 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/NavCorner"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "CNavArea",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "NORTH",
         "value": 0,
-        "description": "North from given <page>CNavArea</page>"
+        "description": "North from given <page>CNavArea</page>",
+        "references": [
+          {
+            "name": "CNavArea",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "EAST",
         "value": 1,
-        "description": "East from given <page>CNavArea</page>"
+        "description": "East from given <page>CNavArea</page>",
+        "references": [
+          {
+            "name": "CNavArea",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SOUTH",
         "value": 2,
-        "description": "South from given <page>CNavArea</page>"
+        "description": "South from given <page>CNavArea</page>",
+        "references": [
+          {
+            "name": "CNavArea",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "WEST",
         "value": 3,
-        "description": "West from given <page>CNavArea</page>"
+        "description": "West from given <page>CNavArea</page>",
+        "references": [
+          {
+            "name": "CNavArea",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -11431,7 +12459,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/NavDir"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "CNavArea",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11481,7 +12515,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/NavTraverseType"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "CNavArea:GetParentHow",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11521,7 +12561,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/NOTIFY"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "notification.AddLegacy",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11580,19 +12626,41 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/NPC_STATE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:SetNPCState",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "NUM_AI_CLASSES",
         "value": 36,
-        "description": "Amount of <page>Enums/CLASS</page>. Used by <page>Global.Add_NPC_Class</page>."
+        "description": "Amount of <page>Enums/CLASS</page>. Used by <page>Global.Add_NPC_Class</page>.",
+        "references": [
+          {
+            "name": "Enums/CLASS",
+            "resolved": false
+          },
+          {
+            "name": "Global.Add_NPC_Class",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "NUM_HULLS",
         "value": 10,
-        "description": "Amount of <page>Enums/HULL</page>."
+        "description": "Amount of <page>Enums/HULL</page>.",
+        "references": [
+          {
+            "name": "Enums/HULL",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -11641,7 +12709,13 @@
       {
         "name": "OBS_MODE_ROAMING",
         "value": 6,
-        "description": "Free roam/noclip-alike. Does not work from <page>GM:PlayerDeath</page>"
+        "description": "Free roam/noclip-alike. Does not work from <page>GM:PlayerDeath</page>",
+        "references": [
+          {
+            "name": "GM:PlayerDeath",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -11654,7 +12728,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/OBS_MODE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Player:SetObserverMode",
+        "resolved": false
+      },
+      {
+        "name": "Player:GetObserverMode",
+        "resolved": false
+      },
+      {
+        "name": "Player:Spectate",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11676,12 +12764,24 @@
       {
         "name": "PATTACH_POINT",
         "value": 3,
-        "description": "Particle attaches to passed to <page>Global.ParticleEffectAttach</page> attachment id, but does not follow the entity"
+        "description": "Particle attaches to passed to <page>Global.ParticleEffectAttach</page> attachment id, but does not follow the entity",
+        "references": [
+          {
+            "name": "Global.ParticleEffectAttach",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "PATTACH_POINT_FOLLOW",
         "value": 4,
-        "description": "Particle attaches to passed to <page>Global.ParticleEffectAttach</page> attachment id and follows the entity"
+        "description": "Particle attaches to passed to <page>Global.ParticleEffectAttach</page> attachment id and follows the entity",
+        "references": [
+          {
+            "name": "Global.ParticleEffectAttach",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "PATTACH_WORLDORIGIN",
@@ -11699,7 +12799,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/PATTACH"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.ParticleEffectAttach",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11756,7 +12862,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/PLAYER"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:SetAnimation",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11882,7 +12994,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/PLAYERANIMEVENT"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "GM:DoAnimationEvent",
+        "resolved": false
+      },
+      {
+        "name": "Player:DoCustomAnimEvent",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11904,17 +13026,39 @@
       {
         "name": "RENDERGROUP_OPAQUE",
         "value": 7,
-        "description": "For non transparent/solid entities.\n\n\nFor scripted entities, this will have <page>ENTITY:Draw</page> called"
+        "description": "For non transparent/solid entities.\n\n\nFor scripted entities, this will have <page>ENTITY:Draw</page> called",
+        "references": [
+          {
+            "name": "ENTITY:Draw",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "RENDERGROUP_TRANSLUCENT",
         "value": 8,
-        "description": "For translucent/transparent entities\n\n\nFor scripted entities, this will have <page>ENTITY:DrawTranslucent</page> called"
+        "description": "For translucent/transparent entities\n\n\nFor scripted entities, this will have <page>ENTITY:DrawTranslucent</page> called",
+        "references": [
+          {
+            "name": "ENTITY:DrawTranslucent",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "RENDERGROUP_BOTH",
         "value": 9,
-        "description": "For both translucent/transparent and opaque/solid anim entities\n\n\nFor scripted entities, this will have both, <page>ENTITY:Draw</page> and <page>ENTITY:DrawTranslucent</page> called"
+        "description": "For both translucent/transparent and opaque/solid anim entities\n\n\nFor scripted entities, this will have both, <page>ENTITY:Draw</page> and <page>ENTITY:DrawTranslucent</page> called",
+        "references": [
+          {
+            "name": "ENTITY:Draw",
+            "resolved": false
+          },
+          {
+            "name": "ENTITY:DrawTranslucent",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "RENDERGROUP_VIEWMODEL",
@@ -11947,7 +13091,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/RENDERGROUP"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.ClientsideModel",
+        "resolved": false
+      },
+      {
+        "name": "Structures/ENT",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetRenderGroup",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -11959,7 +13117,13 @@
       {
         "name": "RENDERMODE_TRANSCOLOR",
         "value": 1,
-        "description": "Supports transparency.\n\nUse this to make alpha of <page>Global.Color</page> work for your entity. For players, it must be set for their active weapon aswell."
+        "description": "Supports transparency.\n\nUse this to make alpha of <page>Global.Color</page> work for your entity. For players, it must be set for their active weapon aswell.",
+        "references": [
+          {
+            "name": "Global.Color",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "RENDERMODE_TRANSTEXTURE",
@@ -12016,7 +13180,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/RENDERMODE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:SetRenderMode",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetRenderMode",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -12080,7 +13254,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/RT_SIZE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.GetRenderTargetEx",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -12507,7 +13687,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/SCHED"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "ENTITY:StartEngineSchedule",
+        "resolved": false
+      },
+      {
+        "name": "ENTITY:TranslateSchedule",
+        "resolved": false
+      },
+      {
+        "name": "NPC:SetSchedule",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -12552,7 +13746,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/SCREENFADE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Player:ScreenFade",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -12769,7 +13969,13 @@
       {
         "name": "SF_PHYSBOX_MOTIONDISABLED",
         "value": 32768,
-        "description": "If set, calls <page>PhysObj:EnableMotion</page>( false ) on the func_physbox when the physics are created"
+        "description": "If set, calls <page>PhysObj:EnableMotion</page>( false ) on the func_physbox when the physics are created",
+        "references": [
+          {
+            "name": "PhysObj:EnableMotion",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SF_PHYSBOX_ALWAYS_PICK_UP",
@@ -12789,7 +13995,13 @@
       {
         "name": "SF_PHYSPROP_MOTIONDISABLED",
         "value": 8,
-        "description": "If set, calls <page>PhysObj:EnableMotion</page>( false ) on the func_physbox when the physics are created. See [Physics optimization](https://developer.valvesoftware.com/wiki/Physics_optimization)."
+        "description": "If set, calls <page>PhysObj:EnableMotion</page>( false ) on the func_physbox when the physics are created. See [Physics optimization](https://developer.valvesoftware.com/wiki/Physics_optimization).",
+        "references": [
+          {
+            "name": "PhysObj:EnableMotion",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SF_PHYSPROP_PREVENT_PICKUP",
@@ -12809,7 +14021,13 @@
       {
         "name": "SF_WEAPON_START_CONSTRAINED",
         "value": 1,
-        "description": "If set before <page>Entity:Spawn</page>, the weapon will be constrained and will not simply fall to the ground."
+        "description": "If set before <page>Entity:Spawn</page>, the weapon will be constrained and will not simply fall to the ground.",
+        "references": [
+          {
+            "name": "Entity:Spawn",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SF_WEAPON_NO_PLAYER_PICKUP",
@@ -12831,7 +14049,25 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/SF"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:SetKeyValue",
+        "resolved": false
+      },
+      {
+        "name": "Entity:SetSpawnFlags",
+        "resolved": false
+      },
+      {
+        "name": "Entity:AddSpawnFlags",
+        "resolved": false
+      },
+      {
+        "name": "Entity:RemoveSpawnFlags",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -12878,7 +14114,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/SIGNONSTATE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "GM:ClientSignOnStateChanged",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -12918,7 +14160,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/SIM"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "ENTITY:PhysicsSimulate",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -12940,7 +14188,13 @@
       {
         "name": "SND_STOP",
         "value": 4,
-        "description": "Stop the sound. Used internally for <page>Entity:StopSound</page>."
+        "description": "Stop the sound. Used internally for <page>Entity:StopSound</page>.",
+        "references": [
+          {
+            "name": "Entity:StopSound",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SND_SPAWNING",
@@ -12988,7 +14242,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/SND"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.EmitSound",
+        "resolved": false
+      },
+      {
+        "name": "Entity:EmitSound",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13147,14 +14411,30 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/SNDLVL"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.EmitSound",
+        "resolved": false
+      },
+      {
+        "name": "Entity:EmitSound",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
       {
         "name": "SOLID_NONE",
         "value": 0,
-        "description": "Does not collide with anything.\n<note>No physics object will be created when using this with <page>Entity:PhysicsInit</page>.</note>"
+        "description": "Does not collide with anything.\n<note>No physics object will be created when using this with <page>Entity:PhysicsInit</page>.</note>",
+        "references": [
+          {
+            "name": "Entity:PhysicsInit",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SOLID_BSP",
@@ -13179,12 +14459,24 @@
       {
         "name": "SOLID_CUSTOM",
         "value": 5,
-        "description": "Always call the entity's `ICollideable::TestCollision` method for traces regardless of the presence of `FSOLID_CUSTOMRAYTEST` or `FSOLID_CUSTOMBOXTEST`. This will only be called back to Lua as <page>ENTITY:TestCollision</page> for `\"anim\"` type SENTs."
+        "description": "Always call the entity's `ICollideable::TestCollision` method for traces regardless of the presence of `FSOLID_CUSTOMRAYTEST` or `FSOLID_CUSTOMBOXTEST`. This will only be called back to Lua as <page>ENTITY:TestCollision</page> for `\"anim\"` type SENTs.",
+        "references": [
+          {
+            "name": "ENTITY:TestCollision",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SOLID_VPHYSICS",
         "value": 6,
-        "description": "Uses the <page>PhysObj</page>ects of the entity."
+        "description": "Uses the <page>PhysObj</page>ects of the entity.",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -13197,7 +14489,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/SOLID"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:PhysicsInit",
+        "resolved": false
+      },
+      {
+        "name": "Entity:SetSolid",
+        "resolved": false
+      },
+      {
+        "name": "Entity:GetSolid",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13340,7 +14646,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/SOUND"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "sound.EmitHint",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13397,7 +14709,13 @@
       {
         "name": "STENCIL_REPLACE",
         "value": 3,
-        "description": "Sets the value in the stencil buffer to the reference value, set using <page>render.SetStencilReferenceValue</page>."
+        "description": "Sets the value in the stencil buffer to the reference value, set using <page>render.SetStencilReferenceValue</page>.",
+        "references": [
+          {
+            "name": "render.SetStencilReferenceValue",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "STENCIL_INCRSAT",
@@ -13434,7 +14752,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/STENCIL"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.SetStencilCompareFunction",
+        "resolved": false
+      },
+      {
+        "name": "render.SetStencilReferenceValue",
+        "resolved": false
+      },
+      {
+        "name": "Enums/STENCILCOMPARISONFUNCTION",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13488,7 +14820,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/STENCILCOMPARISONFUNCTION"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.SetStencilCompareFunction",
+        "resolved": false
+      },
+      {
+        "name": "render.SetStencilReferenceValue",
+        "resolved": false
+      },
+      {
+        "name": "Enums/STENCIL",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13505,7 +14851,13 @@
       {
         "name": "STENCILOPERATION_REPLACE",
         "value": 3,
-        "description": "Sets the value in the stencil buffer to the reference value, set using <page>render.SetStencilReferenceValue</page>."
+        "description": "Sets the value in the stencil buffer to the reference value, set using <page>render.SetStencilReferenceValue</page>.",
+        "references": [
+          {
+            "name": "render.SetStencilReferenceValue",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "STENCILOPERATION_INCRSAT",
@@ -13542,7 +14894,25 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/STENCILOPERATION"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.SetStencilPassOperation",
+        "resolved": false
+      },
+      {
+        "name": "render.SetStencilFailOperation",
+        "resolved": false
+      },
+      {
+        "name": "render.SetStencilZFailOperation",
+        "resolved": false
+      },
+      {
+        "name": "Enums/STENCIL",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13577,7 +14947,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/STEPSOUNDTIME"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "GM:PlayerStepSoundTime",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13643,7 +15019,13 @@
       {
         "name": "STUDIO_SKIP_FLEXES",
         "value": 1024,
-        "description": "Do not update/apply flexes. (<page>Entity:SetFlexWeight</page>)"
+        "description": "Do not update/apply flexes. (<page>Entity:SetFlexWeight</page>)",
+        "references": [
+          {
+            "name": "Entity:SetFlexWeight",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "STUDIO_SKIP_DECALS",
@@ -13660,7 +15042,57 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/STUDIO"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Entity:DrawModel",
+        "resolved": false
+      },
+      {
+        "name": "ENTITY:Draw",
+        "resolved": false
+      },
+      {
+        "name": "ENTITY:DrawTranslucent",
+        "resolved": false
+      },
+      {
+        "name": "WEAPON:PreDrawViewModel",
+        "resolved": false
+      },
+      {
+        "name": "WEAPON:PostDrawViewModel",
+        "resolved": false
+      },
+      {
+        "name": "WEAPON:ViewModelDrawn",
+        "resolved": false
+      },
+      {
+        "name": "GM:PreDrawPlayerHands",
+        "resolved": false
+      },
+      {
+        "name": "GM:PostDrawPlayerHands",
+        "resolved": false
+      },
+      {
+        "name": "GM:PreDrawViewModel",
+        "resolved": false
+      },
+      {
+        "name": "GM:PostDrawViewModel",
+        "resolved": false
+      },
+      {
+        "name": "GM:PrePlayerDraw",
+        "resolved": false
+      },
+      {
+        "name": "GM:PostPlayerDraw",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13677,7 +15109,13 @@
       {
         "name": "SURF_SKY",
         "value": 4,
-        "description": "This surface is a skybox, equivalent to HitSky in <page>Structures/TraceResult</page>"
+        "description": "This surface is a skybox, equivalent to HitSky in <page>Structures/TraceResult</page>",
+        "references": [
+          {
+            "name": "Structures/TraceResult",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SURF_WARP",
@@ -13702,7 +15140,13 @@
       {
         "name": "SURF_NODRAW",
         "value": 128,
-        "description": "This surface is an invisible entity, equivalent to HitNoDraw in <page>Structures/TraceResult</page>"
+        "description": "This surface is an invisible entity, equivalent to HitNoDraw in <page>Structures/TraceResult</page>",
+        "references": [
+          {
+            "name": "Structures/TraceResult",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "SURF_HINT",
@@ -13755,7 +15199,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/SURF"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Structures/TraceResult",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13794,7 +15244,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/TASKSTATUS"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:GetTaskStatus",
+        "resolved": false
+      },
+      {
+        "name": "NPC:SetTaskStatus",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13824,7 +15284,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/TEAM"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Player:Team",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13860,7 +15326,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/TEXFILTER"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.PushFilterMin",
+        "resolved": false
+      },
+      {
+        "name": "render.PushFilterMag",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13900,7 +15376,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/TEXT_ALIGN"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "draw.SimpleText",
+        "resolved": false
+      },
+      {
+        "name": "draw.DrawText",
+        "resolved": false
+      },
+      {
+        "name": "Structures/TextData",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -13934,7 +15424,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/TEXT_FILTER"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "util.FilterText",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -14103,7 +15599,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/TEXTUREFLAGS"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Global.GetRenderTargetEx",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -14143,7 +15645,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/TRACER"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "Structures/AmmoData",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -14173,7 +15681,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/TRANSMIT"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "ENTITY:UpdateTransmitState",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -14190,12 +15704,24 @@
       {
         "name": "TYPE_NIL",
         "value": 0,
-        "description": "<page>nil</page>"
+        "description": "<page>nil</page>",
+        "references": [
+          {
+            "name": "nil",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_BOOL",
         "value": 1,
-        "description": "<page>boolean</page>"
+        "description": "<page>boolean</page>",
+        "references": [
+          {
+            "name": "boolean",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_LIGHTUSERDATA",
@@ -14205,87 +15731,218 @@
       {
         "name": "TYPE_NUMBER",
         "value": 3,
-        "description": "<page>number</page>"
+        "description": "<page>number</page>",
+        "references": [
+          {
+            "name": "number",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_STRING",
         "value": 4,
-        "description": "<page>string</page>"
+        "description": "<page>string</page>",
+        "references": [
+          {
+            "name": "string",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_TABLE",
         "value": 5,
-        "description": "<page>table</page>"
+        "description": "<page>table</page>",
+        "references": [
+          {
+            "name": "table",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_FUNCTION",
         "value": 6,
-        "description": "<page>function</page>"
+        "description": "<page>function</page>",
+        "references": [
+          {
+            "name": "function",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_USERDATA",
         "value": 7,
-        "description": "<page>userdata</page>"
+        "description": "<page>userdata</page>",
+        "references": [
+          {
+            "name": "userdata",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_THREAD",
         "value": 8,
-        "description": "<page>thread</page>"
+        "description": "<page>thread</page>",
+        "references": [
+          {
+            "name": "thread",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_ENTITY",
         "value": 9,
-        "description": "<page>Entity</page> and entity sub-classes including <page>Player</page>, <page>Weapon</page>, <page>NPC</page>, <page>Vehicle</page>, <page>CSEnt</page>, and <page>NextBot</page>"
+        "description": "<page>Entity</page> and entity sub-classes including <page>Player</page>, <page>Weapon</page>, <page>NPC</page>, <page>Vehicle</page>, <page>CSEnt</page>, and <page>NextBot</page>",
+        "references": [
+          {
+            "name": "Entity",
+            "resolved": false
+          },
+          {
+            "name": "PLAYER",
+            "canonicalName": "PLAYER",
+            "resolved": true,
+            "id": "enum:PLAYER",
+            "documentationURLs": [
+              "https://wiki.facepunch.com/gmod/ENUMS/PLAYER"
+            ]
+          },
+          {
+            "name": "Weapon",
+            "resolved": false
+          },
+          {
+            "name": "NPC",
+            "resolved": false
+          },
+          {
+            "name": "Vehicle",
+            "resolved": false
+          },
+          {
+            "name": "CSEnt",
+            "resolved": false
+          },
+          {
+            "name": "NextBot",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_VECTOR",
         "value": 10,
-        "description": "<page>Vector</page>"
+        "description": "<page>Vector</page>",
+        "references": [
+          {
+            "name": "Vector",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_ANGLE",
         "value": 11,
-        "description": "<page>Angle</page>"
+        "description": "<page>Angle</page>",
+        "references": [
+          {
+            "name": "Angle",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_PHYSOBJ",
         "value": 12,
-        "description": "<page>PhysObj</page>"
+        "description": "<page>PhysObj</page>",
+        "references": [
+          {
+            "name": "PhysObj",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_SAVE",
         "value": 13,
-        "description": "<page>ISave</page>"
+        "description": "<page>ISave</page>",
+        "references": [
+          {
+            "name": "ISave",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_RESTORE",
         "value": 14,
-        "description": "<page>IRestore</page>"
+        "description": "<page>IRestore</page>",
+        "references": [
+          {
+            "name": "IRestore",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_DAMAGEINFO",
         "value": 15,
-        "description": "<page>CTakeDamageInfo</page>"
+        "description": "<page>CTakeDamageInfo</page>",
+        "references": [
+          {
+            "name": "CTakeDamageInfo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_EFFECTDATA",
         "value": 16,
-        "description": "<page>CEffectData</page>"
+        "description": "<page>CEffectData</page>",
+        "references": [
+          {
+            "name": "CEffectData",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_MOVEDATA",
         "value": 17,
-        "description": "<page>CMoveData</page>"
+        "description": "<page>CMoveData</page>",
+        "references": [
+          {
+            "name": "CMoveData",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_RECIPIENTFILTER",
         "value": 18,
-        "description": "<page>CRecipientFilter</page>"
+        "description": "<page>CRecipientFilter</page>",
+        "references": [
+          {
+            "name": "CRecipientFilter",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_USERCMD",
         "value": 19,
-        "description": "<page>CUserCmd</page>"
+        "description": "<page>CUserCmd</page>",
+        "references": [
+          {
+            "name": "CUserCmd",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_SCRIPTEDVEHICLE",
@@ -14295,117 +15952,255 @@
       {
         "name": "TYPE_MATERIAL",
         "value": 21,
-        "description": "<page>IMaterial</page>"
+        "description": "<page>IMaterial</page>",
+        "references": [
+          {
+            "name": "IMaterial",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_PANEL",
         "value": 22,
-        "description": "<page>Panel</page>"
+        "description": "<page>Panel</page>",
+        "references": [
+          {
+            "name": "Panel",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_PARTICLE",
         "value": 23,
-        "description": "<page>CLuaParticle</page>"
+        "description": "<page>CLuaParticle</page>",
+        "references": [
+          {
+            "name": "CLuaParticle",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_PARTICLEEMITTER",
         "value": 24,
-        "description": "<page>CLuaEmitter</page>"
+        "description": "<page>CLuaEmitter</page>",
+        "references": [
+          {
+            "name": "CLuaEmitter",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_TEXTURE",
         "value": 25,
-        "description": "<page>ITexture</page>"
+        "description": "<page>ITexture</page>",
+        "references": [
+          {
+            "name": "ITexture",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_USERMSG",
         "value": 26,
-        "description": "<page>bf_read</page>"
+        "description": "<page>bf_read</page>",
+        "references": [
+          {
+            "name": "bf_read",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_CONVAR",
         "value": 27,
-        "description": "<page>ConVar</page>"
+        "description": "<page>ConVar</page>",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_IMESH",
         "value": 28,
-        "description": "<page>IMesh</page>"
+        "description": "<page>IMesh</page>",
+        "references": [
+          {
+            "name": "IMesh",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_MATRIX",
         "value": 29,
-        "description": "<page>VMatrix</page>"
+        "description": "<page>VMatrix</page>",
+        "references": [
+          {
+            "name": "VMatrix",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_SOUND",
         "value": 30,
-        "description": "<page>CSoundPatch</page>"
+        "description": "<page>CSoundPatch</page>",
+        "references": [
+          {
+            "name": "CSoundPatch",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_PIXELVISHANDLE",
         "value": 31,
-        "description": "<page>pixelvis_handle_t</page>"
+        "description": "<page>pixelvis_handle_t</page>",
+        "references": [
+          {
+            "name": "pixelvis_handle_t",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_DLIGHT",
         "value": 32,
-        "description": "dlight_t. Metatable of a <page>Structures/DynamicLight</page>"
+        "description": "dlight_t. Metatable of a <page>Structures/DynamicLight</page>",
+        "references": [
+          {
+            "name": "Structures/DynamicLight",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_VIDEO",
         "value": 33,
-        "description": "<page>IVideoWriter</page>"
+        "description": "<page>IVideoWriter</page>",
+        "references": [
+          {
+            "name": "IVideoWriter",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_FILE",
         "value": 34,
-        "description": "<page>File</page>"
+        "description": "<page>File</page>",
+        "references": [
+          {
+            "name": "File",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_LOCOMOTION",
         "value": 35,
-        "description": "<page>CLuaLocomotion</page>"
+        "description": "<page>CLuaLocomotion</page>",
+        "references": [
+          {
+            "name": "CLuaLocomotion",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_PATH",
         "value": 36,
-        "description": "<page>PathFollower</page>"
+        "description": "<page>PathFollower</page>",
+        "references": [
+          {
+            "name": "PathFollower",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_NAVAREA",
         "value": 37,
-        "description": "<page>CNavArea</page>"
+        "description": "<page>CNavArea</page>",
+        "references": [
+          {
+            "name": "CNavArea",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_SOUNDHANDLE",
         "value": 38,
-        "description": "<page>IGModAudioChannel</page>"
+        "description": "<page>IGModAudioChannel</page>",
+        "references": [
+          {
+            "name": "IGModAudioChannel",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_NAVLADDER",
         "value": 39,
-        "description": "<page>CNavLadder</page>"
+        "description": "<page>CNavLadder</page>",
+        "references": [
+          {
+            "name": "CNavLadder",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_PARTICLESYSTEM",
         "value": 40,
-        "description": "<page>CNewParticleEffect</page>"
+        "description": "<page>CNewParticleEffect</page>",
+        "references": [
+          {
+            "name": "CNewParticleEffect",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_PROJECTEDTEXTURE",
         "value": 41,
-        "description": "<page>ProjectedTexture</page>"
+        "description": "<page>ProjectedTexture</page>",
+        "references": [
+          {
+            "name": "ProjectedTexture",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_PHYSCOLLIDE",
         "value": 42,
-        "description": "<page>PhysCollide</page>"
+        "description": "<page>PhysCollide</page>",
+        "references": [
+          {
+            "name": "PhysCollide",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_SURFACEINFO",
         "value": 43,
-        "description": "<page>SurfaceInfo</page>"
+        "description": "<page>SurfaceInfo</page>",
+        "references": [
+          {
+            "name": "SurfaceInfo",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "TYPE_COUNT",
@@ -14415,7 +16210,21 @@
       {
         "name": "TYPE_COLOR",
         "value": 255,
-        "description": "Metatable of a <page>Color</page>.\n\n<note>This doesn't actually represent a unique type returned by <page>Global.TypeID</page>, but instead is a hack for networking colors with <page>net.WriteType</page>.</note>"
+        "description": "Metatable of a <page>Color</page>.\n\n<note>This doesn't actually represent a unique type returned by <page>Global.TypeID</page>, but instead is a hack for networking colors with <page>net.WriteType</page>.</note>",
+        "references": [
+          {
+            "name": "Color",
+            "resolved": false
+          },
+          {
+            "name": "Global.TypeID",
+            "resolved": false
+          },
+          {
+            "name": "net.WriteType",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -14429,7 +16238,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/TYPE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "net.ReadType",
+        "resolved": false
+      },
+      {
+        "name": "Global.TypeID",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -14460,7 +16279,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/USE"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "ENTITY:Use",
+        "resolved": false
+      },
+      {
+        "name": "Enums/_USE",
+        "resolved": false
+      },
+      {
+        "name": "Entity:SetUseType",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -14502,12 +16335,24 @@
       {
         "name": "VIEW_SHADOW_DEPTH_TEXTURE",
         "value": 7,
-        "description": "Internally used for <page>Global.ProjectedTexture</page> and flashlight."
+        "description": "Internally used for <page>Global.ProjectedTexture</page> and flashlight.",
+        "references": [
+          {
+            "name": "Global.ProjectedTexture",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "VIEW_SSAO",
         "value": 8,
-        "description": "For SSAO depth. Can be accessed via <page>render.GetResolvedFullFrameDepth</page>."
+        "description": "For SSAO depth. Can be accessed via <page>render.GetResolvedFullFrameDepth</page>.",
+        "references": [
+          {
+            "name": "render.GetResolvedFullFrameDepth",
+            "resolved": false
+          }
+        ]
       }
     ],
     "realms": [
@@ -14519,7 +16364,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/VIEW"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "render.RenderView",
+        "resolved": false
+      },
+      {
+        "name": "Structures/ViewData",
+        "resolved": false
+      }
+    ]
   },
   {
     "fields": [
@@ -14559,6 +16414,16 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/ENUMS/WEAPON_PROFICIENCY"
     ],
-    "retrievalDate": "2026-10-09T14:14:30.379Z"
+    "retrievalDate": "2026-10-09T14:14:30.379Z",
+    "references": [
+      {
+        "name": "NPC:SetCurrentWeaponProficiency",
+        "resolved": false
+      },
+      {
+        "name": "NPC:GetCurrentWeaponProficiency",
+        "resolved": false
+      }
+    ]
   }
 ]

@@ -33,7 +33,13 @@
         "name": "force",
         "type": "number{FORCE}",
         "default": "nil",
-        "description": "The type the setter should force to (uses <page>Enums/FORCE</page>)."
+        "description": "The type the setter should force to (uses <page>Enums/FORCE</page>).",
+        "references": [
+          {
+            "name": "Enums/FORCE",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "AccessorFunc",
@@ -67,7 +73,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Add_NPC_Class"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Enums/CLASS",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "AddBackgroundImage",
@@ -117,14 +129,30 @@
       {
         "name": "flags",
         "type": "number{FCVAR}",
-        "description": "Concommand flags using <page>Enums/FCVAR</page>."
+        "description": "Concommand flags using <page>Enums/FCVAR</page>.",
+        "references": [
+          {
+            "name": "Enums/FCVAR",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "AddConsoleCommand",
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.AddConsoleCommand"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "concommand.Add",
+        "resolved": false
+      },
+      {
+        "name": "concommand.Run",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "AddCSLuaFile",
@@ -139,7 +167,13 @@
         "name": "file",
         "type": "string",
         "default": "current file",
-        "description": "The name/path to the Lua file that should be sent, **relative to the garrysmod/lua folder**. If no parameter is specified, it sends the current file.\n\nThe file path can be relative to the script it's ran from. For example, if your script is in `lua/myfolder/stuff.lua`, calling <page>Global.AddCSLuaFile</page>(\"otherstuff.lua\") and <page>Global.AddCSLuaFile</page>(\"myfolder/otherstuff.lua\") is the same thing.\n\n<note>Please make sure your file names are unique, the filesystem is shared across all addons, so a file named `lua/config.lua` in your addon may be overwritten by the same file in another addon.</note>"
+        "description": "The name/path to the Lua file that should be sent, **relative to the garrysmod/lua folder**. If no parameter is specified, it sends the current file.\n\nThe file path can be relative to the script it's ran from. For example, if your script is in `lua/myfolder/stuff.lua`, calling <page>Global.AddCSLuaFile</page>(\"otherstuff.lua\") and <page>Global.AddCSLuaFile</page>(\"myfolder/otherstuff.lua\") is the same thing.\n\n<note>Please make sure your file names are unique, the filesystem is shared across all addons, so a file named `lua/config.lua` in your addon may be overwritten by the same file in another addon.</note>",
+        "references": [
+          {
+            "name": "Global.AddCSLuaFile",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "AddCSLuaFile",
@@ -173,7 +207,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.AddonMaterial"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "steamworks.Download",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "AddOriginToPVS",
@@ -233,7 +273,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.AddPropsOfParent"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.GenerateSpawnlistFromPath",
+        "resolved": false
+      },
+      {
+        "name": "SANDBOX:PopulateContent",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "AddWorldTip",
@@ -277,7 +327,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.AddWorldTip"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "SANDBOX:PaintWorldTips",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Angle",
@@ -320,7 +376,18 @@
           {
             "name": "angle",
             "type": "Angle",
-            "description": "Creates a new <page>Angle</page> that is a copy of the <page>Angle</page> passed in."
+            "description": "Creates a new <page>Angle</page> that is a copy of the <page>Angle</page> passed in.",
+            "references": [
+              {
+                "name": "Angle",
+                "canonicalName": "Angle",
+                "resolved": true,
+                "id": "api:Angle",
+                "documentationURLs": [
+                  "https://wiki.facepunch.com/gmod/Global.Angle"
+                ]
+              }
+            ]
           }
         ],
         "returnValues": [
@@ -335,7 +402,28 @@
           {
             "name": "angleString",
             "type": "string",
-            "description": "Attempts to parse the input <page>string</page> from the <page>Global.print</page> format of an <page>Angle</page>.\n\nReturns an <page>Angle</page> with its pitch, yaw, and roll set to `0` if the <page>string</page> cannot be parsed."
+            "description": "Attempts to parse the input <page>string</page> from the <page>Global.print</page> format of an <page>Angle</page>.\n\nReturns an <page>Angle</page> with its pitch, yaw, and roll set to `0` if the <page>string</page> cannot be parsed.",
+            "references": [
+              {
+                "name": "string",
+                "canonicalName": "string",
+                "resolved": true,
+                "id": "string:string"
+              },
+              {
+                "name": "Global.print",
+                "resolved": false
+              },
+              {
+                "name": "Angle",
+                "canonicalName": "Angle",
+                "resolved": true,
+                "id": "api:Angle",
+                "documentationURLs": [
+                  "https://wiki.facepunch.com/gmod/Global.Angle"
+                ]
+              }
+            ]
           }
         ],
         "returnValues": [
@@ -350,7 +438,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Angle"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Angle",
+        "canonicalName": "Angle",
+        "resolved": true,
+        "id": "api:Angle",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Angle"
+        ]
+      }
+    ]
   },
   {
     "name": "AngleRand",
@@ -480,7 +579,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.BroadcastLua"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "net",
+        "resolved": false
+      },
+      {
+        "name": "net.Receive",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "BuildNetworkedVarsTable",
@@ -557,7 +666,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ChangeBackground"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.AddBackgroundImage",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ChangeTooltip",
@@ -670,7 +785,13 @@
         "name": "renderGroup",
         "type": "number",
         "default": "RENDERGROUP_OTHER",
-        "description": "The render group of the entity for the clientside leaf system, see <page>Enums/RENDERGROUP</page>."
+        "description": "The render group of the entity for the clientside leaf system, see <page>Enums/RENDERGROUP</page>.",
+        "references": [
+          {
+            "name": "Enums/RENDERGROUP",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -683,7 +804,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ClientsideModel"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "ents.CreateClientProp",
+        "resolved": false
+      },
+      {
+        "name": "CSEnt:Remove",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ClientsideRagdoll",
@@ -702,7 +833,13 @@
         "name": "renderGroup",
         "type": "number",
         "default": "RENDERGROUP_OPAQUE",
-        "description": "The <page>Enums/RENDERGROUP</page> to assign."
+        "description": "The <page>Enums/RENDERGROUP</page> to assign.",
+        "references": [
+          {
+            "name": "Enums/RENDERGROUP",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -715,7 +852,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ClientsideRagdoll"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Entity:Spawn",
+        "resolved": false
+      },
+      {
+        "name": "CSEnt:Remove",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ClientsideScene",
@@ -760,7 +907,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.CloseDermaMenus"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.RegisterDermaMenuForClose",
+        "resolved": false
+      },
+      {
+        "name": "GM:CloseDermaMenus",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "collectgarbage",
@@ -843,7 +1000,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Color"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      }
+    ]
   },
   {
     "name": "ColorAlpha",
@@ -863,7 +1031,18 @@
       {
         "name": "color",
         "type": "Color",
-        "description": "The <page>Color</page> from which to take RGB values. This color will not be modified."
+        "description": "The <page>Color</page> from which to take RGB values. This color will not be modified.",
+        "references": [
+          {
+            "name": "Color",
+            "canonicalName": "Color",
+            "resolved": true,
+            "id": "api:Color",
+            "documentationURLs": [
+              "https://wiki.facepunch.com/gmod/Global.Color"
+            ]
+          }
+        ]
       },
       {
         "name": "alpha",
@@ -881,7 +1060,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ColorAlpha"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      }
+    ]
   },
   {
     "name": "ColorRand",
@@ -915,7 +1105,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ColorRand"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      }
+    ]
   },
   {
     "name": "ColorToHSL",
@@ -930,7 +1131,18 @@
       {
         "name": "color",
         "type": "Color",
-        "description": "The <page>Color</page>."
+        "description": "The <page>Color</page>.",
+        "references": [
+          {
+            "name": "Color",
+            "canonicalName": "Color",
+            "resolved": true,
+            "id": "api:Color",
+            "documentationURLs": [
+              "https://wiki.facepunch.com/gmod/Global.Color"
+            ]
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -951,7 +1163,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ColorToHSL"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      }
+    ]
   },
   {
     "name": "ColorToHSV",
@@ -966,7 +1189,18 @@
       {
         "name": "color",
         "type": "Color",
-        "description": "The <page>Color</page>."
+        "description": "The <page>Color</page>.",
+        "references": [
+          {
+            "name": "Color",
+            "canonicalName": "Color",
+            "resolved": true,
+            "id": "api:Color",
+            "documentationURLs": [
+              "https://wiki.facepunch.com/gmod/Global.Color"
+            ]
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -987,7 +1221,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ColorToHSV"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      }
+    ]
   },
   {
     "name": "CompileFile",
@@ -1073,7 +1318,13 @@
       {
         "name": "name",
         "type": "string",
-        "description": "Name of the <page>ConVar</page>."
+        "description": "Name of the <page>ConVar</page>.",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -1086,7 +1337,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ConVarExists"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "ConVar",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "CreateClientConVar",
@@ -1123,7 +1380,13 @@
         "name": "userinfo",
         "type": "boolean",
         "default": "false",
-        "description": "Should the ConVar and its containing data be sent to the server when it has changed. This makes the convar accessible from server using <page>Player:GetInfoNum</page> and similar functions."
+        "description": "Should the ConVar and its containing data be sent to the server when it has changed. This makes the convar accessible from server using <page>Player:GetInfoNum</page> and similar functions.",
+        "references": [
+          {
+            "name": "Player:GetInfoNum",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "helptext",
@@ -1154,7 +1417,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.CreateClientConVar"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.CreateConVar",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "CreateContextMenu",
@@ -1187,7 +1456,13 @@
       {
         "name": "name",
         "type": "string",
-        "description": "Name of the <page>ConVar</page>.\n\nThis cannot be a name of an engine console command or console variable. It will throw an error if it is. If it is the same name as another lua ConVar, it will return that ConVar object."
+        "description": "Name of the <page>ConVar</page>.\n\nThis cannot be a name of an engine console command or console variable. It will throw an error if it is. If it is the same name as another lua ConVar, it will return that ConVar object.",
+        "references": [
+          {
+            "name": "ConVar",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "value",
@@ -1198,7 +1473,13 @@
         "name": "flags",
         "type": "number{FCVAR}|table<number>",
         "default": "FCVAR_NONE",
-        "description": "Flags of the convar, see <page>Enums/FCVAR</page>, either as bitflag or as table."
+        "description": "Flags of the convar, see <page>Enums/FCVAR</page>, either as bitflag or as table.",
+        "references": [
+          {
+            "name": "Enums/FCVAR",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "helptext",
@@ -1229,7 +1510,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.CreateConVar"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "ConVar",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "CreateMaterial",
@@ -1248,12 +1535,32 @@
       {
         "name": "shaderName",
         "type": "string",
-        "description": "The shader name. See <page>Shaders</page>."
+        "description": "The shader name. See <page>Shaders</page>.",
+        "references": [
+          {
+            "name": "Shaders",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "materialData",
         "type": "table",
-        "description": "Key-value table that contains shader parameters and proxies.\n\n* See: [List of Shader Parameters on Valve Developers Wiki](https://developer.valvesoftware.com/wiki/Category:List_of_Shader_Parameters) and each shader's page from .\n\n<note>Unlike <page>IMaterial:SetTexture</page>, this table will not accept <page>ITexture</page> values. Instead, use the texture's name (see <page>ITexture:GetName</page>).</note>"
+        "description": "Key-value table that contains shader parameters and proxies.\n\n* See: [List of Shader Parameters on Valve Developers Wiki](https://developer.valvesoftware.com/wiki/Category:List_of_Shader_Parameters) and each shader's page from .\n\n<note>Unlike <page>IMaterial:SetTexture</page>, this table will not accept <page>ITexture</page> values. Instead, use the texture's name (see <page>ITexture:GetName</page>).</note>",
+        "references": [
+          {
+            "name": "IMaterial:SetTexture",
+            "resolved": false
+          },
+          {
+            "name": "ITexture",
+            "resolved": false
+          },
+          {
+            "name": "ITexture:GetName",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -1266,7 +1573,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.CreateMaterial"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Entity:SetMaterial",
+        "resolved": false
+      },
+      {
+        "name": "Entity:SetSubMaterial",
+        "resolved": false
+      },
+      {
+        "name": "Global.Material",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "CreateNewAddonPreset",
@@ -1284,7 +1605,13 @@
       {
         "name": "data",
         "type": "string",
-        "description": "A JSON string containing all necessary information.\nJSON structue should be <page>Structures/Preset</page>"
+        "description": "A JSON string containing all necessary information.\nJSON structue should be <page>Structures/Preset</page>",
+        "references": [
+          {
+            "name": "Structures/Preset",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "CreateNewAddonPreset",
@@ -1309,12 +1636,24 @@
       {
         "name": "effect",
         "type": "string",
-        "description": "The name of the effect to create. It must be precached via <page>Global.PrecacheParticleSystem</page> beforehand."
+        "description": "The name of the effect to create. It must be precached via <page>Global.PrecacheParticleSystem</page> beforehand.",
+        "references": [
+          {
+            "name": "Global.PrecacheParticleSystem",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "partAtt",
         "type": "number",
-        "description": "See <page>Enums/PATTACH</page>."
+        "description": "See <page>Enums/PATTACH</page>.",
+        "references": [
+          {
+            "name": "Enums/PATTACH",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "entAtt",
@@ -1326,7 +1665,13 @@
         "name": "offset",
         "type": "Vector",
         "default": "Vector( 0, 0, 0 )",
-        "description": "The offset from the <page>Entity:GetPos</page> of the entity we are attaching this CP to."
+        "description": "The offset from the <page>Entity:GetPos</page> of the entity we are attaching this CP to.",
+        "references": [
+          {
+            "name": "Entity:GetPos",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -1339,7 +1684,29 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.CreateParticleSystem"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Entity:CreateParticleEffect",
+        "resolved": false
+      },
+      {
+        "name": "Global.ParticleEffectAttach",
+        "resolved": false
+      },
+      {
+        "name": "Global.CreateParticleSystemNoEntity",
+        "resolved": false
+      },
+      {
+        "name": "Global.PrecacheParticleSystem",
+        "resolved": false
+      },
+      {
+        "name": "game.AddParticles",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "CreateParticleSystemNoEntity",
@@ -1352,7 +1719,13 @@
       {
         "name": "effect",
         "type": "string",
-        "description": "The name of the effect to create. It must be precached via <page>Global.PrecacheParticleSystem</page> beforehand."
+        "description": "The name of the effect to create. It must be precached via <page>Global.PrecacheParticleSystem</page> beforehand.",
+        "references": [
+          {
+            "name": "Global.PrecacheParticleSystem",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "pos",
@@ -1376,7 +1749,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.CreateParticleSystemNoEntity"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.CreateParticleSystem",
+        "resolved": false
+      },
+      {
+        "name": "Global.PrecacheParticleSystem",
+        "resolved": false
+      },
+      {
+        "name": "game.AddParticles",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "CreatePhysCollideBox",
@@ -1390,7 +1777,13 @@
       {
         "name": "mins",
         "type": "Vector",
-        "description": "Min corner of the box. This is not automatically ordered with the maxs and must contain the smallest vector components. See <page>Global.OrderVectors</page>."
+        "description": "Min corner of the box. This is not automatically ordered with the maxs and must contain the smallest vector components. See <page>Global.OrderVectors</page>.",
+        "references": [
+          {
+            "name": "Global.OrderVectors",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "maxs",
@@ -1408,7 +1801,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.CreatePhysCollideBox"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "PhysCollide",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "CreatePhysCollidesFromModel",
@@ -1435,7 +1834,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.CreatePhysCollidesFromModel"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "PhysCollide",
+        "resolved": false
+      },
+      {
+        "name": "util.PrecacheModel",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "CreateSound",
@@ -1460,7 +1869,13 @@
         "name": "filter",
         "type": "CRecipientFilter",
         "default": "nil",
-        "description": "A <page>CRecipientFilter</page> of the players that will have this sound networked to them.\n\nIf not set, the default is a [CPASAttenuationFilter](https://developer.valvesoftware.com/wiki/CRecipientFilter#Derived_classes).\n\n<note>This argument only works serverside.</note>"
+        "description": "A <page>CRecipientFilter</page> of the players that will have this sound networked to them.\n\nIf not set, the default is a [CPASAttenuationFilter](https://developer.valvesoftware.com/wiki/CRecipientFilter#Derived_classes).\n\n<note>This argument only works serverside.</note>",
+        "references": [
+          {
+            "name": "CRecipientFilter",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -1499,7 +1914,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.CreateSprite"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "DSprite",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "CurTime",
@@ -1520,7 +1941,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.CurTime"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "game.GetTimeScale",
+        "resolved": false
+      },
+      {
+        "name": "Global.RealTime",
+        "resolved": false
+      },
+      {
+        "name": "Global.SysTime",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "DamageInfo",
@@ -1540,7 +1975,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.DamageInfo"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "CTakeDamageInfo",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "DebugInfo",
@@ -1589,7 +2030,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.DEFINE_BASECLASS"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "baseclass.Get",
+        "resolved": false
+      },
+      {
+        "name": "BaseClasses",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "DeleteAddonPreset",
@@ -1635,7 +2086,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.DeriveGamemode"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "gamemode.Register",
+        "resolved": false
+      },
+      {
+        "name": "Gamemode_Creation#derivinggamemodes",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Derma_Anim",
@@ -1708,7 +2169,15 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Derma_DrawBackgroundBlur"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "panel",
+        "canonicalName": "panel",
+        "resolved": true,
+        "id": "Panel:panel"
+      }
+    ]
   },
   {
     "name": "Derma_Hook",
@@ -1749,7 +2218,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Derma_Hook"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "derma.SkinHook",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Derma_Install_Convar_Functions",
@@ -1775,7 +2250,29 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Derma_Install_Convar_Functions"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Panel:SetConVar",
+        "resolved": false
+      },
+      {
+        "name": "Panel:ConVarChanged",
+        "resolved": false
+      },
+      {
+        "name": "Panel:ConVarStringThink",
+        "resolved": false
+      },
+      {
+        "name": "Panel:ConVarNumberThink",
+        "resolved": false
+      },
+      {
+        "name": "PANEL:Think",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Derma_Message",
@@ -1988,7 +2485,13 @@
         "name": "keepOpen",
         "type": "boolean",
         "default": "false",
-        "description": "If we should keep other <page>DMenu</page>s open (`true`) or not (`false`)."
+        "description": "If we should keep other <page>DMenu</page>s open (`true`) or not (`false`).",
+        "references": [
+          {
+            "name": "DMenu",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "parent",
@@ -2001,14 +2504,26 @@
       {
         "type": "Panel",
         "name": "menu",
-        "description": "The created <page>DMenu</page>."
+        "description": "The created <page>DMenu</page>.",
+        "references": [
+          {
+            "name": "DMenu",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "DermaMenu",
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.DermaMenu"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "DMenu",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "DisableClipping",
@@ -2036,7 +2551,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.DisableClipping"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "2d rendering hooks",
+        "resolved": false
+      },
+      {
+        "name": "Panel:NoClipping",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "DOF_Kill",
@@ -2054,7 +2579,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.DOF_Kill"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.DOF_Start",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "DOF_Start",
@@ -2092,7 +2623,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.DOFModeHack"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "GM:NeedsDepthPass",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "DoStopServers",
@@ -2248,7 +2785,13 @@
       {
         "name": "modifyParameters",
         "type": "table",
-        "description": "Color modification parameters. See <page>Shaders/g_colourmodify</page> and the example below. Note that if you leave out a field, it will retain its last value which may have changed if another caller uses this function."
+        "description": "Color modification parameters. See <page>Shaders/g_colourmodify</page> and the example below. Note that if you leave out a field, it will retain its last value which may have changed if another caller uses this function.",
+        "references": [
+          {
+            "name": "Shaders/g_colourmodify",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "DrawColorModify",
@@ -2443,7 +2986,13 @@
       {
         "name": "BaseTexture",
         "type": "number",
-        "description": "This will be the texture to use in the effect. Make sure you use <page>Global.Material</page> to get the texture number."
+        "description": "This will be the texture to use in the effect. Make sure you use <page>Global.Material</page> to get the texture number.",
+        "references": [
+          {
+            "name": "Global.Material",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "DrawTexturize",
@@ -2500,7 +3049,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.DropEntityIfHeld"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Entity:ForcePlayerDrop",
+        "resolved": false
+      },
+      {
+        "name": "Player:DropObject",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "DTVar_ReceiveProxyGL",
@@ -2541,7 +3100,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.DTVar_ReceiveProxyGL"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Entity:CallDTVarProxies",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "DynamicLight",
@@ -2592,7 +3157,13 @@
         "name": "flags",
         "type": "string",
         "default": "nil",
-        "description": "Flags, same as <page>Global.Material</page>."
+        "description": "Flags, same as <page>Global.Material</page>.",
+        "references": [
+          {
+            "name": "Global.Material",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -2625,7 +3196,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.EffectData"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "CEffectData",
+        "resolved": false
+      },
+      {
+        "name": "util.Effect",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Either",
@@ -2692,13 +3273,25 @@
       {
         "name": "entity",
         "type": "number",
-        "description": "The entity to emit the sound from. Must be <page>Entity:EntIndex</page>"
+        "description": "The entity to emit the sound from. Must be <page>Entity:EntIndex</page>",
+        "references": [
+          {
+            "name": "Entity:EntIndex",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "channel",
         "type": "number",
         "default": "CHAN_AUTO",
-        "description": "The sound channel, see <page>Enums/CHAN</page>."
+        "description": "The sound channel, see <page>Enums/CHAN</page>.",
+        "references": [
+          {
+            "name": "Enums/CHAN",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "volume",
@@ -2710,13 +3303,25 @@
         "name": "soundLevel",
         "type": "number",
         "default": "75",
-        "description": "The sound level of the sound, see <page>Enums/SNDLVL</page>"
+        "description": "The sound level of the sound, see <page>Enums/SNDLVL</page>",
+        "references": [
+          {
+            "name": "Enums/SNDLVL",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "soundFlags",
         "type": "number",
         "default": "0",
-        "description": "The flags of the sound, see <page>Enums/SND</page>"
+        "description": "The flags of the sound, see <page>Enums/SND</page>",
+        "references": [
+          {
+            "name": "Enums/SND",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "pitch",
@@ -2749,7 +3354,13 @@
       {
         "name": "soundName",
         "type": "string",
-        "description": "The sound to play\n\nThis should either be a sound script name (<page>sound.Add</page>) or a file path relative to the `sound/` folder. (Make note that it's not sound**s**)"
+        "description": "The sound to play\n\nThis should either be a sound script name (<page>sound.Add</page>) or a file path relative to the `sound/` folder. (Make note that it's not sound**s**)",
+        "references": [
+          {
+            "name": "sound.Add",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "position",
@@ -2760,13 +3371,25 @@
         "name": "entity",
         "type": "number",
         "default": "0",
-        "description": "The entity to emit the sound from. Can be an <page>Entity:EntIndex</page> or one of the following:\n* `0` - Plays sound on the world\n* `-1` - Plays sound on the local player (on server acts as `0`)\n* `-2` - Plays UI sound (position set to `0,0,0`, no spatial sound, on server acts as `0`)"
+        "description": "The entity to emit the sound from. Can be an <page>Entity:EntIndex</page> or one of the following:\n* `0` - Plays sound on the world\n* `-1` - Plays sound on the local player (on server acts as `0`)\n* `-2` - Plays UI sound (position set to `0,0,0`, no spatial sound, on server acts as `0`)",
+        "references": [
+          {
+            "name": "Entity:EntIndex",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "channel",
         "type": "number{CHAN}",
         "default": "CHAN_AUTO",
-        "description": "The sound channel, see <page>Enums/CHAN</page>."
+        "description": "The sound channel, see <page>Enums/CHAN</page>.",
+        "references": [
+          {
+            "name": "Enums/CHAN",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "volume",
@@ -2778,13 +3401,25 @@
         "name": "soundLevel",
         "type": "number{SNDLVL}",
         "default": "75",
-        "description": "The sound level of the sound, see <page>Enums/SNDLVL</page>"
+        "description": "The sound level of the sound, see <page>Enums/SNDLVL</page>",
+        "references": [
+          {
+            "name": "Enums/SNDLVL",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "soundFlags",
         "type": "number{SND}",
         "default": "0",
-        "description": "The flags of the sound, see <page>Enums/SND</page>"
+        "description": "The flags of the sound, see <page>Enums/SND</page>",
+        "references": [
+          {
+            "name": "Enums/SND",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "pitch",
@@ -2809,7 +3444,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.EmitSound"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Entity:EmitSound",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "EndTooltip",
@@ -2862,7 +3503,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Entity"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Entity:EntIndex",
+        "resolved": false
+      },
+      {
+        "name": "game.MaxPlayers",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "error",
@@ -2912,7 +3563,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Error"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.ErrorNoHalt",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ErrorNoHalt",
@@ -2934,7 +3591,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ErrorNoHalt"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.Msg",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ErrorNoHaltWithStack",
@@ -2975,7 +3638,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.EyeAngles"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "GM:CalcView",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "EyePos",
@@ -2994,7 +3663,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.EyePos"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "GM:CalcView",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "EyeVector",
@@ -3013,7 +3688,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.EyeVector"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "GM:CalcView",
+        "resolved": false
+      },
+      {
+        "name": "Global.EyeAngles",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "FindMetaTable",
@@ -3041,7 +3726,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.FindMetaTable"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Meta Tables",
+        "resolved": false
+      },
+      {
+        "name": "Enums/TYPE",
+        "resolved": false
+      },
+      {
+        "name": "Global.RegisterMetaTable",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "FindTooltip",
@@ -3099,7 +3798,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.FireAddonConflicts"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.FireProblem",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "FireProblem",
@@ -3159,7 +3864,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.FireProblemFromEngine"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.FireProblem",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Format",
@@ -3196,7 +3907,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Format"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "string.format",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "FrameNumber",
@@ -3237,7 +3954,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.FrameTime"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.CurTime",
+        "resolved": false
+      },
+      {
+        "name": "Global.RealFrameTime",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GameDetails",
@@ -3275,7 +4002,13 @@
       {
         "name": "steamid",
         "type": "string",
-        "description": "The local player's <page>Player:SteamID64</page>."
+        "description": "The local player's <page>Player:SteamID64</page>.",
+        "references": [
+          {
+            "name": "Player:SteamID64",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "gamemode",
@@ -3308,7 +4041,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.gcinfo"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.collectgarbage",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetAddonStatus",
@@ -3321,12 +4060,24 @@
       {
         "type": "boolean",
         "name": "noaddons",
-        "description": "true if the game was started with -noaddons. (see <page>Command_Line_Parameters</page>)"
+        "description": "true if the game was started with -noaddons. (see <page>Command_Line_Parameters</page>)",
+        "references": [
+          {
+            "name": "Command_Line_Parameters",
+            "resolved": false
+          }
+        ]
       },
       {
         "type": "boolean",
         "name": "noworkshop",
-        "description": "true if the game was started with -noworkshop. (see <page>Command_Line_Parameters</page>)"
+        "description": "true if the game was started with -noworkshop. (see <page>Command_Line_Parameters</page>)",
+        "references": [
+          {
+            "name": "Command_Line_Parameters",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "GetAddonStatus",
@@ -3346,7 +4097,13 @@
       {
         "name": "callback",
         "type": "function",
-        "description": "Callback to be called when the API request is done.\n\n<callback>\n<arg type=\"string\" name=\"data\">JSON encoded data, see <page>util.JSONToTable</page>.</arg>\n</callback>\n\n<br>\nFormatted output:\n```js\n{\n\"ManifestVersion\": \tnumber - Version of the manifest\n\"Date\": \t\t\tstring - Date the data was retrieved\n\n// Contains all the blog posts, the things in the top right of the menu\n\"News\": {\n\"Blogs\": [\n\n// Structure of blog posts\n{\n\"Date\": \t\tstring - Date the post was created\n\"ShortName\": \tstring - Short name of the post, identifier of it on the blog website\n\"Title\": \t\tstring - Title of the post\n\"HeaderImage\": \tstring - Main image of the post, showed in the top right\n\"SummaryHtml\": \tstring - Summary of the blogpost, text thats shown to the user\n\"Url\": \t\t\tstring - URL to the post on the blog\n\"Tags\": \t\tstring - String of the posts tag\n}\n]\n}\n\n// Array of Facepunches Mods, Admins and Developers\n\"Administrators\": [\n{\n\"UserId\": \t\tstring - SteamID64 of the person\n\"Level\": \t\tstring - Level of the user (Administrator, Developer or Moderator)\n}\n]\n\n// Unused and contains nothing useful\n\"Heroes\": {}\n\n\"SentryUrl\": \t\tstring - Nothing\n\"DatabaseUrl\" \t\tstring - URL to the Facepunch API (/database/{action}/)\n\"FeedbackUrl\" \t\tstring - URL to the Facepunch API (/feedback/add/)\n\"ReportUrl\" \t\tstring - URL to the Facepunch API (/feedback/report/)\n\"LeaderboardUrl\" \tstring - URL to the Facepunch API (/leaderboard/{action}/)\n\"BenchmarkUrl\" \t\tstring - URL to the Facepunch API (/benchmark/add/)\n\"AccountUrl\" \t\tstring - URL to the Facepunch API (/account/{action}/)\n\n\"Servers\": {\n\"Official\": [] // Nothing\n\n// List of blacklisted servers\n\"Banned\": [\nstring \t- IP of the blacklisted server\n]\n}\n}\n```"
+        "description": "Callback to be called when the API request is done.\n\n<callback>\n<arg type=\"string\" name=\"data\">JSON encoded data, see <page>util.JSONToTable</page>.</arg>\n</callback>\n\n<br>\nFormatted output:\n```js\n{\n\"ManifestVersion\": \tnumber - Version of the manifest\n\"Date\": \t\t\tstring - Date the data was retrieved\n\n// Contains all the blog posts, the things in the top right of the menu\n\"News\": {\n\"Blogs\": [\n\n// Structure of blog posts\n{\n\"Date\": \t\tstring - Date the post was created\n\"ShortName\": \tstring - Short name of the post, identifier of it on the blog website\n\"Title\": \t\tstring - Title of the post\n\"HeaderImage\": \tstring - Main image of the post, showed in the top right\n\"SummaryHtml\": \tstring - Summary of the blogpost, text thats shown to the user\n\"Url\": \t\t\tstring - URL to the post on the blog\n\"Tags\": \t\tstring - String of the posts tag\n}\n]\n}\n\n// Array of Facepunches Mods, Admins and Developers\n\"Administrators\": [\n{\n\"UserId\": \t\tstring - SteamID64 of the person\n\"Level\": \t\tstring - Level of the user (Administrator, Developer or Moderator)\n}\n]\n\n// Unused and contains nothing useful\n\"Heroes\": {}\n\n\"SentryUrl\": \t\tstring - Nothing\n\"DatabaseUrl\" \t\tstring - URL to the Facepunch API (/database/{action}/)\n\"FeedbackUrl\" \t\tstring - URL to the Facepunch API (/feedback/add/)\n\"ReportUrl\" \t\tstring - URL to the Facepunch API (/feedback/report/)\n\"LeaderboardUrl\" \tstring - URL to the Facepunch API (/leaderboard/{action}/)\n\"BenchmarkUrl\" \t\tstring - URL to the Facepunch API (/benchmark/add/)\n\"AccountUrl\" \t\tstring - URL to the Facepunch API (/account/{action}/)\n\n\"Servers\": {\n\"Official\": [] // Nothing\n\n// List of blacklisted servers\n\"Banned\": [\nstring \t- IP of the blacklisted server\n]\n}\n}\n```",
+        "references": [
+          {
+            "name": "util.JSONToTable",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "GetAPIManifest",
@@ -3386,7 +4143,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetConVar"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "ConVar",
+        "resolved": false
+      },
+      {
+        "name": "Global.GetConVar_Internal",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetConVar_Internal",
@@ -3414,7 +4181,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetConVar_Internal"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.GetConVar",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetConVarNumber",
@@ -3447,7 +4220,33 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetConVarNumber"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "ConVar",
+        "resolved": false
+      },
+      {
+        "name": "cvars.Number",
+        "resolved": false
+      },
+      {
+        "name": "game.MaxPlayers",
+        "resolved": false
+      },
+      {
+        "name": "ConVar:GetFloat",
+        "resolved": false
+      },
+      {
+        "name": "Global.GetConVar",
+        "resolved": false
+      },
+      {
+        "name": "Global.CreateConVar",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetConVarString",
@@ -3480,7 +4279,33 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetConVarString"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "ConVar",
+        "resolved": false
+      },
+      {
+        "name": "cvars.String",
+        "resolved": false
+      },
+      {
+        "name": "game.MaxPlayers",
+        "resolved": false
+      },
+      {
+        "name": "ConVar:GetString",
+        "resolved": false
+      },
+      {
+        "name": "Global.GetConVar",
+        "resolved": false
+      },
+      {
+        "name": "Global.CreateConVar",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetDefaultLoadingHTML",
@@ -3525,7 +4350,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetDemoFileDetails"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.GetSaveFileDetails",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetDownloadables",
@@ -3738,7 +4569,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetGlobal2Int"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.GetGlobalInt",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetGlobal2String",
@@ -4137,7 +4974,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetHUDPanel"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "vgui.GetWorldPanel",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetLoadPanel",
@@ -4232,7 +5075,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.getmetatable"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "debug.getmetatable",
+        "resolved": false
+      },
+      {
+        "name": "Global.FindMetaTable",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetOverlayPanel",
@@ -4251,7 +5104,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetOverlayPanel"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "GM:OnLuaError",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetPlayerList",
@@ -4276,7 +5135,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetPlayerList"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "serverlist.PlayerList",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetPredictionPlayer",
@@ -4296,7 +5161,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetPredictionPlayer"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Player:GetCurrentCommand",
+        "resolved": false
+      },
+      {
+        "name": "Prediction",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetRenderTarget",
@@ -4332,7 +5207,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetRenderTarget"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.GetRenderTargetEx",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetRenderTargetEx",
@@ -4360,27 +5241,57 @@
       {
         "name": "sizeMode",
         "type": "number{RT_SIZE}",
-        "description": "Bitflag that influences the sizing of the render target, see <page>Enums/RT_SIZE</page>."
+        "description": "Bitflag that influences the sizing of the render target, see <page>Enums/RT_SIZE</page>.",
+        "references": [
+          {
+            "name": "Enums/RT_SIZE",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "depthMode",
         "type": "number{MATERIAL_RT_DEPTH}",
-        "description": "Bitflag that determines the depth buffer usage of the render target <page>Enums/MATERIAL_RT_DEPTH</page>.\n\n<warning>PNG's may not render to non MATERIAL_RT_DEPTH_NONE RenderTargets</warning>"
+        "description": "Bitflag that determines the depth buffer usage of the render target <page>Enums/MATERIAL_RT_DEPTH</page>.\n\n<warning>PNG's may not render to non MATERIAL_RT_DEPTH_NONE RenderTargets</warning>",
+        "references": [
+          {
+            "name": "Enums/MATERIAL_RT_DEPTH",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "textureFlags",
         "type": "number{TEXTUREFLAGS}",
-        "description": "Bitflag that configures the texture, see <page>Enums/TEXTUREFLAGS</page>.\n\nList of flags can also be found on the Valve's Developer Wiki:\nhttps://developer.valvesoftware.com/wiki/Valve_Texture_Format"
+        "description": "Bitflag that configures the texture, see <page>Enums/TEXTUREFLAGS</page>.\n\nList of flags can also be found on the Valve's Developer Wiki:\nhttps://developer.valvesoftware.com/wiki/Valve_Texture_Format",
+        "references": [
+          {
+            "name": "Enums/TEXTUREFLAGS",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "rtFlags",
         "type": "number{CREATERENDERTARGETFLAGS}",
-        "description": "Flags that control the HDR behaviour of the render target, see <page>Enums/CREATERENDERTARGETFLAGS</page>."
+        "description": "Flags that control the HDR behaviour of the render target, see <page>Enums/CREATERENDERTARGETFLAGS</page>.",
+        "references": [
+          {
+            "name": "Enums/CREATERENDERTARGETFLAGS",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "imageFormat",
         "type": "number",
-        "description": "Image format, see <page>Enums/IMAGE_FORMAT</page>.\n<note>Some additional image formats are accepted, but don't have enums. See [VTF Enumerations.](https://developer.valvesoftware.com/wiki/Valve_Texture_Format#VTF_enumerations)</note>"
+        "description": "Image format, see <page>Enums/IMAGE_FORMAT</page>.\n<note>Some additional image formats are accepted, but don't have enums. See [VTF Enumerations.](https://developer.valvesoftware.com/wiki/Valve_Texture_Format#VTF_enumerations)</note>",
+        "references": [
+          {
+            "name": "Enums/IMAGE_FORMAT",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -4393,7 +5304,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetRenderTargetEx"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.GetRenderTarget",
+        "resolved": false
+      },
+      {
+        "name": "render.PushRenderTarget",
+        "resolved": false
+      },
+      {
+        "name": "render.SetRenderTarget",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetSaveFileDetails",
@@ -4419,7 +5344,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetSaveFileDetails"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.GetDemoFileDetails",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetServers",
@@ -4449,7 +5380,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetServers"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.DoStopServers",
+        "resolved": false
+      },
+      {
+        "name": "serverlist.Query",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetTimeoutInfo",
@@ -4472,7 +5413,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GetTimeoutInfo"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Player:IsTimingOut",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "GetViewEntity",
@@ -4516,7 +5463,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.GMOD_OpenURLNoOverlay"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "HTML",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "HexToColor",
@@ -4549,7 +5502,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.HexToColor"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      }
+    ]
   },
   {
     "name": "HSLToColor",
@@ -4592,7 +5556,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.HSLToColor"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      }
+    ]
   },
   {
     "name": "HSVToColor",
@@ -4635,7 +5610,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.HSVToColor"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      }
+    ]
   },
   {
     "name": "HTTP",
@@ -4650,7 +5636,13 @@
       {
         "name": "parameters",
         "type": "table{HTTPRequest}",
-        "description": "The request parameters. See <page>Structures/HTTPRequest</page>."
+        "description": "The request parameters. See <page>Structures/HTTPRequest</page>.",
+        "references": [
+          {
+            "name": "Structures/HTTPRequest",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -4663,7 +5655,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.HTTP"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Command Line Parameters",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "HWBToColor",
@@ -4706,7 +5704,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.HWBToColor"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      }
+    ]
   },
   {
     "name": "include",
@@ -4734,7 +5743,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.include"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.AddCSLuaFile",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "IncludeCS",
@@ -4767,7 +5782,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.IncludeCS"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.include",
+        "resolved": false
+      },
+      {
+        "name": "Global.AddCSLuaFile",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "InvalidateInternalEntityCache",
@@ -4786,14 +5811,38 @@
       {
         "name": "isPly",
         "type": "boolean",
-        "description": "Reset the <page>player.Iterator</page> cache"
+        "description": "Reset the <page>player.Iterator</page> cache",
+        "references": [
+          {
+            "name": "player.Iterator",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "InvalidateInternalEntityCache",
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.InvalidateInternalEntityCache"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "GM:OnEntityCreated",
+        "resolved": false
+      },
+      {
+        "name": "GM:EntityRemoved",
+        "resolved": false
+      },
+      {
+        "name": "player.Iterator",
+        "resolved": false
+      },
+      {
+        "name": "ents.Iterator",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ipairs",
@@ -4829,7 +5878,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ipairs"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.pairs",
+        "resolved": false
+      },
+      {
+        "name": "Global.SortedPairs",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "isangle",
@@ -4857,7 +5916,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.isangle"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Angle",
+        "canonicalName": "Angle",
+        "resolved": true,
+        "id": "api:Angle",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Angle"
+        ]
+      }
+    ]
   },
   {
     "name": "isbool",
@@ -4885,7 +5955,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.isbool"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "boolean",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "IsColor",
@@ -4946,7 +6022,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.IsConCommandBlocked"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.RunConsoleCommand",
+        "resolved": false
+      },
+      {
+        "name": "Player:ConCommand",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "IsEnemyEntityName",
@@ -5007,7 +6093,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.isentity"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Entity",
+        "canonicalName": "Entity",
+        "resolved": true,
+        "id": "api:Entity",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Entity"
+        ]
+      }
+    ]
   },
   {
     "name": "IsEntity",
@@ -5035,7 +6132,22 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.IsEntity"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.isentity",
+        "resolved": false
+      },
+      {
+        "name": "Entity",
+        "canonicalName": "Entity",
+        "resolved": true,
+        "id": "api:Entity",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Entity"
+        ]
+      }
+    ]
   },
   {
     "name": "IsFirstTimePredicted",
@@ -5055,7 +6167,29 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.IsFirstTimePredicted"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Prediction",
+        "resolved": false
+      },
+      {
+        "name": "Entity:EmitSound",
+        "resolved": false
+      },
+      {
+        "name": "Weapon:SendWeaponAnim",
+        "resolved": false
+      },
+      {
+        "name": "Entity:FireBullets",
+        "resolved": false
+      },
+      {
+        "name": "util.Effect",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "IsFriendEntityName",
@@ -5116,7 +6250,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.isfunction"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "function",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "IsInGame",
@@ -5187,7 +6327,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ismatrix"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "VMatrix",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "IsMounted",
@@ -5220,7 +6366,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.IsMounted"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "engine.GetGames",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "isnumber",
@@ -5248,7 +6400,15 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.isnumber"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "number",
+        "canonicalName": "number",
+        "resolved": true,
+        "id": "number:number"
+      }
+    ]
   },
   {
     "name": "ispanel",
@@ -5276,7 +6436,15 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ispanel"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "panel",
+        "canonicalName": "panel",
+        "resolved": true,
+        "id": "Panel:panel"
+      }
+    ]
   },
   {
     "name": "IsServerBlacklisted",
@@ -5356,7 +6524,15 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.isstring"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "string",
+        "canonicalName": "string",
+        "resolved": true,
+        "id": "string:string"
+      }
+    ]
   },
   {
     "name": "istable",
@@ -5384,7 +6560,24 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.istable"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "table",
+        "canonicalName": "table",
+        "resolved": true,
+        "id": "table:table"
+      },
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      }
+    ]
   },
   {
     "name": "IsTableOfEntitiesValid",
@@ -5483,7 +6676,29 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.IsValid"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "panel",
+        "canonicalName": "panel",
+        "resolved": true,
+        "id": "Panel:panel"
+      },
+      {
+        "name": "table",
+        "canonicalName": "table",
+        "resolved": true,
+        "id": "table:table"
+      },
+      {
+        "name": "nil",
+        "resolved": false
+      },
+      {
+        "name": "Vehicle:IsValidVehicle",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "isvector",
@@ -5511,7 +6726,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.isvector"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Vector",
+        "canonicalName": "Vector",
+        "resolved": true,
+        "id": "api:Vector",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Vector"
+        ]
+      }
+    ]
   },
   {
     "name": "JoinServer",
@@ -5557,7 +6783,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.JS_Language"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "language.GetPhrase",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "JS_Utility",
@@ -5583,7 +6815,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.JS_Utility"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "motionsensor.IsAvailable",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "JS_Workshop",
@@ -5647,7 +6885,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Label"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "DLabel",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "LanguageChanged",
@@ -5715,7 +6959,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Lerp"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "math.ease",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "LerpAngle",
@@ -5829,7 +7079,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.LoadAddonPresets"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.SaveAddonPresets",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "LoadLastMap",
@@ -5847,7 +7103,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.LoadLastMap"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.SaveLastMap",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "LoadNewsList",
@@ -5884,7 +7146,15 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.LoadPresets"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "presets",
+        "canonicalName": "presets",
+        "resolved": true,
+        "id": "table:presets"
+      }
+    ]
   },
   {
     "name": "Localize",
@@ -5916,7 +7186,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Localize"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "language.GetPhrase",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "LocalPlayer",
@@ -5935,7 +7211,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.LocalPlayer"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "GM:InitPostEntity",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "LocalToWorld",
@@ -5981,7 +7263,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.LocalToWorld"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.WorldToLocal",
+        "resolved": false
+      },
+      {
+        "name": "Entity:LocalToWorld",
+        "resolved": false
+      },
+      {
+        "name": "Entity:LocalToWorldAngles",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "MainEyeAngles",
@@ -6000,7 +7296,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.MainEyeAngles"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.EyeAngles",
+        "resolved": false
+      },
+      {
+        "name": "render.RenderView",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "MainEyePos",
@@ -6019,7 +7325,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.MainEyePos"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.EyePos",
+        "resolved": false
+      },
+      {
+        "name": "render.RenderView",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "MakeBalloon",
@@ -6037,25 +7353,55 @@
       {
         "name": "ply",
         "type": "Player",
-        "description": "The player who spawns the balloon. This argument can be <page>nil</page>"
+        "description": "The player who spawns the balloon. This argument can be <page>nil</page>",
+        "references": [
+          {
+            "name": "nil",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "r",
         "type": "number",
         "default": "255",
-        "description": "Balloon <page>color</page> (red)"
+        "description": "Balloon <page>color</page> (red)",
+        "references": [
+          {
+            "name": "color",
+            "canonicalName": "color",
+            "resolved": true,
+            "id": "Color:color"
+          }
+        ]
       },
       {
         "name": "g",
         "type": "number",
         "default": "255",
-        "description": "Balloon <page>color</page> (green)"
+        "description": "Balloon <page>color</page> (green)",
+        "references": [
+          {
+            "name": "color",
+            "canonicalName": "color",
+            "resolved": true,
+            "id": "Color:color"
+          }
+        ]
       },
       {
         "name": "b",
         "type": "number",
         "default": "255",
-        "description": "Balloon <page>color</page> (blue)."
+        "description": "Balloon <page>color</page> (blue).",
+        "references": [
+          {
+            "name": "color",
+            "canonicalName": "color",
+            "resolved": true,
+            "id": "Color:color"
+          }
+        ]
       },
       {
         "name": "force",
@@ -6066,7 +7412,13 @@
       {
         "name": "data",
         "type": "table{BalloonData}",
-        "description": "Data applied to the balloon. This data is required for correctly spawning the balloon.\nFor more information, please see: <page>Structures/BalloonData</page>"
+        "description": "Data applied to the balloon. This data is required for correctly spawning the balloon.\nFor more information, please see: <page>Structures/BalloonData</page>",
+        "references": [
+          {
+            "name": "Structures/BalloonData",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -6100,13 +7452,25 @@
       {
         "name": "materialName",
         "type": "string",
-        "description": "The material name or path relative to the `materials/` folder.\nPaths outside the `materials/` folder like `data/MyImage.jpg` or `maps/thumb/gm_construct.png` will also work for when generating materials.\n\nTo retrieve a Lua material created with <page>Global.CreateMaterial</page>, just prepend a `!` to the material name."
+        "description": "The material name or path relative to the `materials/` folder.\nPaths outside the `materials/` folder like `data/MyImage.jpg` or `maps/thumb/gm_construct.png` will also work for when generating materials.\n\nTo retrieve a Lua material created with <page>Global.CreateMaterial</page>, just prepend a `!` to the material name.",
+        "references": [
+          {
+            "name": "Global.CreateMaterial",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "pngParameters",
         "type": "string",
         "default": "nil",
-        "description": "A string containing space separated keywords which will be used to add material parameters.\n\nSee <page>Material Parameters</page> for more information.\n\n<note>This feature only works when importing `.png` or `.jpg` image files.</note>"
+        "description": "A string containing space separated keywords which will be used to add material parameters.\n\nSee <page>Material Parameters</page> for more information.\n\n<note>This feature only works when importing `.png` or `.jpg` image files.</note>",
+        "references": [
+          {
+            "name": "Material Parameters",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -6123,7 +7487,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Material"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.AddonMaterial",
+        "resolved": false
+      },
+      {
+        "name": "steamworks.Download",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Matrix",
@@ -6138,7 +7512,13 @@
         "name": "data",
         "type": "table",
         "default": "{{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {0, 0, 0, 1}}",
-        "description": "Initial data to initialize the matrix with. Leave empty to initialize an identity matrix. See examples for usage.\n\nCan be a <page>VMatrix</page> to copy its data."
+        "description": "Initial data to initialize the matrix with. Leave empty to initialize an identity matrix. See examples for usage.\n\nCan be a <page>VMatrix</page> to copy its data.",
+        "references": [
+          {
+            "name": "VMatrix",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -6151,7 +7531,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Matrix"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "VMatrix",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "MenuGetAddonData",
@@ -6176,7 +7562,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.MenuGetAddonData"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "steamworks.FileInfo",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Mesh",
@@ -6196,7 +7588,17 @@
         "name": "boneWeights",
         "type": "number",
         "default": "0",
-        "description": "Number of bone weights per vertex. This value can be set to 2 to enable skinning and rendering via <page>IMesh:DrawSkinned</page>. This was recently added and is only available on the <page>Dev Branch</page> right now."
+        "description": "Number of bone weights per vertex. This value can be set to 2 to enable skinning and rendering via <page>IMesh:DrawSkinned</page>. This was recently added and is only available on the <page>Dev Branch</page> right now.",
+        "references": [
+          {
+            "name": "IMesh:DrawSkinned",
+            "resolved": false
+          },
+          {
+            "name": "Dev Branch",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -6242,7 +7644,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Model"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "util.PrecacheModel",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "module",
@@ -6269,7 +7677,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.module"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "package.seeall",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Msg",
@@ -6291,7 +7705,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Msg"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.print",
+        "resolved": false
+      },
+      {
+        "name": "Global.tostring",
+        "resolved": false
+      },
+      {
+        "name": "Global.MsgN",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "MsgAll",
@@ -6312,7 +7740,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.MsgAll"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.Msg",
+        "resolved": false
+      },
+      {
+        "name": "Global.print",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "MsgC",
@@ -6334,7 +7772,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.MsgC"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.Msg",
+        "resolved": false
+      },
+      {
+        "name": "chat.AddText",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "MsgN",
@@ -6349,14 +7797,30 @@
       {
         "name": "args",
         "type": "vararg",
-        "description": "List of values to print. They can be of any type and will be converted to strings with <page>Global.tostring</page>."
+        "description": "List of values to print. They can be of any type and will be converted to strings with <page>Global.tostring</page>.",
+        "references": [
+          {
+            "name": "Global.tostring",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "MsgN",
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.MsgN"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.print",
+        "resolved": false
+      },
+      {
+        "name": "Global.Msg",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "NamedColor",
@@ -6398,7 +7862,15 @@
         "name": "addMetatable",
         "type": "boolean",
         "default": "false",
-        "description": "If true, the created <page>userdata</page> will be given its own metatable."
+        "description": "If true, the created <page>userdata</page> will be given its own metatable.",
+        "references": [
+          {
+            "name": "userData",
+            "canonicalName": "userData",
+            "resolved": true,
+            "id": "userdata:userData"
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -6413,7 +7885,15 @@
           {
             "name": "userData",
             "type": "userdata",
-            "description": "Creates a new <page>userdata</page> with the same metatable the <page>userdata</page> passed in had. The <page>userdata</page> passed in **must be** a <page>userdata</page> that has a metatable that was created from this function."
+            "description": "Creates a new <page>userdata</page> with the same metatable the <page>userdata</page> passed in had. The <page>userdata</page> passed in **must be** a <page>userdata</page> that has a metatable that was created from this function.",
+            "references": [
+              {
+                "name": "userData",
+                "canonicalName": "userData",
+                "resolved": true,
+                "id": "userdata:userData"
+              }
+            ]
           }
         ],
         "returnValues": [
@@ -6428,7 +7908,15 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.newproxy"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "userData",
+        "canonicalName": "userData",
+        "resolved": true,
+        "id": "userdata:userData"
+      }
+    ]
   },
   {
     "name": "next",
@@ -6466,7 +7954,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.next"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.ipairs",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "NumDownloadables",
@@ -6516,7 +8010,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.NumModelSkins"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Entity:SkinCount",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "OnModelLoaded",
@@ -6571,7 +8071,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.OnModelLoaded"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "sql",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "OpenFolder",
@@ -6672,7 +8178,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.pairs"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.next",
+        "resolved": false
+      },
+      {
+        "name": "Global.SortedPairs",
+        "resolved": false
+      },
+      {
+        "name": "Global.SortedPairsByValue",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Particle",
@@ -6705,7 +8225,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Particle"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "game.AddParticles",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ParticleEffect",
@@ -6742,7 +8268,25 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ParticleEffect"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.CreateParticleSystem",
+        "resolved": false
+      },
+      {
+        "name": "Global.PrecacheParticleSystem",
+        "resolved": false
+      },
+      {
+        "name": "game.AddParticles",
+        "resolved": false
+      },
+      {
+        "name": "Global.CreateParticleSystemNoEntity",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ParticleEffectAttach",
@@ -6761,7 +8305,13 @@
       {
         "name": "attachType",
         "type": "number",
-        "description": "Attachment type using <page>Enums/PATTACH</page>."
+        "description": "Attachment type using <page>Enums/PATTACH</page>.",
+        "references": [
+          {
+            "name": "Enums/PATTACH",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "entity",
@@ -6778,7 +8328,29 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ParticleEffectAttach"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Entity:CreateParticleEffect",
+        "resolved": false
+      },
+      {
+        "name": "Global.CreateParticleSystem",
+        "resolved": false
+      },
+      {
+        "name": "Global.PrecacheParticleSystem",
+        "resolved": false
+      },
+      {
+        "name": "game.AddParticles",
+        "resolved": false
+      },
+      {
+        "name": "Global.CreateParticleSystemNoEntity",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ParticleEmitter",
@@ -6810,7 +8382,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ParticleEmitter"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "CLuaEmitter",
+        "resolved": false
+      },
+      {
+        "name": "CLuaEmitter:Finish",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Path",
@@ -6836,7 +8418,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Path"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "PathFollower:Update",
+        "resolved": false
+      },
+      {
+        "name": "PathFollower:Chase",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "pcall",
@@ -6873,7 +8465,25 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.pcall"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.Error",
+        "resolved": false
+      },
+      {
+        "name": "Global.ErrorNoHalt",
+        "resolved": false
+      },
+      {
+        "name": "GM:OnLuaError",
+        "resolved": false
+      },
+      {
+        "name": "Global.error",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Player",
@@ -6900,7 +8510,25 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Player"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Player:UserID",
+        "resolved": false
+      },
+      {
+        "name": "Entity:EntIndex",
+        "resolved": false
+      },
+      {
+        "name": "Global.Entity",
+        "resolved": false
+      },
+      {
+        "name": "player.GetByID",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "PositionSpawnIcon",
@@ -6941,7 +8569,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.PositionSpawnIcon"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Panel:RebuildSpawnIconEx",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "PrecacheParticleSystem",
@@ -6962,7 +8596,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.PrecacheParticleSystem"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "game.AddParticles",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "PrecacheScene",
@@ -7045,7 +8685,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.print"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.tostring",
+        "resolved": false
+      },
+      {
+        "name": "Global.Msg",
+        "resolved": false
+      },
+      {
+        "name": "Global.MsgC",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "PrintMessage",
@@ -7058,7 +8712,13 @@
       {
         "name": "type",
         "type": "number",
-        "description": "Which type of message should be sent to the players (see <page>Enums/HUD</page>)"
+        "description": "Which type of message should be sent to the players (see <page>Enums/HUD</page>)",
+        "references": [
+          {
+            "name": "Enums/HUD",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "message",
@@ -7070,7 +8730,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.PrintMessage"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "umsg",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "PrintTable",
@@ -7128,7 +8794,18 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ProjectedTexture"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "ProjectedTexture",
+        "canonicalName": "ProjectedTexture",
+        "resolved": true,
+        "id": "api:ProjectedTexture",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.ProjectedTexture"
+        ]
+      }
+    ]
   },
   {
     "name": "ProtectedCall",
@@ -7160,7 +8837,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ProtectedCall"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.pcall",
+        "resolved": false
+      },
+      {
+        "name": "Global.xpcall",
+        "resolved": false
+      },
+      {
+        "name": "GM:OnLuaError",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RandomPairs",
@@ -7345,7 +9036,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RealTime"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.CurTime",
+        "resolved": false
+      },
+      {
+        "name": "Global.SysTime",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RecipientFilter",
@@ -7359,7 +9060,13 @@
         "name": "unreliable",
         "type": "boolean",
         "default": "false",
-        "description": "If set to true, makes the filter unreliable.\n\nThis means, when sending over the network in cases like <page>Global.CreateSound</page> (and its subsequent updates), the message is not guaranteed to reach all clients."
+        "description": "If set to true, makes the filter unreliable.\n\nThis means, when sending over the network in cases like <page>Global.CreateSound</page> (and its subsequent updates), the message is not guaranteed to reach all clients.",
+        "references": [
+          {
+            "name": "Global.CreateSound",
+            "resolved": false
+          }
+        ]
       }
     ],
     "returnValues": [
@@ -7372,7 +9079,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RecipientFilter"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "CRecipientFilter",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RecordDemoFrame",
@@ -7407,7 +9120,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RefreshAddonConflicts"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.FireAddonConflicts",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RegisterDermaMenuForClose",
@@ -7428,7 +9147,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RegisterDermaMenuForClose"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.CloseDermaMenus",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RegisterMetaTable",
@@ -7455,7 +9180,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RegisterMetaTable"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.FindMetaTable",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RememberCursorPosition",
@@ -7474,7 +9205,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RememberCursorPosition"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.RestoreCursorPosition",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RemoveTooltip",
@@ -7493,7 +9230,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RemoveTooltip"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.EndTooltip",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RenderAngles",
@@ -7512,7 +9255,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RenderAngles"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "render.GetViewSetup",
+        "resolved": false
+      },
+      {
+        "name": "Global.EyeAngles",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RenderDoF",
@@ -7667,7 +9420,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RequestConnectToServer"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "permissions.AskToConnect",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RequestOpenURL",
@@ -7739,7 +9498,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.require"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.pcall",
+        "resolved": false
+      },
+      {
+        "name": "Global.xpcall",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RestoreCursorPosition",
@@ -7758,7 +9527,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RestoreCursorPosition"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.RememberCursorPosition",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RunConsoleCommand",
@@ -7778,14 +9553,26 @@
       {
         "name": "arguments",
         "type": "vararg",
-        "description": "The arguments. Note, that unlike <page>Player:ConCommand</page>, you must pass each argument as a new string, not separating them with a space."
+        "description": "The arguments. Note, that unlike <page>Player:ConCommand</page>, you must pass each argument as a new string, not separating them with a space.",
+        "references": [
+          {
+            "name": "Player:ConCommand",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "RunConsoleCommand",
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RunConsoleCommand"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Blocked ConCommands",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RunGameUICommand",
@@ -7798,14 +9585,30 @@
       {
         "name": "command",
         "type": "string",
-        "description": "The menu command to run\n\nShould be one of the following:\n* `Disconnect` - Disconnects from the current server.\n* `OpenBenchmarkDialog` - Opens the \"Video Hardware Stress Test\" dialog.\n* `OpenChangeGameDialog` - Does not work in GMod.\n* `OpenCreateMultiplayerGameDialog` - Opens the Source dialog for creating a listen server.\n* `OpenCustomMapsDialog` - Does nothing.\n* `OpenFriendsDialog` - Does nothing.\n* `OpenGameMenu` - Does not work in GMod.\n* `OpenLoadCommentaryDialog` - Opens the \"Developer Commentary\" selection dialog. Useless in GMod.\n* `OpenLoadDemoDialog` - Does nothing.\n* `OpenLoadGameDialog` - Opens the Source \"Load Game\" dialog.\n* `OpenNewGameDialog` - Opens the \"New Game\" dialog. Useless in GMod.\n* `OpenOptionsDialog` - Opens the options dialog.\n* `OpenPlayerListDialog` - Opens the \"Mute Players\" dialog that shows all players connected to the server and allows to mute them.\n* `OpenSaveGameDialog` - Opens the Source \"Save Game\" dialog.\n* `OpenServerBrowser` - Opens the legacy server browser.\n* `Quit` - Quits the game **without** confirmation (unlike other Source games).\n* `QuitNoConfirm` - Quits the game without confirmation (like other Source games).\n* `ResumeGame` - Closes the menu and returns to the game.\n* `engine 'concommand'` - Runs a console command. Unlike <page>Global.RunConsoleCommand</page> It will ignore <page>Blocked ConCommands</page>"
+        "description": "The menu command to run\n\nShould be one of the following:\n* `Disconnect` - Disconnects from the current server.\n* `OpenBenchmarkDialog` - Opens the \"Video Hardware Stress Test\" dialog.\n* `OpenChangeGameDialog` - Does not work in GMod.\n* `OpenCreateMultiplayerGameDialog` - Opens the Source dialog for creating a listen server.\n* `OpenCustomMapsDialog` - Does nothing.\n* `OpenFriendsDialog` - Does nothing.\n* `OpenGameMenu` - Does not work in GMod.\n* `OpenLoadCommentaryDialog` - Opens the \"Developer Commentary\" selection dialog. Useless in GMod.\n* `OpenLoadDemoDialog` - Does nothing.\n* `OpenLoadGameDialog` - Opens the Source \"Load Game\" dialog.\n* `OpenNewGameDialog` - Opens the \"New Game\" dialog. Useless in GMod.\n* `OpenOptionsDialog` - Opens the options dialog.\n* `OpenPlayerListDialog` - Opens the \"Mute Players\" dialog that shows all players connected to the server and allows to mute them.\n* `OpenSaveGameDialog` - Opens the Source \"Save Game\" dialog.\n* `OpenServerBrowser` - Opens the legacy server browser.\n* `Quit` - Quits the game **without** confirmation (unlike other Source games).\n* `QuitNoConfirm` - Quits the game without confirmation (like other Source games).\n* `ResumeGame` - Closes the menu and returns to the game.\n* `engine 'concommand'` - Runs a console command. Unlike <page>Global.RunConsoleCommand</page> It will ignore <page>Blocked ConCommands</page>",
+        "references": [
+          {
+            "name": "Global.RunConsoleCommand",
+            "resolved": false
+          },
+          {
+            "name": "Blocked ConCommands",
+            "resolved": false
+          }
+        ]
       }
     ],
     "canonicalName": "RunGameUICommand",
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RunGameUICommand"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.RunConsoleCommand",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "RunString",
@@ -7885,7 +9688,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.RunStringEx"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.RunString",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SafeRemoveEntity",
@@ -7944,7 +9753,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SafeRemoveEntityDelayed"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.SafeRemoveEntity",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SaveAddonPresets",
@@ -7964,7 +9779,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SaveAddonPresets"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.LoadAddonPresets",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SaveHideNews",
@@ -7989,7 +9810,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SaveHideNews"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.LoadNewsList",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SaveLastMap",
@@ -8039,7 +9866,15 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SavePresets"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "presets",
+        "canonicalName": "presets",
+        "resolved": true,
+        "id": "table:presets"
+      }
+    ]
   },
   {
     "name": "ScreenScale",
@@ -8070,7 +9905,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ScreenScale"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.ScreenScaleH",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ScreenScaleH",
@@ -8101,7 +9942,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ScreenScaleH"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.ScreenScale",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ScrH",
@@ -8121,7 +9968,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ScrH"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "render.SetViewPort",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ScrW",
@@ -8141,7 +9994,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ScrW"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "render.SetViewPort",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "select",
@@ -8156,7 +10015,21 @@
       {
         "name": "parameter",
         "type": "any",
-        "description": "Can be a <page>number</page> or <page>string</page>.\n* If it's a string and starts with \"#\", the function will return the amount of values in the vararg (ignoring the rest of the string).\n* If it's a positive number, the function will return all values starting from the given index.\n* If the number is negative, it will return the amount specified from the end instead of the beginning. This mode will not be compiled by LuaJIT."
+        "description": "Can be a <page>number</page> or <page>string</page>.\n* If it's a string and starts with \"#\", the function will return the amount of values in the vararg (ignoring the rest of the string).\n* If it's a positive number, the function will return all values starting from the given index.\n* If the number is negative, it will return the amount specified from the end instead of the beginning. This mode will not be compiled by LuaJIT.",
+        "references": [
+          {
+            "name": "number",
+            "canonicalName": "number",
+            "resolved": true,
+            "id": "number:number"
+          },
+          {
+            "name": "string",
+            "canonicalName": "string",
+            "resolved": true,
+            "id": "string:string"
+          }
+        ]
       },
       {
         "name": "vararg",
@@ -8198,7 +10071,28 @@
       {
         "name": "recipients",
         "type": "any",
-        "description": "Can be a <page>CRecipientFilter</page>, <page>table</page> or <page>Player</page> object."
+        "description": "Can be a <page>CRecipientFilter</page>, <page>table</page> or <page>Player</page> object.",
+        "references": [
+          {
+            "name": "CRecipientFilter",
+            "resolved": false
+          },
+          {
+            "name": "table",
+            "canonicalName": "table",
+            "resolved": true,
+            "id": "table:table"
+          },
+          {
+            "name": "Player",
+            "canonicalName": "Player",
+            "resolved": true,
+            "id": "api:Player",
+            "documentationURLs": [
+              "https://wiki.facepunch.com/gmod/Global.Player"
+            ]
+          }
+        ]
       },
       {
         "name": "args",
@@ -8210,7 +10104,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SendUserMessage"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "umsg",
+        "resolved": false
+      },
+      {
+        "name": "net",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SentenceDuration",
@@ -8237,7 +10141,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SentenceDuration"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.EmitSentence",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ServerLog",
@@ -8415,7 +10325,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SetGlobal2Float"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.SetGlobalFloat",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SetGlobal2Int",
@@ -8441,7 +10357,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SetGlobal2Int"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.SetGlobalInt",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SetGlobal2String",
@@ -8545,7 +10467,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SetGlobalAngle"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "net",
+        "resolved": false
+      },
+      {
+        "name": "Global.SetGlobal2Angle",
+        "resolved": false
+      },
+      {
+        "name": "Networking_Usage",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SetGlobalBool",
@@ -8571,7 +10507,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SetGlobalBool"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "net",
+        "resolved": false
+      },
+      {
+        "name": "Global.SetGlobal2Bool",
+        "resolved": false
+      },
+      {
+        "name": "Networking_Usage",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SetGlobalEntity",
@@ -8597,7 +10547,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SetGlobalEntity"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "net",
+        "resolved": false
+      },
+      {
+        "name": "Global.SetGlobal2Entity",
+        "resolved": false
+      },
+      {
+        "name": "Networking_Usage",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SetGlobalFloat",
@@ -8623,7 +10587,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SetGlobalFloat"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "net",
+        "resolved": false
+      },
+      {
+        "name": "Global.SetGlobal2Float",
+        "resolved": false
+      },
+      {
+        "name": "Networking_Usage",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SetGlobalInt",
@@ -8649,7 +10627,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SetGlobalInt"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "net",
+        "resolved": false
+      },
+      {
+        "name": "Global.SetGlobal2Int",
+        "resolved": false
+      },
+      {
+        "name": "Networking_Usage",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SetGlobalString",
@@ -8675,7 +10667,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SetGlobalString"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "net",
+        "resolved": false
+      },
+      {
+        "name": "Global.SetGlobal2String",
+        "resolved": false
+      },
+      {
+        "name": "Networking_Usage",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SetGlobalVar",
@@ -8701,7 +10707,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SetGlobalVar"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "net",
+        "resolved": false
+      },
+      {
+        "name": "Global.SetGlobal2Var",
+        "resolved": false
+      },
+      {
+        "name": "Networking_Usage",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SetGlobalVector",
@@ -8727,7 +10747,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SetGlobalVector"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "net",
+        "resolved": false
+      },
+      {
+        "name": "Global.SetGlobal2Vector",
+        "resolved": false
+      },
+      {
+        "name": "Networking_Usage",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "setmetatable",
@@ -8820,7 +10854,21 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SortedPairs"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.pairs",
+        "resolved": false
+      },
+      {
+        "name": "Global.SortedPairsByMemberValue",
+        "resolved": false
+      },
+      {
+        "name": "Global.SortedPairsByValue",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SortedPairsByMemberValue",
@@ -8868,7 +10916,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SortedPairsByMemberValue"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.SortedPairsByValue",
+        "resolved": false
+      },
+      {
+        "name": "Global.SortedPairs",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SortedPairsByValue",
@@ -8911,7 +10969,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SortedPairsByValue"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.SortedPairsByMemberValue",
+        "resolved": false
+      },
+      {
+        "name": "Global.SortedPairs",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Sound",
@@ -8944,7 +11012,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Sound"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "util.PrecacheSound",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SoundDuration",
@@ -9010,7 +11084,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SQLStr"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "sql.SQLStr",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SScale",
@@ -9034,7 +11114,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SScale"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.ScreenScale",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "STNDRD",
@@ -9087,7 +11173,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SuppressHostEvents"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "NULL",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "SysTime",
@@ -9108,7 +11200,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.SysTime"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.RealTime",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "TauntCamera",
@@ -9248,7 +11346,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.TimedSin"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.CurTime",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "tobool",
@@ -9340,7 +11444,15 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.tonumber"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "number",
+        "canonicalName": "number",
+        "resolved": true,
+        "id": "number:number"
+      }
+    ]
   },
   {
     "name": "tostring",
@@ -9368,7 +11480,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.tostring"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.print",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "TranslateDownloadableName",
@@ -9427,7 +11545,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.type"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.Color",
+        "resolved": false
+      },
+      {
+        "name": "Global.IsColor",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "TypeID",
@@ -9454,7 +11582,39 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.TypeID"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.type",
+        "resolved": false
+      },
+      {
+        "name": "no value",
+        "resolved": false
+      },
+      {
+        "name": "Color",
+        "canonicalName": "Color",
+        "resolved": true,
+        "id": "api:Color",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Color"
+        ]
+      },
+      {
+        "name": "Entity",
+        "canonicalName": "Entity",
+        "resolved": true,
+        "id": "api:Entity",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Entity"
+        ]
+      },
+      {
+        "name": "proto",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "unpack",
@@ -9515,7 +11675,17 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.UnPredictedCurTime"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.CurTime",
+        "resolved": false
+      },
+      {
+        "name": "Prediction",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "UpdateAddonDisabledState",
@@ -9533,7 +11703,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.UpdateAddonDisabledState"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.GetAddonStatus",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "UpdateAddonMapList",
@@ -9551,7 +11727,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.UpdateAddonMapList"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.UpdateMapList",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "UpdateGames",
@@ -9607,7 +11789,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.UpdateLoadPanel"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.GetLoadPanel",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "UpdateMapList",
@@ -9693,7 +11881,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.UTIL_IsUselessModel"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.IsUselessModel",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "ValidPanel",
@@ -9719,7 +11913,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.ValidPanel"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.IsValid",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "Vector",
@@ -9762,7 +11962,18 @@
           {
             "name": "vector",
             "type": "Vector",
-            "description": "Creates a new <page>Vector</page> that is a copy of the given <page>Vector</page>."
+            "description": "Creates a new <page>Vector</page> that is a copy of the given <page>Vector</page>.",
+            "references": [
+              {
+                "name": "Vector",
+                "canonicalName": "Vector",
+                "resolved": true,
+                "id": "api:Vector",
+                "documentationURLs": [
+                  "https://wiki.facepunch.com/gmod/Global.Vector"
+                ]
+              }
+            ]
           }
         ],
         "returnValues": [
@@ -9777,7 +11988,28 @@
           {
             "name": "vectorString",
             "type": "string",
-            "description": "Attempts to parse the input <page>string</page> from the <page>Global.print</page> format of an <page>Vector</page>.\n\nReturns a <page>Vector</page> with its `x`, `y`, and `z` set to `0` if the <page>string</page> cannot be parsed."
+            "description": "Attempts to parse the input <page>string</page> from the <page>Global.print</page> format of an <page>Vector</page>.\n\nReturns a <page>Vector</page> with its `x`, `y`, and `z` set to `0` if the <page>string</page> cannot be parsed.",
+            "references": [
+              {
+                "name": "string",
+                "canonicalName": "string",
+                "resolved": true,
+                "id": "string:string"
+              },
+              {
+                "name": "Global.print",
+                "resolved": false
+              },
+              {
+                "name": "Vector",
+                "canonicalName": "Vector",
+                "resolved": true,
+                "id": "api:Vector",
+                "documentationURLs": [
+                  "https://wiki.facepunch.com/gmod/Global.Vector"
+                ]
+              }
+            ]
           }
         ],
         "returnValues": [
@@ -9792,7 +12024,22 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.Vector"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Vector",
+        "canonicalName": "Vector",
+        "resolved": true,
+        "id": "api:Vector",
+        "documentationURLs": [
+          "https://wiki.facepunch.com/gmod/Global.Vector"
+        ]
+      },
+      {
+        "name": "Vector:Add",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "VectorRand",
@@ -9847,7 +12094,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.VGUIFrameTime"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.SysTime",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "VGUIRect",
@@ -9893,7 +12146,13 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.VGUIRect"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "DShape",
+        "resolved": false
+      }
+    ]
   },
   {
     "name": "VisualizeLayout",
@@ -10022,7 +12281,13 @@
       {
         "name": "errorCallback",
         "type": "function",
-        "description": "The function to be called if execution of the first fails; the error message is passed as a string.\n\nYou cannot throw an <page>Global.error</page>() from this callback: it will have no effect (not even stopping the callback)."
+        "description": "The function to be called if execution of the first fails; the error message is passed as a string.\n\nYou cannot throw an <page>Global.error</page>() from this callback: it will have no effect (not even stopping the callback).",
+        "references": [
+          {
+            "name": "Global.error",
+            "resolved": false
+          }
+        ]
       },
       {
         "name": "arguments",
@@ -10044,6 +12309,36 @@
     "documentationURLs": [
       "https://wiki.facepunch.com/gmod/Global.xpcall"
     ],
-    "retrievalDate": "2026-10-09T21:48:05.944Z"
+    "retrievalDate": "2026-10-09T21:48:05.944Z",
+    "references": [
+      {
+        "name": "Global.pcall",
+        "resolved": false
+      },
+      {
+        "name": "debug",
+        "resolved": false
+      },
+      {
+        "name": "Global.Error",
+        "resolved": false
+      },
+      {
+        "name": "Global.ErrorNoHalt",
+        "resolved": false
+      },
+      {
+        "name": "Global.include",
+        "resolved": false
+      },
+      {
+        "name": "GM:OnLuaError",
+        "resolved": false
+      },
+      {
+        "name": "Global.error",
+        "resolved": false
+      }
+    ]
   }
 ]
